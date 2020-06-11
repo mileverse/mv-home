@@ -171,10 +171,17 @@ body {
     overflow: hidden;
 }
 .header-img{
-    transition: all ease 4s;
+    animation:scale ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
 }
-.header-img.scale{
-    transform:scale(1.4);
+@keyframes scale{
+    from {
+        transform:scale(1);
+    }
+    to {
+        transform:scale(1.4);
+    }
 }
 .header-video{
     position: absolute;

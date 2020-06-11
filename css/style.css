@@ -206,13 +206,34 @@ body {
 }
 
 .header-img {
-  -webkit-transition: all ease 4s;
-  transition: all ease 4s;
+  -webkit-animation: scale ease-in 1;
+          animation: scale ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
-.header-img.scale {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes scale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
 }
 
 .header-video {

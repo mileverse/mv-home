@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $('.header-img').addClass('scale')
     setTimeout(function(){
         $('.header-txt-color').height('116%');
     },1000)

@@ -201,8 +201,18 @@ body {
 
 #video {
   position: relative;
-  height: 700px;
+  height: 694px;
   overflow: hidden;
+}
+
+.header-img {
+  -webkit-transition: all ease 4s;
+  transition: all ease 4s;
+}
+
+.header-img.scale {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .header-video {

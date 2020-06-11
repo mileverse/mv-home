@@ -167,12 +167,14 @@ body {
 }
 #video {
     position: relative;
-    height: 700px;
+    height: 694px;
     overflow: hidden;
-    // background: url(../img/header_img.png);
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-attachment: fixed;
+}
+.header-img{
+    transition: all ease 4s;
+}
+.header-img.scale{
+    transform:scale(1.4);
 }
 .header-video{
     position: absolute;

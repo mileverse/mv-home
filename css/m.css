@@ -167,8 +167,8 @@ body {
           animation: scale ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
 }
 
 @-webkit-keyframes scale {

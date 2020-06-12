@@ -2,6 +2,7 @@ $(document).ready(function(){
     setTimeout(function(){
         $('.header-txt-color').height('116%');
     },1000)
+    $('.ex1').textyle();
 
     AOS.init({
         // Global settings:

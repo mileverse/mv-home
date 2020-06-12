@@ -37,6 +37,25 @@ body {
     text-align: left;
     opacity: 0.9;
 }
+.ex1 {
+    opacity : 0;
+    span {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        opacity: 0;
+    }
+}
+.ex2 {
+    opacity : 0;
+    span {
+      position: relative;
+      left: -10px;
+      opacity: 0;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+}
 .header-txt {
     width: 1280px;
     font-size: 36px;
@@ -171,7 +190,7 @@ body {
     overflow: hidden;
 }
 .header-img{
-    animation:scale ease-in 1;
+    animation:scale ease-in-out;
     animation-fill-mode: forwards;
     animation-duration: 4s;
 }

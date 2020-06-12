@@ -131,11 +131,22 @@ body {
     width: 100%;
     height:410px;
     position: relative;
+    overflow: hidden;
 }
 .header-video{
-    margin-left: -286px;
-    margin-top: -102px;
-    width: 245%;
+    margin-left: -380px;
+    width: 300%;
+    animation:scale ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+}
+@keyframes scale{
+    from {
+        transform:scale(1);
+    }
+    to {
+        transform:scale(1.4);
+    }
 }
 .section_main_video_txt {
     position: absolute;

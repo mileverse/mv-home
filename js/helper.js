@@ -231,6 +231,14 @@ $(document).ready(function(){
     $(".contact-btn").click(function(){
         $("html,body").stop().animate({scrollTop:$('.contact').offset().top},500)
     })
+    $('.partners-list').click(function(){
+        var url = $(this).data('url');
+        if(url !== ''){
+            window.open(url,);
+        }else {
+            alert('오픈 예정 입니다.')
+        }
+    })
 
     function headerWhite(){
         $('.header').removeClass('dark').addClass('white')

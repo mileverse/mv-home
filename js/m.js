@@ -71,6 +71,14 @@ $(document).ready(function(){
             }
         })
     })
+    $('.partners-card-wrap').click(function(){
+        var url = $(this).data('url');
+        if(url !== ''){
+            window.open(url,);
+        }else {
+            alert('오픈 예정 입니다.')
+        }
+    })
     function showLoading(flag){
         flag?$('.loading-dimm').show() : $('.loading-dimm').hide()
     }

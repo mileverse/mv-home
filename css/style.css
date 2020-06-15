@@ -874,7 +874,6 @@ body {
 }
 
 .partners-list-wrap {
-  height: 310px;
   display: inline-block;
 }
 
@@ -884,20 +883,25 @@ body {
 
 .partners-list {
   float: left;
+  cursor: pointer;
 }
 
-.partners-list:not(:first-child) {
+.partners-list:not(:nth-child(4n-3)) {
   margin-left: 55px;
+}
+
+.partners-list:nth-child(n+5) {
+  margin-top: 55px;
 }
 
 .partner-list-card-wrap {
   position: relative;
-  width: 330px;
+  width: 278px;
   height: 220px;
   -webkit-box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.05);
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .partner-card-label {
@@ -924,6 +928,14 @@ body {
 
 .partner-card-label.tech {
   background: #84B8CE;
+}
+
+.partner-card-label.invest {
+  background: #96CAC6;
+}
+
+.partner-card-label.govm {
+  background: #F4B183;
 }
 
 .partner-img-wrap {

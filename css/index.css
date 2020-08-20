@@ -266,14 +266,18 @@ body {
 }
 
 .value-card-img {
-  margin-top: 18px;
-  width: 206px;
+  margin-top: 20px;
+  width: 240px;
 }
 
 .value-card-txt {
   margin-top: 34px;
+}
+
+.value-area-card-list {
   text-align: left;
-  padding-left: 66px;
+  width: 151px;
+  margin: 0 auto;
 }
 
 .value-txt-list {
@@ -282,7 +286,7 @@ body {
 }
 
 .value-txt-list li {
-  font-size: 10px;
+  font-size: 14px;
   text-indent: -16px;
   line-height: 2;
 }
@@ -678,12 +682,12 @@ footer {
 }
 
 .footer-community li:not(:first-child) {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .footer-community li img {
   cursor: pointer;
-  width: 50%;
+  width: 100%;
 }
 
 .align-center {
@@ -1018,4 +1022,3 @@ footer {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   color: #b53e74;
 }
-/*# sourceMappingURL=index.css.map */

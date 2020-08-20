@@ -30,7 +30,7 @@ $(document).ready(function(){
         window.open("https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%BC%EB%B2%8C%EC%8A%A4/id1521818622","_blank")
     })
     $(".whitePaperBtn").click(function(){
-        $(this).data('lang') === "kr" ? window.open("https://bit.ly/36WG2hM","_blank") : alert("업로드 예정입니다.")
+        $(this).data('lang') === "kr" ? window.open("https://drive.google.com/file/d/1xuifltQOWcW1P9CH2mIYq8PBXhc3ruxY/view?usp=sharing","_blank") : alert("업로드 예정입니다.")
     })
     $('#lang').change(function(e){
         $(this).prop('checked') === true ? location.href= '/en' : location.href= '/'

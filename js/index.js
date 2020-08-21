@@ -33,7 +33,7 @@ $(document).ready(function(){
         if($(this).data('lang') === "kr") {
             window.open("https://drive.google.com/file/d/1xuifltQOWcW1P9CH2mIYq8PBXhc3ruxY/view?usp=sharing","_blank")
         } else {
-            location.href.indexOf("en") === -1 ? alert("업로드 예정입니다.") : alert("Comming Soon");
+            window.open("https://drive.google.com/file/d/1lUH4fnsnpI8bCrgpFKa0mPPttV7yNHJn/view?usp=sharing","_blank")
         }
     })
     $('#lang').change(function(e){

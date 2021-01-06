@@ -573,7 +573,7 @@ body {
 }
 
 .team-card-wrap {
-  width: 249px;
+  width: 258px;
   margin: 0 auto;
 }
 
@@ -617,63 +617,6 @@ body {
 .partenrs-title {
   font-size: 25px;
   font-weight: bold;
-}
-
-.partners__one__wrap {
-  -webkit-box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.05);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 22px 56px;
-}
-
-.ks_net_logo {
-  text-align: center;
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.ks_nst_expl {
-  margin-left: 120px;
-  height: 116px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.ks_nst_expl.en {
-  margin-left: 50px;
-}
-
-.ks_nst_expl p {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 18px;
-  text-indent: -17px;
 }
 
 .partners-li {

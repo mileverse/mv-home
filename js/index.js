@@ -37,6 +37,6 @@ $(document).ready(function(){
         }
     })
     $('#lang').change(function(e){
-        $(this).prop('checked') === true ? location.href= '/en' : location.href= '/'
+        $(this).prop('checked') === true ? location.href= '/' : location.href= '/kr'
     })
 })

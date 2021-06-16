@@ -129,8 +129,11 @@ body {
 .language-btnWrap{
     position: absolute;
     top: 50%;
-    right: 130px;
+    right: 40px;
     transform: translateY(-50%);
+}
+.language-btnWrap a{
+  text-decoration: none;
 }
 .home-area{
   background-image: url(../img/header_img.png);

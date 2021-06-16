@@ -36,7 +36,4 @@ $(document).ready(function(){
             window.open("https://drive.google.com/file/d/1lUH4fnsnpI8bCrgpFKa0mPPttV7yNHJn/view?usp=sharing","_blank")
         }
     })
-    $('#lang').change(function(e){
-        $(this).prop('checked') === true ? location.href= '/' : location.href= '/kr'
-    })
 })

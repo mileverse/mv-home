@@ -32,8 +32,10 @@ $(document).ready(function(){
     $(".whitePaperBtn, .footer-btn").click(function(){
         if($(this).data('lang') === "kr") {
             window.open("https://drive.google.com/file/d/1xuifltQOWcW1P9CH2mIYq8PBXhc3ruxY/view?usp=sharing","_blank")
-        } else {
+        } else if($(this).data('lang') === "en") {
             window.open("https://drive.google.com/file/d/1lUH4fnsnpI8bCrgpFKa0mPPttV7yNHJn/view?usp=sharing","_blank")
+        } else if($(this).data('lang') === "cn") {
+            window.open("https://drive.google.com/file/d/1W7J40XCaiVsoTXRh3cAg718kNzTFEx2g/view?usp=sharing","_blank")
         }
     })
 })

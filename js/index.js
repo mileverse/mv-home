@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    $('#headers').load('../common/header.html');
-    $('#footers').load('../common/footer.html');
+    $('#headers').load('/common/header.html');
+    $('#footers').load('/common/footer.html');
 
     // var agent = navigator.userAgent.toLowerCase();
 

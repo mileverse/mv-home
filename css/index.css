@@ -28,10 +28,6 @@ html, body {
   height: 100%;
 }
 
-.wrapper {
-  min-height: 100vh;
-}
-
 .noto-regular {
   font-family: NotoSansRegular;
 }
@@ -46,6 +42,28 @@ html, body {
 
 .gmarket-bold {
   font-family: GamrketBold;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+#footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .header-wrap {
@@ -96,6 +114,19 @@ html, body {
 
 .category a {
   font-size: 18px;
+}
+
+.category a.active {
+  color: rebeccapurple;
+}
+
+.active-border {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background-color: #FFFFFF;
+  bottom: -2px;
+  display: none;
 }
 
 .category:hover > .sub-menu-wrap {
@@ -180,3 +211,4 @@ html, body {
   width: 30px;
   height: 30px;
 }
+/*# sourceMappingURL=index.css.map */

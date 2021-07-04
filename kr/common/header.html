@@ -1,0 +1,71 @@
+<div class="header-wrap">
+    <div style="width: 1300px;display: flex;justify-content: space-between;align-items: center;">
+        <a href="/kr" style="position: relative;"><img src="../../assets/img/mv_logo.png" alt="로고" class="header_logo"></a>
+        <div style="display: flex;">
+            <ul class="nav">
+                <li class="category">
+                    <a href="#" class="company">Company</a>
+                    <div class="active-border"></div>
+                    <div class="sub-menu-wrap">
+                        <div class="half-circle"></div>
+                        <ul class="sub-menu">
+                            <li><a href="/kr/company/mileverse.html">Mileverse</a></li>
+                            <li><a href="/kr/company/business.html">Business</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="category">
+                    <a href="#" class="apptech">APP&Tech</a>
+                    <div class="active-border"></div>
+                    <div class="sub-menu-wrap">
+                        <div class="half-circle"></div>
+                        <ul class="sub-menu">
+                            <li><a href="/kr/apptech/application.html">Application</a></li>
+                            <li><a href="/kr/apptech/tech.html">Tech</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="category">
+                    <a href="#" class="media">Media</a>
+                    <div class="active-border"></div>
+                    <div class="sub-menu-wrap">
+                        <div class="half-circle"></div>
+                        <ul class="sub-menu">
+                            <li><a href="/kr/media/pr.html">PR</a></li>
+                            <li><a href="/kr/media/partners.html">Partners </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="category">
+                    <a href="/kr/contact/index.html" class="contact">Contact</a>
+                    <div class="active-border"></div>
+                </li>
+            </ul>
+            <ul class="lang_nav">
+                <li>
+                    <a href="">KOR</a>
+                </li>
+                <li><a href="">ENG</a></li>
+                <li>
+                    <a href="">CHN</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<script>
+    if(location.href.indexOf("company") !== -1) {
+        $('.company').css('font-family','GamrketBold');
+        $('.company').siblings('.active-border').show()
+    } else if(location.href.indexOf("apptech") !== -1) {
+        $('.apptech').css('font-family','GamrketBold');
+        $('.apptech').siblings('.active-border').show()
+    } else if(location.href.indexOf("media") !== -1) {
+        $('.media').css('font-family','GamrketBold');
+        $('.media').siblings('.active-border').show()
+    } else if(location.href.indexOf("contact") !== -1) {
+        $('.contact').css('font-family','GamrketBold');
+        $('.contact').siblings('.active-border').show()
+    }
+</script>

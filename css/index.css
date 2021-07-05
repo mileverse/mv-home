@@ -61,7 +61,31 @@ html, body {
           flex: 1 0 auto;
 }
 
-#footer {
+.contents-init-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contents-title {
+  color: #212121;
+  font-size: 28px;
+  font-family: GamrketBold;
+}
+
+.contents-text {
+  font-family: NotoSansMedium;
+  color: #212121;
+}
+
+#footers {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -211,4 +235,3 @@ html, body {
   width: 30px;
   height: 30px;
 }
-/*# sourceMappingURL=index.css.map */

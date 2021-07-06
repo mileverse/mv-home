@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: GamrketBold;
   src: url("../assets/font/GmarketSansBold.woff2") format("woff2"), url("../assets/font/GmarketSansBold.woff") format("woff");
@@ -55,6 +56,40 @@ html, body {
   height: 100vh;
 }
 
+.banner-fake-area {
+  height: 102px;
+}
+
+.banner-text-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-title {
+  font-size: 50px;
+  color: #FFFFFF;
+  font-family: GamrketBold;
+}
+
+.banner-sub-title {
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-top: 12px;
+  font-family: NotoSansMedium;
+}
+
 .main-content {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -72,6 +107,30 @@ html, body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.contents-total-wrap {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contents-size {
+  width: 1300px;
+}
+
+.contents-title-size {
+  width: 290px;
+}
+
+.contents-article-size {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .contents-title {
@@ -234,4 +293,152 @@ html, body {
 .footer-wrap .icon {
   width: 30px;
   height: 30px;
+}
+
+/*
+*
+마일벌스 css
+*
+*/
+.mileverse .contents-article-size.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.mileverse .contents-article-size.director {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mileverse .contents-article-size.vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mileverse .director-box-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.16);
+  padding: 30px 103px;
+}
+
+.mileverse .director-box-wrap:not(:first-child) {
+  margin-top: 78px;
+}
+
+/*
+*
+비지니스 css
+*
+*/
+.business .contents-init-wrap:not(:first-child) {
+  padding-top: 100px;
+}
+
+.business .contents-init-wrap:not(:last-child) {
+  padding-bottom: 120px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.business .contents-init-wrap:last-child {
+  margin-bottom: 235px;
+}
+
+.business .contents-header {
+  font-family: NotoSansBold;
+  color: #212121;
+  font-size: 24px;
+}
+
+.business .contents-text {
+  font-size: 20px;
+  font-family: NotoSansMedium;
+  line-height: 29px;
+  margin-top: 7px;
+}
+
+.business .contents-img {
+  margin-top: 120px;
+}
+
+/*
+*
+앱테크 css
+*
+*/
+.apptech .contents-init-wrap:not(:first-child) {
+  padding-top: 100px;
+}
+
+.apptech .contents-init-wrap:not(:last-child) {
+  padding-bottom: 120px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.apptech .contents-init-wrap:last-child {
+  margin-bottom: 235px;
+}
+
+.apptech .contents-text {
+  font-size: 20px;
+}
+
+.apptech .app-img {
+  margin-top: 120px;
+}
+
+.apptech .btn-wrap {
+  text-align: right;
+  margin-top: 38px;
+  padding-right: 64px;
+}
+
+.apptech .img-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.apptech .comming-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 180px;
+  text-align: center;
+}
+
+.apptech .comming-version {
+  color: #212121;
+  font-size: 80px;
+  font-family: NotoSansMedium;
+  line-height: 116px;
+}
+
+.apptech .comming-text {
+  color: #757575;
+  font-size: 110px;
+  font-family: NotoSansMedium;
+  line-height: 160px;
 }

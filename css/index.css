@@ -316,6 +316,9 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 
 .mileverse .contents-article-size.vision {
@@ -442,3 +445,61 @@ html, body {
   font-family: NotoSansMedium;
   line-height: 160px;
 }
+
+/*
+*
+미디어 css
+*
+*/
+.media .refer-total-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.media .news-total-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 18px 16px;
+}
+
+.media .refer-header {
+  margin-top: 34px;
+  font-size: 20px;
+  color: #212121;
+  font-family: NotoSansBold;
+}
+
+.media .refer-expl {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #212121;
+  font-family: NotoSansMedium;
+  line-height: 26px;
+}
+
+.media .contents-init-wrap:not(:first-child) {
+  padding-top: 100px;
+}
+
+.media .contents-init-wrap:not(:last-child) {
+  padding-bottom: 120px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.media .contents-init-wrap:last-child {
+  margin-bottom: 120px;
+}
+/*# sourceMappingURL=index.css.map */

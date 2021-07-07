@@ -100,3 +100,7 @@ a {
 a:visited{
     color:#FFFFFF
 }
+textarea {
+    resize: none;
+ }
+ 

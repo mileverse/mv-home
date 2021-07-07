@@ -1,4 +1,11 @@
 $(document).ready(function(){
     $('#headers').load('/kr/common/header.html');
     $('#footers').load('/kr/common/footer.html');
+    $('.input-file').change(function(e){
+        $('#fileTxt').text($(this).val());
+    })
+    $('#fileBtn').click(function(e){
+        e.preventDefault();
+        $('.input-file').click();
+    })
 })

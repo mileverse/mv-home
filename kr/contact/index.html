@@ -23,8 +23,45 @@
   <body>
     <div class="wrapper">
       <div id='headers'></div>
-      <div class="main-content" >
-        <div style="background-color:orange;width: 100%;height: 800px;"></div>
+      <div class="main-content contact">
+        <div style="background-image: url(../../assets/img/apptech_bg.png); height: 560px;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+          <div class="banner-fake-area">
+          </div>
+          <div class="banner-text-wrap" >
+            <p class="banner-title">Contact</p>
+            <p class="banner-sub-title">마일벌스는 항상 열려 있는 마음으로 고객의 의견을 기다립니다. </p>
+          </div>
+        </div>
+        <div class="contents-total-wrap">
+          <div class="contents-size">
+            <div class="contents-init-wrap">
+              <div class="common-input-wrap">
+                <input type="text" placeholder="제목" class="common-input">
+              </div>
+              <div class="common-input-wrap" style="gap:20px;">
+                <input type="text" placeholder="이름" class="common-input">
+                <input type="text" placeholder="E-mail" class="common-input">
+              </div>
+              <div class="common-input-wrap">
+                <textarea placeholder="내용"  name="" id="" cols="30" rows="12" class="common-input"></textarea>
+              </div>
+              <div class="common-input-wrap">
+                <input type="file" style="display: none;" class="input-file">
+                <div class="fileTxtWrap">
+                  <span id="fileTxt">첨부파일(파일명)</span>
+                </div>
+                <div id='fileBtn'>
+                  <span>첨부하기</span>
+                </div>
+              </div>
+              <div class="common-input-wrap">
+                <div id='send'>
+                  전송하기
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id='footers'></div>
     </div>

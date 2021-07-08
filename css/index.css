@@ -174,6 +174,36 @@ html, body {
   color: #FFFFFF;
   line-height: 100px;
   position: absolute;
+  z-index: 2;
+  position: fixed;
+}
+
+.header-wrap.bl {
+  color: #212121;
+  border-bottom: 1px solid #DBDBDB;
+  background-color: #FFFFFF;
+}
+
+.main-page-header .header-wrap {
+  color: #212121;
+  border-bottom: 1px solid #DBDBDB;
+  background-color: #FFFFFF;
+}
+
+.header-wrap.bl a.category-text:visited {
+  color: #212121;
+}
+
+.main-page-header .header-wrap a.category-text:visited {
+  color: #212121;
+}
+
+.bl .header_logo {
+  background-image: url(../assets/img/mv_logo_bl.png);
+}
+
+.main-page-header .header_logo {
+  background-image: url(../assets/img/mv_logo_bl.png);
 }
 
 .header_logo {
@@ -181,6 +211,10 @@ html, body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  background-image: url(../assets/img/mv_logo.png);
+  background-repeat: no-repeat;
+  width: 236px;
+  height: 24px;
 }
 
 .header-wrap .nav {
@@ -219,6 +253,10 @@ html, body {
   background-color: #FFFFFF;
   bottom: -2px;
   display: none;
+}
+
+.bl .active-border {
+  background-color: #212121;
 }
 
 .category:hover > .sub-menu-wrap {
@@ -351,8 +389,8 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.16);
   padding: 30px 103px;
 }
 
@@ -393,6 +431,7 @@ html, body {
 
 .business .contents-img {
   margin-top: 70px;
+  width: 100%;
 }
 
 /*
@@ -410,7 +449,7 @@ html, body {
 }
 
 .apptech .contents-init-wrap:last-child {
-  margin-bottom: 235px;
+  margin-bottom: 88px;
 }
 
 .apptech .contents-text {
@@ -438,7 +477,7 @@ html, body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 180px;
+  margin-top: 70px;
   text-align: center;
 }
 
@@ -573,7 +612,7 @@ html, body {
           box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
   color: #212121;
   font-size: 20px;
-  font-family: NotoSansMedium;
+  font-family: NotoSansRegular;
   padding: 10px 0;
   text-align: center;
   width: 100%;
@@ -585,7 +624,7 @@ html, body {
           box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
   color: #212121;
   font-size: 20px;
-  font-family: NotoSansMedium;
+  font-family: NotoSansRegular;
   padding: 10px 0;
   text-align: center;
   width: 414px;
@@ -624,6 +663,13 @@ html, body {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.media .refer-total-wrap img {
+  width: 100%;
+  max-width: 306px;
 }
 
 .media .news-total-wrap {
@@ -653,6 +699,7 @@ html, body {
   color: #212121;
   font-family: NotoSansMedium;
   line-height: 26px;
+  width: 300px;
 }
 
 .media .contents-init-wrap:not(:first-child) {
@@ -677,7 +724,7 @@ html, body {
 
 .media .news-header {
   font-size: 20px;
-  line-height: 29px;
+  line-height: 32px;
   font-family: NotoSansBold;
 }
 
@@ -952,4 +999,3 @@ table.commonFrame tr th:not(:last-child) {
 table.commonFrame tr td:not(:last-child) {
   border-right: 1px solid #DBDBDB;
 }
-/*# sourceMappingURL=index.css.map */

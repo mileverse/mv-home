@@ -73,10 +73,6 @@ html, body {
           flex-direction: column;
 }
 
-.banner-fake-area {
-  height: 102px;
-}
-
 .banner-text-wrap {
   margin-top: 110px;
   -webkit-box-flex: 1;
@@ -206,6 +202,23 @@ html, body {
   position: fixed;
 }
 
+.header-web {
+  width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-mobile {
+  display: none;
+}
+
 .header-wrap.bl {
   color: #212121;
   border-bottom: 1px solid #DBDBDB;
@@ -232,6 +245,10 @@ html, body {
 
 .main-page-header .header_logo {
   background-image: url(../assets/img/mv_logo_bl.png);
+}
+
+.main-page-header .menu_logo {
+  background-image: url(../assets/img/hamberger_bl.png);
 }
 
 .header_logo {
@@ -390,9 +407,93 @@ html, body {
 
 /*
 *
+메인화면 css
+*
+*/
+.welcome-page {
+  position: relative;
+  height: 1030px;
+}
+
+.welcome-page-wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -656px;
+  margin-top: -158px;
+}
+
+.welcome-text-sub {
+  font-family: GamrketMedium;
+  font-size: 30px;
+  line-height: 35px;
+  color: #212121;
+}
+
+.welcome-text-main {
+  font-family: GamrketBold;
+  font-size: 64px;
+  line-height: 73px;
+  color: #212121;
+  margin-top: 26px;
+}
+
+.welcome-img {
+  width: 100%;
+  max-width: 644px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  margin-top: -170px;
+  margin-right: -892px;
+}
+
+/*
+*
 마일벌스 css
 *
 */
+.mileverse .contents-text {
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.mileverse .greeting-title {
+  font-size: 24px;
+  color: #212121;
+}
+
+.mileverse .sign-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 56px;
+}
+
+.mileverse .history-start-img {
+  margin-top: 214px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.mileverse .thumb-img-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+  margin-left: 110px;
+}
+
+.mileverse .vision-text {
+  font-size: 24px;
+  color: #212121;
+  line-height: 35px;
+}
+
 .mileverse .contents-article-size.history {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,6 +539,8 @@ html, body {
   -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.16);
   padding: 30px 103px;
+  width: 100%;
+  max-width: 587px;
 }
 
 .mileverse .director-box-wrap:not(:first-child) {
@@ -674,6 +777,14 @@ html, body {
   padding: 10px 0;
   text-align: center;
   width: 414px;
+}
+
+.tech .token-dist-wrap.web {
+  display: block;
+}
+
+.tech .contents-init-wrap.mobile-token-dis-wrap {
+  display: none;
 }
 
 .tech .token-dist-wrap {
@@ -1049,6 +1160,46 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @media (max-width: 767px) {
+  .header-web {
+    display: none;
+  }
+  .header-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: #FFFFFF;
+    height: 67px;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .header_logo.mobile {
+    position: relative;
+    background-size: 136px;
+    height: 14px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .menu_logo {
+    background-image: url(../assets/img/hamberger.png);
+    background-size: 26px;
+    height: 20px;
+    background-repeat: no-repeat;
+    -webkit-transform: translateX(58px);
+            transform: translateX(58px);
+  }
+  .bl .menu_logo {
+    background-image: url(../assets/img/hamberger_bl.png);
+  }
   .banner-bg {
     height: 310px;
     padding-left: 20px;
@@ -1092,6 +1243,71 @@ table.commonFrame tr td:not(:last-child) {
   }
   .contents-img.web {
     display: none;
+  }
+  .welcome-page {
+    height: auto;
+  }
+  .welcome-page-wrap {
+    line-height: 1;
+    margin-top: 104px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    margin-left: 0;
+    top: 0;
+    left: 0;
+  }
+  .welcome-text-sub {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .welcome-text-main {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 10px;
+  }
+  .welcome-img {
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .mileverse .contents-text {
+    margin-top: 8px;
+    font-size: 14px !important;
+    line-height: 20px;
+  }
+  .mileverse .greeting-title {
+    font-size: 15px;
+    line-height: 21px;
+    color: #212121;
+    margin-top: 18px;
+  }
+  .mileverse .sign-wrap {
+    margin-top: 41px;
+  }
+  .mileverse .director-box-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 18px;
+  }
+  .mileverse .history-start-img {
+    margin-top: 50px;
+  }
+  .mileverse .thumb-img-wrap {
+    margin-left: 0;
+  }
+  .mileverse .director-box-wrap:not(:first-child) {
+    margin-top: 0;
+  }
+  .mileverse .vision-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 19px;
   }
   .bg_mileverse {
     background-position-y: 106%;
@@ -1164,7 +1380,7 @@ table.commonFrame tr td:not(:last-child) {
     padding-top: 26px;
   }
   .tech .contents-init-wrap:last-child {
-    margin-bottom: 26px;
+    margin-bottom: 50px;
   }
   .tech .article-wrap .eco-wrap {
     -webkit-box-orient: vertical;
@@ -1203,6 +1419,12 @@ table.commonFrame tr td:not(:last-child) {
   }
   .tech .corp-card-wrap {
     margin-top: 16px;
+  }
+  .tech .token-dist-wrap.web {
+    display: none;
+  }
+  .tech .contents-init-wrap.mobile-token-dis-wrap {
+    display: block;
   }
   .bg_media {
     background-position-x: 68%;
@@ -1320,6 +1542,28 @@ table.commonFrame tr td:not(:last-child) {
     width: 25px;
     height: 24px;
   }
+  .privacy .banner-text-wrap {
+    margin-bottom: 100px;
+  }
+  .privacy .privacy-header {
+    font-size: 21px;
+  }
+  .privacy .privacy-sub-header {
+    font-size: 16px;
+  }
+  .privacy .privacy-expl {
+    font-size: 14px;
+  }
+  .privacy .privacy-area-wrap {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .privacy .privacy-area-wrap .title {
+    font-size: 15px;
+  }
+  .privacy .privacy-area-wrap .contents {
+    font-size: 15px;
+  }
   table.commonFrame tr th {
     font-size: 10px;
   }
@@ -1329,4 +1573,72 @@ table.commonFrame tr td:not(:last-child) {
   .mobile-mg-16 {
     margin-top: 16px;
   }
+  .mobile-menu-screen {
+    background: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: all ease 0.5s 0s;
+    transition: all ease 0.5s 0s;
+  }
+  .mobile-menu-screen.active {
+    left: 0;
+  }
+  .mobile-menu-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 20px;
+  }
+  .mobile-menu-wrap:not(:last-child) {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EFEFEF;
+  }
+  .mobile-menu-wrap:not(:first-child) {
+    margin-top: 26px;
+  }
+  .mobile-menu-wrap .level1 {
+    width: 130px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #212121;
+    font-family: GamrketMedium;
+  }
+  .mobile-menu-wrap .level2 {
+    font-size: 14px;
+    line-height: 19px;
+    font-family: GamrketMedium;
+  }
+  .mobile-menu-wrap .level2 a {
+    color: #616161;
+  }
+  .mobile-menu-wrap .level2:not(:first-child) {
+    margin-top: 16px;
+  }
+  .lang_nav {
+    font-size: 13px;
+    line-height: 17px;
+    margin-left: 0;
+  }
+  .header-mobile a {
+    color: #212121;
+  }
 }
+/*# sourceMappingURL=index.css.map */

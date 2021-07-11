@@ -1,9 +1,7 @@
 <div class="header-wrap">
-    <div style="width: 1300px;display: flex;justify-content: space-between;align-items: center;">
+    <div class="header-web">
         <a href="/kr" style="position: relative;">
-            <!-- <img src="../../assets/img/mv_logo.png" alt="로고" class="header_logo"> -->
             <div class="header_logo">
-
             </div>
         </a>
         <div style="display: flex;">
@@ -58,6 +56,64 @@
         </div>
         
     </div>
+    <div class="header-mobile">
+        <a href="/kr" style="flex:1">
+            <div class="header_logo mobile">
+            </div>
+        </a>
+        <a href="#" id="mobile-menu-hamberger" style="width: 84px;" >
+            <div class="menu_logo mobile">
+
+            </div>
+        </a>
+        <div class="mobile-menu-screen" id="menu-screen">
+            <div>
+                <div style="text-align: right;padding-right: 20px;height: 84px;">
+                    <a href="#" id="mobile-menu-close">
+                        <img src="../../assets/img/ico_close.png" alt=""  style="width: 20px;height: 20px;">
+                    </a>
+                </div>
+                <div class="mobile-menu-wrap">
+                    <p class="level1">Company</p>
+                    <div>
+                        <p class="level2"><a href="/kr/company/mileverse.html">Mileverse</a></p>
+                        <p class="level2"><a href="/kr/company/business.html">Business</a></p>
+                    </div>
+                </div>
+                <div class="mobile-menu-wrap">
+                    <p class="level1">APP&Tech</p>
+                    <div>
+                        <p class="level2"><a href="/kr/apptech/application.html">Application</a></p>
+                        <p class="level2"><a href="/kr/apptech/tech.html">Tech</a></p>
+                    </div>
+                </div>
+                <div class="mobile-menu-wrap">
+                    <p class="level1">Media</p>
+                    <div>
+                        <p class="level2"><a href="/kr/media/pr.html">PR</a></p>
+                        <p class="level2"><a href="/kr/media/partners.html">Partners</a></p>
+                    </div>
+                </div>
+                <div class="mobile-menu-wrap">
+                    <p class="level1">
+                        <a href="/kr/contact/index.html">Contact</a>
+                    </p>
+                </div>
+            </div>
+            <div style="line-height: 1;padding: 0 20px 32px 20px;display: flex;justify-content: space-between;align-items: center;">
+                <ul class="lang_nav">
+                    <li>
+                        <a href="" class="category-text">KOR</a>
+                    </li>
+                    <li><a href="" class="category-text">ENG</a></li>
+                    <li>
+                        <a href="" class="category-text">CHN</a>
+                    </li>
+                </ul>
+                <img src="../../assets/img/mv_logo_bl.png" alt="" style="width: 136px;">
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     if(location.href.indexOf("company") !== -1) {
@@ -73,4 +129,16 @@
         $('.contact').css('font-family','GamrketBold');
         $('.contact').siblings('.active-border').show()
     }
+
+    $('#mobile-menu-hamberger').click(function(e){
+        e.preventDefault();
+        $('#menu-screen').addClass('active');
+        $("body").css('overflow','hidden');
+    });
+    $('#mobile-menu-close').click(function(e){
+        e.preventDefault();
+        $('#menu-screen').removeClass('active');
+        $("body").css('overflow','auto');
+    })
+
 </script>

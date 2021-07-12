@@ -193,7 +193,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   font-family: GamrketMedium;
   color: #FFFFFF;
   line-height: 100px;
@@ -413,6 +413,7 @@ html, body {
 .welcome-page {
   position: relative;
   height: 1030px;
+  overflow: hidden;
 }
 
 .welcome-page-wrap {
@@ -420,7 +421,7 @@ html, body {
   left: 50%;
   top: 50%;
   margin-left: -656px;
-  margin-top: -158px;
+  margin-top: -227px;
 }
 
 .welcome-text-sub {
@@ -439,13 +440,13 @@ html, body {
 }
 
 .welcome-img {
-  width: 100%;
-  max-width: 644px;
+  max-width: 1220px;
+  z-index: -1;
   position: absolute;
   right: 50%;
   top: 50%;
-  margin-top: -170px;
-  margin-right: -892px;
+  margin-top: -202px;
+  margin-right: -1232px;
 }
 
 /*
@@ -464,6 +465,14 @@ html, body {
   color: #212121;
 }
 
+.mileverse .greeting-text {
+  color: #212121;
+  margin-top: 6px;
+  font-size: 20px;
+  line-height: 29px;
+  font-family: NotoSansMedium;
+}
+
 .mileverse .sign-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,10 +483,128 @@ html, body {
   margin-top: 56px;
 }
 
+.mileverse .sign-text {
+  font-size: 20px;
+  font-family: NotoSansMedium;
+  color: #212121;
+}
+
 .mileverse .history-start-img {
   margin-top: 214px;
   width: 100%;
   max-width: 1300px;
+}
+
+.mileverse .history-init-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mileverse .history-init-wrap.mobile {
+  display: none;
+}
+
+.mileverse .history-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mileverse .history-years {
+  width: 394px;
+  border-right: 1px dotted #9E9E9E;
+  padding-right: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 82px;
+}
+
+.mileverse .history-years.fake {
+  height: 160px;
+  padding-bottom: 0;
+}
+
+.mileverse .history-years.title {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mileverse .history-years.last {
+  padding-bottom: 0;
+}
+
+.history-years-text, .history-title-text {
+  color: #212121;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: GamrketBold;
+}
+
+.mileverse .history-horizontal {
+  margin-left: -10px;
+  height: 20px;
+}
+
+.mileverse .history-expl {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 82px;
+}
+
+.mileverse .history-expl.last {
+  padding-bottom: 0;
+}
+
+.mileverse .history-expl-text {
+  font-size: 20px;
+  line-height: 40px;
+  margin-left: 10px;
+  font-family: NotoSansMedium;
+  color: #212121;
+  margin-top: -10px;
+}
+
+.mileverse .roadmap-wrap {
+  margin-top: 150px;
+  height: 376px;
+}
+
+.mileverse .founder-name {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: NotoSansMedium;
+  color: #212121;
+}
+
+.mileverse .founder-history {
+  font-size: 17px;
+  line-height: 25px;
+  font-family: NotoSansMedium;
+  margin-top: 14px;
 }
 
 .mileverse .thumb-img-wrap {
@@ -486,6 +613,17 @@ html, body {
           flex: 1;
   text-align: right;
   margin-left: 110px;
+}
+
+.mileverse .vision-wrap {
+  margin-top: 220px;
+  margin-bottom: 180px;
+}
+
+.mileverse .vision-imge {
+  margin-top: 68px;
+  width: 100%;
+  max-width: 1022px;
 }
 
 .mileverse .vision-text {
@@ -939,7 +1077,7 @@ html, body {
 }
 
 .partner .parnter-wrap {
-  border: 1px solid #DBDBDB;
+  border: 1px solid #EFEFEF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1204,6 +1342,7 @@ table.commonFrame tr td:not(:last-child) {
     height: 310px;
     padding-left: 20px;
     padding-right: 20px;
+    background-repeat: no-repeat;
   }
   .banner-text-wrap {
     width: 100%;
@@ -1232,8 +1371,13 @@ table.commonFrame tr td:not(:last-child) {
   .contents-title {
     font-size: 21px;
   }
+  .contents-title.sub {
+    font-size: 15px;
+    line-height: 15px;
+  }
   .contents-title.mobile {
     display: block;
+    line-height: 21px;
   }
   .contents-title.web {
     display: none;
@@ -1262,31 +1406,43 @@ table.commonFrame tr td:not(:last-child) {
     line-height: 19px;
   }
   .welcome-text-main {
-    font-size: 30px;
-    line-height: 40px;
-    margin-top: 10px;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 6px;
   }
   .welcome-img {
-    right: 0;
     top: 0;
-    margin-top: 0;
+    margin-top: 24px;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     position: relative;
+    right: 174px;
+    width: 670px;
+  }
+  .mileverse .contents-title {
+    line-height: unset;
   }
   .mileverse .contents-text {
     margin-top: 8px;
-    font-size: 14px !important;
     line-height: 20px;
   }
   .mileverse .greeting-title {
     font-size: 15px;
     line-height: 21px;
     color: #212121;
-    margin-top: 18px;
+    margin-top: 16px;
+  }
+  .mileverse .greeting-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
+    font-family: NotoSansMedium;
   }
   .mileverse .sign-wrap {
-    margin-top: 41px;
+    margin-top: 30px;
+  }
+  .mileverse .sign-text {
+    font-size: 14px;
   }
   .mileverse .director-box-wrap {
     -webkit-box-orient: vertical;
@@ -1294,9 +1450,73 @@ table.commonFrame tr td:not(:last-child) {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     padding: 18px;
+    width: 37%;
   }
   .mileverse .history-start-img {
-    margin-top: 50px;
+    margin-top: 60px;
+  }
+  .mileverse .history-init-wrap.web {
+    display: none;
+  }
+  .mileverse .history-init-wrap.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+  }
+  .mileverse .history-years {
+    width: 46px;
+    padding-bottom: 31px;
+  }
+  .mileverse .history-years.fake {
+    height: 40px;
+  }
+  .mileverse .history-expl.fake {
+    padding-bottom: 0;
+  }
+  .history-years-text {
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 5px;
+  }
+  .mileverse .history-expl {
+    padding-bottom: 31px;
+  }
+  .mileverse .history-expl-text {
+    font-size: 13px;
+    line-height: 22px;
+    font-family: NotoSansRegular;
+    margin-top: 0;
+  }
+  .mileverse .contents-title.director {
+    margin-top: 10px;
+  }
+  .mileverse .contents-article-size.director {
+    margin-top: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #EFEFEF;
+  }
+  .mileverse .founder-name {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 5px;
+  }
+  .mileverse .founder-history {
+    font-size: 9px;
+    line-height: 13px;
   }
   .mileverse .thumb-img-wrap {
     margin-left: 0;
@@ -1304,13 +1524,20 @@ table.commonFrame tr td:not(:last-child) {
   .mileverse .director-box-wrap:not(:first-child) {
     margin-top: 0;
   }
+  .mileverse .vision-wrap {
+    margin-top: 26px;
+    margin-bottom: 52px;
+  }
+  .mileverse .vision-imge {
+    margin-top: 16px;
+  }
   .mileverse .vision-text {
     font-size: 14px;
     line-height: 20px;
     margin-top: 19px;
   }
   .bg_mileverse {
-    background-position-y: 106%;
+    background-position-y: 100%;
     background-position-x: 43%;
   }
   .business .contents-header {
@@ -1342,6 +1569,7 @@ table.commonFrame tr td:not(:last-child) {
   .apptech .contents-text {
     font-size: 14px;
     line-height: 20px;
+    margin-top: 16px;
   }
   .apptech .app-img {
     margin-top: 26px;
@@ -1450,6 +1678,8 @@ table.commonFrame tr td:not(:last-child) {
     font-size: 15px;
     text-align: center;
     line-height: 21px;
+    width: auto;
+    margin-top: 6px;
   }
   .media .news-total-wrap {
     margin-left: 0;
@@ -1494,6 +1724,10 @@ table.commonFrame tr td:not(:last-child) {
   }
   .partner .contents-init-wrap:last-child {
     margin-bottom: 50px;
+  }
+  .partner .contents-title {
+    font-size: 18px;
+    font-family: GamrketMedium;
   }
   .bg_contact {
     background-position-x: 66%;
@@ -1641,4 +1875,3 @@ table.commonFrame tr td:not(:last-child) {
     color: #212121;
   }
 }
-/*# sourceMappingURL=index.css.map */

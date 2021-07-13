@@ -28,9 +28,4 @@ $(document).ready(function(){
     function isMobile() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
-
-    var video = $("#motion_video").get(0)
-    console.log(video)
-    video.play();
-
 })

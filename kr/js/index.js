@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    AOS.init();
+
     $('#headers').load('/kr/common/header.html');
     $('#footers').load('/kr/common/footer.html');
 
@@ -14,7 +16,7 @@ $(document).ready(function(){
             }
         });
     } else {
-        $('.header-wrap').addClass("bl")
+        $('.header-wrap').addClass("bl");
     }
     $('.input-file').change(function(e){
         $('#fileTxt').text($(this).val());
@@ -26,4 +28,9 @@ $(document).ready(function(){
     function isMobile() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
+
+    var video = $("#motion_video").get(0)
+    console.log(video)
+    video.play();
+
 })

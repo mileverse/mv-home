@@ -19,25 +19,27 @@
       <link rel="stylesheet" href="../css/index.css">
 
       <script src="/lib/jquery-3.5.0.min.js"></script>
-      <script src="./js/index.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="wrapper">
       <div id='headers' class="main-page-header"></div>
       <div class="main-content main welcome-page">
         <div class="welcome-page-wrap">
-          <p class="welcome-text-sub">편리한 포인트경제의 마일리지 통합·결제 플랫폼</p>
-          <p class="welcome-text-main">
+          <p class="welcome-text-sub" data-aos="fade-down" data-aos-duration="1000">편리한 포인트경제의 마일리지 통합·결제 플랫폼</p>
+          <p class="welcome-text-main" data-aos="fade-down" data-aos-duration="1000">
             Revolutionary  Mileage <br>
             Consolidation Platform
           </p>
           <!-- <img class="welcome-img" src="../assets/img/main_motion.gif" alt="메인 이미지"> -->
-          <video autoplay loop class="welcome-img">
+          <video autoplay loop class="welcome-img" id="motion_video" muted>
             <source src="../assets/img/main_motion.mp4" type="video/mp4">
           </video>
         </div>
       </div>
       <div id='footers'></div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

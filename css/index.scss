@@ -508,7 +508,10 @@ html,body{ width:100%; height:100%;}
   margin-top:70px;
   width: 100%;
 }
-
+.business .video {
+  width: 100%;
+  max-width: 1046px;
+}
 /*
 *
 앱테크 css
@@ -1179,6 +1182,13 @@ table.commonFrame tr td:not(:last-child){
   }
   .business .contents-init-wrap:last-child {
     margin-bottom: 50px;
+  }
+  .business .video {
+    transform: scale(1.4);
+  }
+  .business .vodeo-wrap {
+    overflow: hidden;
+    margin:26px 0;
   }
   
   // app&tech 

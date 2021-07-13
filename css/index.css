@@ -721,6 +721,11 @@ html, body {
   width: 100%;
 }
 
+.business .video {
+  width: 100%;
+  max-width: 1046px;
+}
+
 /*
 *
 앱테크 css
@@ -1561,6 +1566,14 @@ table.commonFrame tr td:not(:last-child) {
   }
   .business .contents-init-wrap:last-child {
     margin-bottom: 50px;
+  }
+  .business .video {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  .business .vodeo-wrap {
+    overflow: hidden;
+    margin: 26px 0;
   }
   .bg_tech {
     background-position-y: 26%;

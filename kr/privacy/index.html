@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta property="og:title" content="마일벌스(MileVerse)">
-      <meta property="og:image" content="../img/thumbnail.png"> 
+      <meta property="og:image" content="../assets/img/thumbnail.png"> 
       <meta property="og:image:width" content="800"/>
       <meta property="og:image:height" content="400"/> 
       <meta property="og:url" content="https://www.mileverse.com"/> 
@@ -19,7 +19,7 @@
       <link rel="stylesheet" href="../../css/index.css">
 
       <script src="/lib/jquery-3.5.0.min.js"></script>
-      <script src="../js/index.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -69,15 +69,6 @@
                 · 보존 기간 : 1년<br>
                 이 외에 법령에 따라 일정기간 보관해야 하는 개인정보 및 해당 법령은 아래와 같습니다.<br>
             </p>
-            <p class="title">05. 개인정보 파기 절차 및 방법</p>
-            <p class="contents">
-                회사는 수집한 개인정보의 이용 목적이 달성된 후에는 이용 및 보유 기간에 따라 해당 정보를 지체 없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.<br>
-                · 파기 절차 <br>
-                &nbsp; &nbsp;-고객이 서비스 이용 등을 위해 기재한 개인정보는 서비스 해지 등 이용 목적이 달성된 후 별도의 데이터베이스(종이의 경우 별도의 서류함)로 옮겨진 후 <br>
-                &nbsp; &nbsp; 내부 방침 및 기타 관련 법령   에 의한 정보보호 사유(위 개인정보의 보유 및 이용기간 참조)에 따른 보유기간이 경과한 후에 삭제되거나 파기합니다.<br>
-                    &nbsp; &nbsp;-별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다. <br>
-                · 파기 방법: 종이에 출력된 개인정보는 분쇄기로 분쇄 또는 소각하여 파기하고, 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br>
-            </p>
             <div style="margin-top:30px;">
                 <table class="commonFrame">
                     <tr>
@@ -119,7 +110,15 @@
                     </tr>
                 </table>
             </div>
-
+            <p class="title">05. 개인정보 파기 절차 및 방법</p>
+            <p class="contents">
+                회사는 수집한 개인정보의 이용 목적이 달성된 후에는 이용 및 보유 기간에 따라 해당 정보를 지체 없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.<br>
+                · 파기 절차 <br>
+                &nbsp; &nbsp;-고객이 서비스 이용 등을 위해 기재한 개인정보는 서비스 해지 등 이용 목적이 달성된 후 별도의 데이터베이스(종이의 경우 별도의 서류함)로 옮겨진 후 <br>
+                &nbsp; &nbsp; 내부 방침 및 기타 관련 법령   에 의한 정보보호 사유(위 개인정보의 보유 및 이용기간 참조)에 따른 보유기간이 경과한 후에 삭제되거나 파기합니다.<br>
+                    &nbsp; &nbsp;-별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다. <br>
+                · 파기 방법: 종이에 출력된 개인정보는 분쇄기로 분쇄 또는 소각하여 파기하고, 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br>
+            </p>
             <p class="title">06. 개인정보의 제 3자 제공</p>
             <p class="contents">
                 회사는 고객의 동의가 있거나 관련 법령의 규정에 의한 경우를 제외하고 원칙적으로 개인정보를 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.<br>
@@ -169,5 +168,7 @@
       </div>
       <div id='footers'></div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

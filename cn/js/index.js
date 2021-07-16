@@ -1,8 +1,8 @@
 $(document).ready(function(){
     AOS.init();
 
-    $('#headers').load('/kr/common/header.html');
-    $('#footers').load('/kr/common/footer.html');
+    $('#headers').load('/cn/common/header.html');
+    $('#footers').load('/cn/common/footer.html');
 
     if($('.main').length ===0) {
         //scroll event;;
@@ -28,21 +28,19 @@ $(document).ready(function(){
     function isMobile() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
-
     $('.play-store').click(function(){
         window.open("https://play.google.com/store/apps/details?id=com.cordova.mileverse","_blank")
     })
     $('.app-store').click(function(){
         window.open("https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%BC%EB%B2%8C%EC%8A%A4/id1521818622","_blank")
     })
-
     $("#send").click(function(){
         var name = $("#name").val();
         var mail = $("#mail").val();
         var title = $("#title").val();
         var contents = $("#contents").val();
         if(name === "" || mail === "" || title === "" || contents === "") {
-            alert("항목을 모두 채워주세요.")
+            alert("请填满所有项目")
         } else {
             var formData = new FormData();
             formData.append('name',name)
@@ -61,9 +59,9 @@ $(document).ready(function(){
                 contentType: false,
                 success:({result})=>{
                     if(result) {
-                        alert("메일을 발송하였습니다.");
+                        alert("已发送邮件");
                     }else {
-                        alert("메일을 발송에 실패하였습니다.");
+                        alert("邮件发送失败");
                     }
                 }
             })

@@ -1,8 +1,8 @@
 $(document).ready(function(){
     AOS.init();
 
-    $('#headers').load('/kr/common/header.html');
-    $('#footers').load('/kr/common/footer.html');
+    $('#headers').load('/en/common/header.html');
+    $('#footers').load('/en/common/footer.html');
 
     if($('.main').length ===0) {
         //scroll event;;
@@ -35,14 +35,13 @@ $(document).ready(function(){
     $('.app-store').click(function(){
         window.open("https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%BC%EB%B2%8C%EC%8A%A4/id1521818622","_blank")
     })
-
     $("#send").click(function(){
         var name = $("#name").val();
         var mail = $("#mail").val();
         var title = $("#title").val();
         var contents = $("#contents").val();
         if(name === "" || mail === "" || title === "" || contents === "") {
-            alert("항목을 모두 채워주세요.")
+            alert("Please fill in all the items.")
         } else {
             var formData = new FormData();
             formData.append('name',name)
@@ -61,9 +60,9 @@ $(document).ready(function(){
                 contentType: false,
                 success:({result})=>{
                     if(result) {
-                        alert("메일을 발송하였습니다.");
+                        alert("Success to send mail");
                     }else {
-                        alert("메일을 발송에 실패하였습니다.");
+                        alert("Failed to send mail");
                     }
                 }
             })

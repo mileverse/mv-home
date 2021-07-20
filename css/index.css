@@ -24,6 +24,11 @@
   src: url("../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../assets/font/NotoSansKR-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-family: MFSongHe;
+  src: url("../assets/font/MFSongHe.woff2") format("woff2"), url("../assets/font/MFSongHe.woff") format("woff");
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -33,12 +38,24 @@ html, body {
   font-family: NotoSansRegular;
 }
 
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .noto-medium {
   font-family: NotoSansMedium;
 }
 
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .noto-bold {
   font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
 }
 
 .gmarket-bold {
@@ -105,6 +122,10 @@ html, body {
   line-height: 29px;
 }
 
+.banner-sub-title:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .main-content {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -156,6 +177,10 @@ html, body {
   line-height: 36px;
 }
 
+.contents-title:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .contents-title.mobile {
   display: none;
 }
@@ -175,6 +200,10 @@ html, body {
 .contents-text {
   font-family: NotoSansMedium;
   color: #212121;
+}
+
+.contents-text:lang(cn) {
+  font-family: MFSongHe;
 }
 
 #footers {
@@ -421,14 +450,18 @@ html, body {
   left: 50%;
   top: 50%;
   margin-left: -656px;
-  margin-top: -227px;
+  margin-top: -232px;
 }
 
 .welcome-text-sub {
   font-family: GamrketMedium;
   font-size: 30px;
-  line-height: 35px;
+  line-height: 45px;
   color: #212121;
+}
+
+.welcome-text-sub:lang(cn) {
+  font-family: MFSongHe;
 }
 
 .welcome-text-main {
@@ -445,7 +478,7 @@ html, body {
   position: absolute;
   right: 50%;
   top: 50%;
-  margin-top: -202px;
+  margin-top: -162px;
   margin-right: -1232px;
 }
 
@@ -473,6 +506,10 @@ html, body {
   font-family: NotoSansMedium;
 }
 
+.mileverse .greeting-text:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .mileverse .sign-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,6 +524,10 @@ html, body {
   font-size: 20px;
   font-family: NotoSansMedium;
   color: #212121;
+}
+
+.mileverse .sign-text:lang(cn) {
+  font-family: MFSongHe;
 }
 
 .mileverse .history-start-img {
@@ -586,6 +627,10 @@ html, body {
   font-family: NotoSansMedium;
   color: #212121;
   margin-top: -10px;
+}
+
+.mileverse .history-expl-text:lang(cn) {
+  font-family: MFSongHe;
 }
 
 .mileverse .roadmap-wrap {
@@ -709,11 +754,19 @@ html, body {
   font-size: 24px;
 }
 
+.business .contents-header:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .business .contents-text {
   font-size: 20px;
   font-family: NotoSansMedium;
   line-height: 29px;
   margin-top: 7px;
+}
+
+.business .contents-text:lang(cn) {
+  font-family: MFSongHe;
 }
 
 .business .contents-img {
@@ -858,11 +911,19 @@ html, body {
   line-height: 30px;
 }
 
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token-header:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl {
   color: #212121;
   font-size: 18px;
   font-family: NotoSansRegular;
   line-height: 30px;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl:lang(cn) {
+  font-family: MFSongHe;
 }
 
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn {
@@ -918,6 +979,10 @@ html, body {
   max-width: 834px;
 }
 
+.tech .franch-card:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .tech .corp-card {
   -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
@@ -927,6 +992,10 @@ html, body {
   padding: 10px 0;
   text-align: center;
   width: 414px;
+}
+
+.tech .corp-card:lang(cn) {
+  font-family: MFSongHe;
 }
 
 .tech .token-dist-wrap.web {
@@ -1000,6 +1069,10 @@ html, body {
   font-family: NotoSansBold;
 }
 
+.media .refer-header:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .media .refer-expl {
   margin-top: 10px;
   font-size: 18px;
@@ -1007,6 +1080,10 @@ html, body {
   font-family: NotoSansMedium;
   line-height: 26px;
   width: 300px;
+}
+
+.media .refer-expl:lang(cn) {
+  font-family: MFSongHe;
 }
 
 .media .contents-init-wrap:not(:first-child) {
@@ -1027,9 +1104,11 @@ html, body {
   height: 218px;
   padding: 40px 30px;
   border: 1px solid #DBDBDB;
+  cursor: pointer;
 }
 
 .media .news-header {
+  height: 64px;
   font-size: 20px;
   line-height: 32px;
   font-family: NotoSansBold;
@@ -1126,6 +1205,10 @@ html, body {
   border: 1px solid #DBDBDB;
 }
 
+.contact .common-input:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .contact .common-input-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1173,6 +1256,10 @@ html, body {
   padding-left: 16px;
 }
 
+.contact .fileTxtWrap:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .contact #fileBtn {
   background-color: #DBDBDB;
   width: 114px;
@@ -1194,6 +1281,10 @@ html, body {
   border: 1px solid #DBDBDB;
 }
 
+.contact #fileBtn:lang(cn) {
+  font-family: MFSongHe;
+}
+
 .contact #send {
   height: 60px;
   width: 420px;
@@ -1211,6 +1302,10 @@ html, body {
   font-size: 20px;
   font-family: NotoSansMedium;
   cursor: pointer;
+}
+
+.contact #send:lang(cn) {
+  font-family: MFSongHe;
 }
 
 .privacy .contents-total-wrap {
@@ -1294,6 +1389,10 @@ table.commonFrame tr th {
   font-family: NotoSansMedium;
 }
 
+table.commonFrame:lang(cn) tr th {
+  font-family: MFSongHe;
+}
+
 table.commonFrame tr td {
   padding: 8px 0;
   border-bottom: 1px solid #DBDBDB;
@@ -1301,6 +1400,10 @@ table.commonFrame tr td {
   line-height: 21px;
   font-size: 15px;
   vertical-align: middle;
+}
+
+table.commonFrame:lang(cn) tr td {
+  font-family: MFSongHe;
 }
 
 table.commonFrame tr th:not(:last-child) {

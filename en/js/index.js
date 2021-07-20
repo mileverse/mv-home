@@ -58,8 +58,8 @@ $(document).ready(function(){
                 contentType:"multipart/form-data",
                 processData: false,
                 contentType: false,
-                success:({result})=>{
-                    if(result) {
+                success:function(data){
+                    if(data.result) {
                         alert("Success to send mail");
                     }else {
                         alert("Failed to send mail");
@@ -68,4 +68,37 @@ $(document).ready(function(){
             })
         }
     })
+
+    if(location.href.indexOf('pr.html') !== -1) {
+        $.ajax({
+            type:"GET",
+            url:"https://server.mileverse.com/adm-svr/v0/api/news",
+            success:function(data){
+                let sb = '';
+                if(data.rows) {
+                    $.each(data.rows,function(index,item){
+                        sb += '<div class="news-wrap" data-link='+item.NEWS_LINK+'>'
+                        sb += '<p class="news-header">'+ellipsisContent(item.TITLE,30)+'</p>'
+                        sb += '<p class="news-date">'+item.PUB_DT+'</p>'
+                        sb += '<div class="news-dash"></div>'
+                        sb += '<p class="news-contents">'+ellipsisContent(item.CONTENT,61)+'</p>'
+                        sb += '</div>'
+                    })
+                    $(".news-total-wrap").html(sb)
+                    $(".news-wrap").click(function(e){
+                        e.preventDefault();
+                        window.open($(this).data('link'))
+                    })
+                }
+            }
+        })
+    }
+
+    function ellipsisContent(text,num) {
+        if(text.length > num) {
+            return text.substr(0,num)+"...";
+        } else {
+            return text
+        }
+    }
 })

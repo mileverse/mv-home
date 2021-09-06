@@ -482,6 +482,49 @@ html, body {
   margin-right: -1232px;
 }
 
+.web-welcome-btn-wrap {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-welcome-btn-wrap {
+  display: none;
+}
+
+.welcome-down-btn {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid #F4F4F4;
+  -webkit-box-shadow: 0px 0px 5px 0px #efefef;
+          box-shadow: 0px 0px 5px 0px #efefef;
+  width: 230px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.welcome-down-btn p {
+  font-size: 12px;
+  color: #656565;
+}
+
+.welcome-down-btn:not(:first-child) {
+  margin-left: 20px;
+}
+
 /*
 *
 마일벌스 css
@@ -1535,6 +1578,29 @@ table.commonFrame tr td:not(:last-child) {
     position: relative;
     right: 174px;
     width: 670px;
+  }
+  .web-welcome-btn-wrap {
+    display: none;
+  }
+  .mobile-welcome-btn-wrap {
+    display: block;
+  }
+  .welcome-down-btn {
+    width: 155px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .welcome-down-btn:not(:first-child) {
+    margin-left: 10px;
   }
   .mileverse .contents-title {
     line-height: unset;

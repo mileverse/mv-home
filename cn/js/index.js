@@ -52,7 +52,7 @@ $(document).ready(function(){
             }
             $.ajax({
                 type:"POST",
-                url:'http://192.168.0.16:3010/api/notice/mail',
+                url:'https://server.mileverse.com/adm-svr/operate/mail',
                 data:formData,
                 contentType:"multipart/form-data",
                 processData: false,
@@ -71,7 +71,7 @@ $(document).ready(function(){
     if(location.href.indexOf('pr.html') !== -1) {
         $.ajax({
             type:"GET",
-            url:"https://server.mileverse.com/adm-svr/v0/api/news",
+            url:"https://server.mileverse.com/adm-svr/operate/news",
             success:function(data){
                 let sb = '';
                 if(data.rows) {

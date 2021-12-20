@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마일벌스</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'NotoSansMedium';
+        src: url("../assets/font/NotoSansKR-Regular.woff2");
+    }
+
+    @font-face {
+        font-family: 'NotoSansBold';
+        src: url("../assets/font/NotoSansKR-Bold.woff2");
+    }
+
+    body{
+        margin: 0;
+    }
+    .wrap{
+        margin:0 auto;
+        padding-bottom: 60px;
+        width: 800px;
+    }
+    .contents {
+        margin-top:90px;
+    }
+    .header-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header {
+        font-family: 'NotoSansBold';
+        color: #123526;
+        font-size: 26px;
+    }
+    .area-1 {
+        margin-top: 40px;
+        flex-flow: row wrap;      
+        text-align: center;  
+    }
+    .area-1 .item:not(:nth-child(1)):not(:nth-child(5)) {
+        margin-left: 36px;
+    }
+    .area-1 .item:nth-child(n+5) {
+        margin-top:22px;
+    }
+    .area-2 {
+        margin-top: 26px;
+    }
+    .area-2 .text{
+        color:#5A5A5A;
+        font-size: 20px;
+        font-family: 'NotoSansMedium';
+        line-height: 30px;
+    }
+    .area-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+</style>
+<body>
+    <img src="./img/banner.png" alt="" style="width: 100%;">
+    <div class="wrap">
+        <div class="contents">
+            <div class="header-wrap">
+                <span class="header">최저가 상품 리스트</span>
+                <img src="./img/line1.png" alt="">
+            </div>
+            <div class="area-1">
+                <img src="./img/macbook.png" alt="" class="item">
+                <img src="./img/applewatch.png" alt="" class="item">
+                <img src="./img/airpod.png" alt="" class="item">
+                <img src="./img/headphone.png" alt="" class="item">
+                <img src="./img/beosound.png" alt="" class="item">
+                <img src="./img/toaster.png" alt="" class="item">
+                <img src="./img/bts.png" alt="" class="item">
+                <img src="./img/osara.png" alt="" class="item">
+            </div>
+        </div>
+        <div class="contents">
+            <div class="header-wrap">
+                <span class="header">참여방법</span>
+                <img src="./img/line2.png" alt="">
+            </div>
+            <div class="area-2">
+                <p class="text">
+                    01.마일벌스 앱을 설치한다.(기존 가입회원은 앱을 연다)<br>
+                    02.이벤트 배너를 터치한다.<br>
+                    03.리워드 몰에서 사고 싶은 제품을 최저가로 구매한다.<br>
+                    04.MVP리워드 20%를 받는다.
+                    <br>
+                    <br>
+                    ※ 본 이벤트는 준비된 물품이 모두 소진될 경우, 조기종료될 수 있습니다.
+                </p>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="header-wrap">
+                <span class="header">마일벌스 앱 설치하기</span>
+                <img src="./img/line3.png" alt="">
+            </div>
+            <div class="area-3">
+                <img src="./img/mock-up.png" alt="">
+                <div style="margin-left: 75px;display: flex;flex-direction: row;align-items: center;">
+                    <div>
+                        <img src="./img/google-qr.png" alt="" style="display: block;">
+                        <a href="https://bit.ly/3q8py09" target="_blank">
+                            <img src="./img/google-btn.png" alt="" style="margin-top:12px;">
+                        </a>
+                    </div>
+                    <div style="margin-left: 110px;">
+                        <img src="./img/ios-qr.png" alt="" style="display: block;">
+                        <a href="https://bit.ly/32czCMZ" target="_blank">
+                            <img src="./img/appstore-btn.png" alt="" style="margin-top:12px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

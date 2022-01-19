@@ -36,28 +36,18 @@
     }
     .header {
         font-family: 'NotoSansBold';
-        color: #123526;
+        color: #2D2D2D;
         font-size: 26px;
     }
     .area-1 {
-        margin-top: 40px;
-        flex-flow: row wrap;      
-        text-align: center;  
-    }
-    .area-1 .item:not(:nth-child(1)):not(:nth-child(5)) {
-        margin-left: 36px;
-    }
-    .area-1 .item:nth-child(n+5) {
-        margin-top:22px;
-    }
-    .area-2 {
-        margin-top: 26px;
-    }
-    .area-2 .text{
-        color:#5A5A5A;
-        font-size: 20px;
+        margin-top: 30px;
+        color: #2E2E2E;
+        line-height: 40px;
+        font-size: 24px;
         font-family: 'NotoSansMedium';
-        line-height: 30px;
+    }
+    .area-1 p {
+        margin:0
     }
     .area-3 {
         display: flex;
@@ -65,59 +55,102 @@
         justify-content: flex-start;
         align-items: center;
     }
+    .line1 {
+        width: 646px
+    }
+    .line2 {
+        width: 654px
+    }
+    .line3 {
+        width: 684px
+    }
+
+    @media (max-width: 767px){
+        .wrap {
+            width: 100%;
+        }
+        .area-1 {
+            font-size: 13px;
+            margin-top:20px;
+            line-height: 24px;
+        }
+        .header {
+            font-size: 18px;
+        }
+        .contents {
+            margin-top:20px;
+            padding: 0 20px;
+        }
+        .line1 {
+            width: 260px;
+        }
+        .line2 {
+            width: 260px;
+        }
+        .line3 {
+            width: 290px;
+        }
+    }
 </style>
 <body>
     <img src="./img/banner.png" alt="" style="width: 100%;">
     <div class="wrap">
         <div class="contents">
             <div class="header-wrap">
-                <span class="header">최저가 상품 리스트</span>
-                <img src="./img/line1.png" alt="">
+                <span class="header">마일벌스란?</span>
+                <img src="./img/line1.png" alt="" class="line1">
             </div>
             <div class="area-1">
-                <img src="./img/macbook.png" alt="" class="item">
-                <img src="./img/applewatch.png" alt="" class="item">
-                <img src="./img/airpod.png" alt="" class="item">
-                <img src="./img/headphone.png" alt="" class="item">
-                <img src="./img/beosound.png" alt="" class="item">
-                <img src="./img/toaster.png" alt="" class="item">
-                <img src="./img/bts.png" alt="" class="item">
-                <img src="./img/osara.png" alt="" class="item">
+                <p>흩어져 있는 나의 모든 기업 포인트를 “마일벌스 포인트(MVP)”로 <br>
+                    교환/통합하여 현금처럼 자유롭게 사용할 수 있는 즐거운 포인트 플랫폼입니다.
+                </p>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="header-wrap">
+                <span class="header">이벤트 기간</span>
+                <img src="./img/line2.png" alt=""  class="line2">
+            </div>
+            <div class="area-1">
+                <p>2022년 1월 19일 (수) 11:00 ~ 2022년 1월 28일 (금) 11:00
+                </p>
             </div>
         </div>
         <div class="contents">
             <div class="header-wrap">
                 <span class="header">참여방법</span>
-                <img src="./img/line2.png" alt="">
+                <img src="./img/line3.png" alt="" class="line3">
             </div>
-            <div class="area-2">
-                <p class="text">
-                    01.마일벌스 앱을 설치한다.(기존 가입회원은 앱을 연다)<br>
-                    02.이벤트 배너를 터치한다.<br>
-                    03.리워드 몰에서 사고 싶은 제품을 최저가로 구매한다.<br>
-                    04.MVP리워드 20%를 받는다.
-                    <br>
-                    <br>
-                    ※ 본 이벤트는 준비된 물품이 모두 소진될 경우, 조기종료될 수 있습니다.
+            <div class="area-1">
+                <P>
+                    1. 앱/플레이 스토어에서 “마일벌스“ 다운로드 및 설치<br>
+                    2. 회원가입<br>
+                    3. MVP교환 > [북앤라이프도서문화상품권] 선택 > 교환동의 > PIN번호 또는
+                </P>
+                <p style="text-indent: 26px;">
+                    ID 입력 후 캐시 전환<br>
+                </p>
+                <p>
+                    4. “마일벌스” 앱에서 자유롭게 사용
                 </p>
             </div>
         </div>
         <div class="contents">
             <div class="header-wrap">
                 <span class="header">마일벌스 앱 설치하기</span>
-                <img src="./img/line3.png" alt="">
+                <img src="./img/line4.png" alt="" style="width: 548px">
             </div>
             <div class="area-3">
-                <img src="./img/mock-up.png" alt="">
+                <img src="./img/mock-up.png" alt="" style="width: 275px;">
                 <div style="margin-left: 75px;display: flex;flex-direction: row;align-items: center;">
                     <div>
-                        <img src="./img/google-qr.png" alt="" style="display: block;">
+                        <img src="./img/google-qr.png" alt="" style="display: block;width: 134px;">
                         <a href="https://bit.ly/2LkYoSJ" target="_blank">
                             <img src="./img/google-btn.png" alt="" style="margin-top:12px;">
                         </a>
                     </div>
                     <div style="margin-left: 110px;">
-                        <img src="./img/ios-qr.png" alt="" style="display: block;">
+                        <img src="./img/ios-qr.png" alt="" style="display: block;width: 134px;">
                         <a href="https://apple.co/3qIn3B0" target="_blank">
                             <img src="./img/appstore-btn.png" alt="" style="margin-top:12px;">
                         </a>

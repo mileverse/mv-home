@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마일벌스</title>
+    <style>
+        @font-face {
+            font-family: NanumSquareB;
+            src: url("../assets/font/NanumSquareB-Bold.woff2") format("woff2"),
+            url("../assets/font/NanumSquareB.woff") format("woff");
+        }
+        html,body {
+            height: 100%;
+        }
+        .wrap {
+            display: flex;align-items: center;justify-content: center;height: 100%;
+        }
+        .comment {
+            margin-top:40px;font-family: NanumSquareB;font-size: 16px;color: #2D2D2D;
+        }
+        .btn {
+            margin-top: 60px;border: none;background-color: transparent;
+        }
+    </style>
+</head>
+<script>
+    function go_app(){
+        const visitedAt = new Date().getTime();
+        const sch = location.search;
+        const params = new URLSearchParams(sch);
+        const route = params.get("route")
+        const agent = navigator.userAgent.toLocaleLowerCase();
+
+        // location.replace('mileversern://'+route);
+        // setTimeout( function() {
+        //     if (agent.match('android') != null) {
+        //         // location.replace("https://play.google.com/store/apps/details?id=com.cordova.mileverse");
+        //         // window.open("https://play.google.com/store/apps/details?id=com.cordova.mileverse");
+        //         location.href = "https://play.google.com/store/apps/details?id=com.cordova.mileverse"
+        //     } else if (agent.indexOf("iphone")>-1||agent.indexOf("ipad")>-1||agent.indexOf("ipod")>-1) {
+        //         // location.replace("https://apps.apple.com/kr/app/마일벌스/id1521818622");
+        //         // window.open("https://apps.apple.com/kr/app/마일벌스/id1521818622");
+        //         location.href = "https://apps.apple.com/kr/app/마일벌스/id1521818622"
+        //     }
+        // }, 3000);
+
+        // location.href = 'mileversern://'+route;
+
+        if (agent.match('android') != null) {
+            document.getElementById('apple').style.display = 'none'; // hide
+            setTimeout( function () {
+                // window.location.href = "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.myapp";
+                // location.href = "http://play.google.com/store/apps/details?id=com.cordova.mileverse#top";
+                // location.href = "market://details?id=com.cordova.mileverse";
+                // location.href = "intent://details?id=com.cordova.mileverse#top";
+                // location.replace("https://play.google.com/store/apps/details?id=com.cordova.mileverse");
+                // window.open("https://play.google.com/store/apps/details?id=com.cordova.mileverse","_system");
+                // window.location = "https://play.google.com/store/apps/details?id=com.cordova.mileverse";
+                // window.location.href= "market://details?id=com.cordova.mileverse";
+                // window.open("market://details?=com.cordova.mileverse","_system");
+                // location.replace("https://play.google.com/store/apps/details?id=com.cordova.mileverse");
+                // window.open("https://play.google.com/store/apps/details?id=com.cordova.mileverse");
+                // location.href = "intent://main_web#Intent;scheme=mileversern;package=com.cordova.mileverse;end"
+                window.location.replace('http://play.google.com/store/apps/details?id=com.cordova.mileverse');
+
+                if(window.confirm("앱 설치 페이지로 이동하시겠습니까?")) {
+                    location.href = "http://play.google.com/store/apps/details?id=com.cordova.mileverse";
+                }
+            } ,2000 );
+            setTimeout( function () {
+                location.href = 'mileversern://'+route;
+            } ,0 );
+        } else if (agent.indexOf("iphone")>-1||agent.indexOf("ipad")>-1||agent.indexOf("ipod")>-1) {
+            document.getElementById('google').style.display = 'none';
+            setTimeout( function () {
+                location.href = "https://apps.apple.com/kr/app/마일벌스/id1521818622";
+            } ,3000 );
+            setTimeout( function () {
+                location.href = 'mileversern://'+route;
+            } ,0 );
+        }
+    }
+</script>
+<body onload="go_app()">
+    <!-- <a href="intent://#Intent;scheme=mileversern;package=com.cordova.mileverse;end">
+        마일벌스 APP으로 이동
+    </a> -->
+    <div class="wrap">
+        <div style="text-align: center;">
+            <img src="./img/logo.png" alt="" style="width: 90px;height: 90px;">
+            <p class="comment">마일벌스 - 내 모든 포인트를 현금처럼</p>
+            <button class="btn" id="apple" onclick="window.open('https://apple.co/3qIn3B0')">
+                <img src="./img/app-store.png" alt="">
+            </button>
+            <button class="btn" id="google" onclick="window.open('https://bit.ly/2LkYoSJ')">
+                <img src="./img/play-store.png" alt="" >
+            </button>
+        </div>
+    </div>
+</body>
+</html>

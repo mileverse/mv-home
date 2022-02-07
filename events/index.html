@@ -1,163 +1,238 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/event.css">
     <title>마일벌스</title>
 </head>
-<style>
-    @font-face {
-        font-family: 'NotoSansMedium';
-        src: url("../assets/font/NotoSansKR-Regular.woff2");
-    }
 
-    @font-face {
-        font-family: 'NotoSansBold';
-        src: url("../assets/font/NotoSansKR-Bold.woff2");
-    }
-
-    body{
-        margin: 0;
-    }
-    .wrap{
-        margin:0 auto;
-        padding-bottom: 60px;
-        width: 800px;
-    }
-    .contents {
-        margin-top:90px;
-    }
-    .header-wrap {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header {
-        font-family: 'NotoSansBold';
-        color: #2D2D2D;
-        font-size: 26px;
-    }
-    .area-1 {
-        margin-top: 30px;
-        color: #2E2E2E;
-        line-height: 40px;
-        font-size: 24px;
-        font-family: 'NotoSansMedium';
-    }
-    .area-1 p {
-        margin:0
-    }
-    .area-3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .line1 {
-        width: 646px
-    }
-    .line2 {
-        width: 654px
-    }
-    .line3 {
-        width: 684px
-    }
-
-    @media (max-width: 767px){
-        .wrap {
-            width: 100%;
-        }
-        .area-1 {
-            font-size: 13px;
-            margin-top:20px;
-            line-height: 24px;
-        }
-        .header {
-            font-size: 18px;
-        }
-        .contents {
-            margin-top:20px;
-            padding: 0 20px;
-        }
-        .line1 {
-            width: 260px;
-        }
-        .line2 {
-            width: 260px;
-        }
-        .line3 {
-            width: 290px;
-        }
-    }
-</style>
 <body>
-    <img src="./img/banner.png" alt="" style="width: 100%;">
-    <div class="wrap">
-        <div class="contents">
-            <div class="header-wrap">
-                <span class="header">마일벌스란?</span>
-                <img src="./img/line1.png" alt="" class="line1">
-            </div>
-            <div class="area-1">
-                <p>흩어져 있는 나의 모든 기업 포인트를 “마일벌스 포인트(MVP)”로 <br>
-                    교환/통합하여 현금처럼 자유롭게 사용할 수 있는 즐거운 포인트 플랫폼입니다.
-                </p>
+    <!-- <img alt="배너 이미지" class="banner"> -->
+    <picture>
+        <source media="(max-width: 767px)" srcset="./img/mobile-banner.png" class="banner">
+        <img src="./img/web-banner.png" alt="배너 이미지" class="banner">
+    </picture>
+    <div class="contents">
+        <div class="section">
+            <p class="title">마일벌스란?</p>
+            <p class="expl">
+                흩어져 있는 나의 모든 포인트를 마일벌스 포인트(MVP)로 교환/통합하여<br>
+                현금처럼 자유롭게 사용할 수 있는 즐거운 포인트 플랫폼 입니다.
+            </p>
+        </div>
+        <div class="section">
+            <p class="title">이벤트 내용</p>
+            <p class="expl">
+                포인트 교환 고객 중 추첨을 통해, 220명에게 <br>
+                다이슨 가전 풀세트 등 푸짐한 경품을 드립니다.
+            </p>
+            <div class="benefit-w">
+                <div class="benefit-wrap">
+                    <img src="../events/img/benefit01.png" alt="혜택01" class="benefit-img-w">
+                    <img src="../events/img/benefit01-m.png" alt="혜택01" class="benefit-img-m">
+                    <p class="benefit-text">교환을 완료하면 220명 추첨이벤트 자동응모!</p>
+                </div>
+                <div class="benefit-wrap">
+                    <img src="../events/img/benefit02.png" alt="혜택02" class="benefit-img-w">
+                    <img src="../events/img/benefit02-m.png" alt="혜택02" class="benefit-img-m">
+                    <p class="benefit-text">교환할 때는 기존 8%의 교환수수료를 5%로 할인</p>
+                </div>
             </div>
         </div>
-        <div class="contents">
-            <div class="header-wrap">
-                <span class="header">이벤트 기간</span>
-                <img src="./img/line2.png" alt=""  class="line2">
-            </div>
-            <div class="area-1">
-                <p>2022년 1월 19일 (수) 11:00 ~ 2022년 1월 28일 (금) 11:00
-                </p>
-            </div>
+        <div class="section">
+            <p class="title">이벤트 기간</p>
+            <p class="expl">
+                22.02.07 (월) 11:00 ~ 22.02.28(월) 11:00
+            </p>
         </div>
-        <div class="contents">
-            <div class="header-wrap">
-                <span class="header">참여방법</span>
-                <img src="./img/line3.png" alt="" class="line3">
-            </div>
-            <div class="area-1">
-                <P>
-                    1. 앱/플레이 스토어에서 “마일벌스“ 다운로드 및 설치<br>
-                    2. 회원가입<br>
-                    3. MVP교환 > [북앤라이프도서문화상품권] 선택 > 교환동의 > PIN번호 또는
-                </P>
-                <p style="text-indent: 26px;">
-                    ID 입력 후 캐시 전환<br>
-                </p>
-                <p>
-                    4. “마일벌스” 앱에서 자유롭게 사용
-                </p>
-            </div>
+        <div class="section">
+            <p class="title">당첨자 발표</p>
+            <p class="expl">
+                22년 03월 07일 (월)
+            </p>
         </div>
-        <div class="contents">
-            <div class="header-wrap">
-                <span class="header">마일벌스 앱 설치하기</span>
-                <img src="./img/line4.png" alt="" style="width: 548px">
+        <div class="section">
+            <p class="title">참여방법</p>
+            <p class="expl">
+                1. 앱/플레이 스토어에서 “마일벌스“ 다운로드 및 설치 <br>
+                2. 회원 가입 <br>
+                3. MVP교환 > [북앤라이프도서문화상품권] 선택 > 교환동의 >
+                PIN 번호 또는 ID 입력 후 북캐시를 MVP로 교환 <br>
+                4. 이벤트 응모 완료
+            </p>
+        </div>
+    </div>
+    <div class="give-away">
+        <img alt="경품안내" class="give-away-banner">
+        <div class="first-wrap">
+            <div class="people-wrap">
+                <span>1명</span>
             </div>
-            <div class="area-3">
-                <img src="./img/mock-up.png" alt="" style="width: 275px;">
-                <div style="margin-left: 75px;display: flex;flex-direction: row;align-items: center;">
-                    <div>
-                        <img src="./img/google-qr.png" alt="" style="display: block;width: 134px;">
-                        <a href="https://bit.ly/2LkYoSJ" target="_blank">
-                            <img src="./img/google-btn.png" alt="" style="margin-top:12px;">
-                        </a>
+            <div class="first-title">
+                다이슨 가전 풀세트
+            </div>
+            <div class="dyson-wrap">
+                <div class="composition">
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="./img/vacuum.png" alt="청소기" class="vacuum">
+                        </div>
+                        <div class="item-text">
+                            <p>
+                                다이슨 V15 디텍트 <br>
+                                앱솔루트 엑스트라
+                            </p>
+                        </div>
                     </div>
-                    <div style="margin-left: 110px;">
-                        <img src="./img/ios-qr.png" alt="" style="display: block;width: 134px;">
-                        <a href="https://apple.co/3qIn3B0" target="_blank">
-                            <img src="./img/appstore-btn.png" alt="" style="margin-top:12px;">
-                        </a>
+                    <img src="./img/plus.png" alt="플러스" class="plus horizontal">
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="./img/air.png" alt="공기청정기" class="air">
+                        </div>
+                        <div class="item-text">
+                            <p>
+                                다이슨 쿨 포름알데히드 <br>
+                                공기청정기
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="composition">
+                    <div class="plus-area">
+                        <img src="./img/plus.png" alt="플러스" class="plus vertical">
+                    </div>
+                    <div class="plus-area-margin"></div>
+                    <div class="plus-area">
+                        <img src="./img/plus.png" alt="플러스" class="plus vertical">
+                    </div>
+                </div>
+
+                <div class="composition">
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="./img/hair.png" alt="헤어드라이어" class="hair">
+                        </div>
+                        <div class="item-text">
+                            <p>
+                                다이슨 슈퍼소닉 헤어드라이어
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./img/plus.png" alt="플러스" class="plus horizontal">
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="./img/styler.png" alt="스타일러" class="styler">
+                        </div>
+                        <div class="item-text">
+                            <p>
+                                다이슨 에어랩 스타일러
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="else-wrap">
+            <div class="item">
+                <div class="people-wrap2">
+                    <span>30명</span>
+                </div>
+                <div class="item-img">
+                    <img src="./img/voucher.png" alt="도서문화상품권" class="voucer">
+                </div>
+                <div class="item-text">
+                    <p>
+                        도서문화상품권 3만원 상당
+                    </p>
+                </div>
+            </div>
+            <div class="else-wrap-margin">
+
+            </div>
+            <div class="item">
+                <div class="people-wrap2">
+                    <span>189명</span>
+                </div>
+                <div class="item-img">
+                    <img src="./img/cu.png" alt="CU 상품권" class="cu">
+                </div>
+                <div class="item-text">
+                    <p>
+                        CU 디지털상품권 3천원 상당
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="install">
+        <p class="install-title">
+            마일벌스 앱 설치하기
+        </p>
+        <div class="qr-mock-wrap">
+            <img src="./img/mock-up.png" alt="목업 이미지">
+            <div class="qr-wrap">
+                <div class="qr-item">
+                    <img src="./img/google-qr.png" alt="구글 QR코드">
+                    <button class="store-btn" onclick="window.open('https://bit.ly/2LkYoSJ')">
+                        <img src="./img/google-btn.png" alt="플레이스토어">
+                    </button>
+                </div>
+                <div class="qr-item">
+                    <img src="./img/apple-qr.png" alt="IOS QR코드">
+                    <button class="store-btn" onclick="window.open('https://apple.co/3qIn3B0')">
+                        <img src="./img/appstore-btn.png" alt="앱스토어">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="event-btn-area">
+        <button class="event-btn" onclick="window.open('https://www.mileverse.com/link?route=main')">
+            이벤트 참여하기
+        </button>
+    </div>
+    <div class="footer">
+        <div class="footer-wrap">
+            <p class="footer-contents caution">
+                ※ 이벤트 관련 문의 사항은 마일벌스 고객센터로 연락 바랍니다.<br>
+                02-2633-5896 / 평일 10:30 ~ 16:30
+            </p>
+            <div class="footer-contents footer-item">
+                <p class="footer-title">
+                    북앤라이프 캐시 교환 유의사항
+                </p>
+                <p class="footer-text">
+                    - 발행자가 부과하는 수수료 등 <span style="text-decoration: line-through;">8%</span> 5%를 공제한 금액 (북앤라이프 액면금의
+                    <span style="text-decoration: line-through;">92%</span> 95%)에 해당하는 MVP가 교환됩니다.<br>
+                    - 1P는 1MVP(1원)으로 교환됩니다.<br>
+                    - 월교환한도 : 북앤라이프 캐시 300,000p<br>
+                    - 교환완료된 MVP는 현금영수증 발급대상이 아닙니다.
+                </p>
+            </div>
+            <div class="footer-contents footer-item">
+                <p class="footer-title">
+                    이벤트 유의사항
+                </p>
+                <p class="footer-text">
+                    - 이벤트 참여는 1인당 1계정으로 참여 가능합니다.<br>
+                    - 이벤트 경품 이미지는 이해를 돕기 위한 이미지이며, 이벤트 내용 및 경품은 주최측 사정에 의해 변 경될 수 있습니다.<br>
+                    - 다이슨 가전 풀세트 당첨자에게는 가입 시, 입력하신 연락처로 개별연락 예정입니다.<br>
+                    - 정확하지 않은 개인 정보로 인한 불이익에 대하여 마일벌스는 책임지지 않습니다.<br>
+                    - 경품 선정 및 발송을 위한 연락이 3회 이상 연결되지 않을 경우, 당첨이 취소됩니다.<br>
+                    - 5만원 초과 경품에 대한 제세공과금 22%는 본인 부담입니다.<br>
+                    - 경품은 당첨 발표 이후 발송됩니다. (제세공과금 대상의 경우, 제세공과금 입금 확인 후 발송됩니다.)<br>
+                    - 제세공과금 처리 및 경품 배송을 위해 경품 당첨 안내 시, 개인정보(주소, 신분증 사본) 추가 수집 및 이용 동의를 요청드립니다.<br>
+                    - 부적절한 방법을 통한 이벤트 참여 및 당첨은 모두 취소되며, 법적 처벌을 받을 수 있습니다.<br>
+                    - 당첨된 경품은 다른 경품으로 변경이 불가능합니다.
+                </p>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

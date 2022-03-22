@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,37 @@
         @font-face {
             font-family: NanumSquareB;
             src: url("../assets/font/NanumSquareB-Bold.woff2") format("woff2"),
-            url("../assets/font/NanumSquareB.woff") format("woff");
+                url("../assets/font/NanumSquareB.woff") format("woff");
         }
-        html,body {
+
+        html,
+        body {
             height: 100%;
         }
+
         .wrap {
-            display: flex;align-items: center;justify-content: center;height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
         }
+
         .comment {
-            margin-top:40px;font-family: NanumSquareB;font-size: 16px;color: #2D2D2D;
+            margin-top: 40px;
+            font-family: NanumSquareB;
+            font-size: 16px;
+            color: #2D2D2D;
         }
+
         .btn {
-            margin-top: 60px;border: none;background-color: transparent;
+            margin-top: 60px;
+            border: none;
+            background-color: transparent;
         }
     </style>
 </head>
 <script>
-    function go_app(){
+    function go_app() {
         const visitedAt = new Date().getTime();
         const sch = location.search;
         const params = new URLSearchParams(sch);
@@ -34,30 +48,32 @@
         const agent = navigator.userAgent.toLocaleLowerCase();
 
         if (agent.match('android') != null) {
-            // document.getElementById('apple').style.display = 'none'; // hide
             document.getElementById('google').style.display = '';
-            setTimeout( function () {
+            setTimeout(function () {
                 window.location.replace('http://play.google.com/store/apps/details?id=com.cordova.mileverse');
 
-                if(window.confirm("앱 설치 페이지로 이동하시겠습니까?")) {
+                if (window.confirm("앱 설치 페이지로 이동하시겠습니까?")) {
                     location.href = "http://play.google.com/store/apps/details?id=com.cordova.mileverse";
                 }
-            } ,2000 );
-            setTimeout( function () {
-                location.href = 'mileversern://'+route;
-            } ,0 );
-        } else if (agent.indexOf("iphone")>-1||agent.indexOf("ipad")>-1||agent.indexOf("ipod")>-1) {
-            // document.getElementById('google').style.display = 'none';
+            }, 2000);
+            setTimeout(function () {
+                location.href = 'mileversern://' + route;
+            }, 0);
+        } else if (agent.indexOf("iphone") > -1 || agent.indexOf("ipad") > -1 || agent.indexOf("ipod") > -1) {
             document.getElementById('apple').style.display = '';
-            setTimeout( function () {
+            setTimeout(function () {
                 location.href = "https://apps.apple.com/kr/app/마일벌스/id1521818622";
-            } ,3000 );
-            setTimeout( function () {
-                location.href = 'mileversern://'+route;
-            } ,0 );
+            }, 3000);
+            setTimeout(function () {
+                location.href = 'mileversern://' + route;
+            }, 0);
+        } else {
+            document.getElementById('apple').style.display = '';
+            document.getElementById('google').style.display = '';
         }
     }
 </script>
+
 <body onload="go_app()">
     <!-- <a href="intent://#Intent;scheme=mileversern;package=com.cordova.mileverse;end">
         마일벌스 APP으로 이동
@@ -70,9 +86,10 @@
                 <img src="./img/app-store.png" alt="">
             </button>
             <button class="btn" id="google" onclick="window.open('https://bit.ly/2LkYoSJ')" style="display: none;">
-                <img src="./img/play-store.png" alt="" >
+                <img src="./img/play-store.png" alt="">
             </button>
         </div>
     </div>
 </body>
+
 </html>

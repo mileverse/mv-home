@@ -1,0 +1,153 @@
+.apptech .contents-size {
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apptech .background-wrap {
+  width: 100%;
+  background-image: url("../../../assets/img/appGuide/appGuide-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.apptech .contents-init-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0 40px 0;
+  &:first-child {
+    padding-top: 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #efefef;
+  }
+  &:last-child {
+    padding-bottom: 140px;
+  }
+}
+
+.apptech .contents-text {
+  font-size: 20px;
+  line-height: 34px;
+  &.web:first-child {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  &.mobile {
+    display: none;
+  }
+}
+
+.apptech .app-img {
+  margin-top: 20px;
+  width: 100%;
+  &.mobile {
+    display: none;
+  }
+}
+.apptech .btn-wrap {
+  margin-top: 38px;
+  text-align: right;
+  .img-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.apptech .contents-article-wrap {
+  width: 900px;
+  margin-left: 110px;
+  &.web {
+    width: 1000px;
+    margin-left: 10px;
+  }
+}
+
+.apptech .contents-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 27px;
+  font-family: GmarketSansBold;
+  &.web {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+// 모바일
+@media (max-width: 767px) {
+  .apptech .background-wrap {
+    background: transparent;
+  }
+  .apptech .bg_tech {
+    background-position-y: 26%;
+    background-position-x: 63%;
+  }
+
+  .apptech .contents-title {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 20px;
+    &.mobile {
+      margin-bottom: 16px;
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+
+  .apptech .contents-text {
+    font-size: 14px;
+    line-height: 22px;
+    &.web {
+      display: none;
+    }
+    &.mobile {
+      display: block;
+    }
+  }
+
+  .apptech .app-img {
+    margin-top: 6px;
+    &.web {
+      display: none;
+    }
+    &.mobile {
+      display: block;
+    }
+  }
+
+  .apptech .btn-wrap {
+    display: flex;
+    margin-top: 0;
+    padding-right: 0;
+  }
+
+  .apptech .contents-init-wrap {
+    border-bottom: 1px solid #efefef;
+    padding: 26px 0;
+    &:first-child {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 26px;
+    }
+
+    &:last-child {
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      border: none;
+    }
+  }
+
+  .apptech .contents-article-wrap {
+    width: 100%;
+    margin-left: 0;
+
+    &.web {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

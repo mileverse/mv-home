@@ -1,0 +1,129 @@
+.contact .contents-init-wrap {
+  flex-direction: column;
+}
+
+.contact .common-input {
+  width: 100%;
+  padding: 10px 16px;
+  font-family: NotoSansMedium;
+  font-size: 20px;
+  border: 1px solid #dbdbdb;
+}
+
+.contact .common-input:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.contact .common-input-wrap {
+  display: flex;
+  width: 100%;
+}
+
+.contact .common-input-wrap.name-mail {
+  gap: 20px;
+}
+
+.contact .common-input-wrap:last-child {
+  justify-content: center;
+  margin-top: 0 !important;
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.contact .common-input-wrap:not(:first-child) {
+  margin-top: 20px;
+}
+
+.contact .common-input:active,
+:focus-visible {
+  outline: none;
+}
+
+.contact .fileTxtWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 640px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid #dbdbdb;
+  color: #9e9e9e;
+  font-size: 20px;
+  font-family: NotoSansMedium;
+}
+
+.contact .fileTxtWrap:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.contact #fileBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 50px;
+  margin-left: 20px;
+  background-color: #dbdbdb;
+  color: #757575;
+  border: 1px solid #dbdbdb;
+  font-size: 20px;
+  font-family: NotoSansMedium;
+  cursor: pointer;
+}
+
+.contact #fileBtn:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.contact #send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 60px;
+  background-color: #3c007c;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: NotoSansMedium;
+  cursor: pointer;
+}
+
+.contact #send:lang(cn) {
+  font-family: MFSongHe;
+}
+
+// 모바일
+@media (max-width: 767px) {
+  .bg_contact {
+    background-position-x: 66%;
+  }
+  .contact .common-input {
+    font-size: 16px;
+  }
+  .contact .common-input-wrap.name-mail {
+    gap: 16px;
+  }
+  .contact .common-input-wrap:not(:first-child) {
+    margin-top: 16px;
+  }
+  .contact .common-input-wrap:last-child {
+    justify-content: center;
+    margin-top: 0 !important;
+    padding-top: 16px;
+    padding-bottom: 50px;
+  }
+  .contact .fileTxtWrap {
+    font-size: 16px;
+    height: 40px;
+  }
+  .contact #fileBtn {
+    width: 100%;
+    height: 40px;
+    margin-left: 16px;
+    font-size: 16px;
+  }
+  .contact #send {
+    height: 40px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,217 @@
+.tech .contents-init-wrap:not(:first-child) {
+  padding-top: 100px;
+}
+
+.tech .contents-init-wrap:not(:last-child) {
+  padding-bottom: 120px;
+  border-bottom: 1px solid #efefef;
+}
+
+.tech .contents-init-wrap:last-child {
+  margin-bottom: 120px;
+}
+
+.tech .article-wrap {
+  margin-top: 70px;
+}
+
+.tech .article-wrap .eco-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech .article-wrap .eco-wrap .eco-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.token-table-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token-text-wrap {
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token {
+  width: 100%;
+  max-width: 100px;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token-header {
+  color: #212121;
+  font-size: 18px;
+  font-family: NotoSansBold;
+  line-height: 30px;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token-header:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl {
+  color: #212121;
+  font-size: 18px;
+  font-family: NotoSansRegular;
+  line-height: 30px;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn {
+  font-size: 16px;
+}
+
+.tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
+  font-size: 14px;
+}
+
+.tech .contents-text {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.tech .corp-card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 8px;
+}
+
+.tech .franch-card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 8px;
+}
+
+.tech .franch-card {
+  width: 100%;
+  max-width: 834px;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+  color: #212121;
+  font-size: 20px;
+  font-family: NotoSansRegular;
+}
+
+.tech .franch-card:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.tech .corp-card {
+  color: #212121;
+  width: 414px;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+  font-size: 20px;
+  font-family: NotoSansRegular;
+}
+
+.tech .corp-card:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.tech .token-dist-wrap.web {
+  display: block;
+}
+
+.tech .contents-init-wrap.mobile-token-dis-wrap {
+  display: none;
+}
+
+.tech .token-dist-wrap {
+  background-color: #f9f9f9;
+  padding: 100px 15.8% 120px;
+}
+
+.tech .token-dist-wrap p {
+  font-size: 28px;
+  color: "#212121";
+  font-family: GmarketSansBold;
+}
+
+.tech .token-dist-img-wrap {
+  text-align: right;
+}
+
+.tech .token-dist-wrap img {
+  margin-top: 58px;
+}
+
+// 모바일
+@media (max-width: 767px) {
+  .tech .contents-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .tech .article-wrap {
+    margin-top: 26px;
+  }
+  .tech .contents-init-wrap:not(:last-child) {
+    padding-bottom: 26px;
+  }
+  .tech .contents-init-wrap:not(:first-child) {
+    padding-top: 26px;
+  }
+  .tech .contents-init-wrap:last-child {
+    margin-bottom: 50px;
+  }
+  .tech .article-wrap .eco-wrap {
+    flex-direction: column;
+    gap: 36px 0;
+  }
+  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-header {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn,
+  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
+    font-size: 11px;
+  }
+  .token-table-wrap {
+    margin-top: 21px;
+  }
+  .tech .franch-card {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: NotoSansMedium;
+    padding: 14px 18px;
+    width: auto;
+  }
+  .tech .corp-card {
+    width: 100%;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: NotoSansMedium;
+    padding: 14px 18px;
+  }
+  .tech .franch-card-wrap,
+  .tech .corp-card-wrap {
+    margin-top: 16px;
+  }
+  .tech .token-dist-wrap.web {
+    display: none;
+  }
+  .tech .contents-init-wrap.mobile-token-dis-wrap {
+    display: block;
+  }
+}

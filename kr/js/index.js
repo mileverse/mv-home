@@ -116,3 +116,18 @@ $(document).ready(function () {
     }
   }
 });
+
+// application fade -in animation
+// observer 객체 생성
+const animationObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // 관찰 대상이 viewport 안에 들어온 경우
+    if (entry.intersectionRatio > 0) entry.target.classList.add('fade-in-box');
+    else entry.target.classList.remove('fade-in-box');
+  })
+})
+
+document.querySelectorAll('.contents-init-wrap').forEach((el) => animationObserver.observe(el));
+
+
+

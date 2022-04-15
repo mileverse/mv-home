@@ -1,0 +1,71 @@
+.apptech .contents-init-wrap:not(:first-child) {
+  padding-top: 100px;
+}
+
+.apptech .contents-init-wrap:not(:last-child) {
+  padding-bottom: 120px;
+  border-bottom: 1px solid #efefef;
+}
+
+.apptech .contents-init-wrap:last-child {
+  margin-bottom: 88px;
+}
+
+.apptech .contents-text {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.apptech .app-img {
+  margin-top: 120px;
+}
+
+.apptech .btn-wrap {
+  margin-top: 38px;
+  text-align: right;
+}
+
+.apptech .img-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.apptech .guide-900-wrap {
+  margin-left: 100px;
+}
+
+@media (max-width: 767px) {
+  .bg_tech {
+    background-position-y: 26%;
+    background-position-x: 63%;
+  }
+  .apptech .contents-text {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .apptech .app-img {
+    margin-top: 26px;
+  }
+  .apptech .btn-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+    padding-right: 0;
+  }
+  .apptech .contents-init-wrap:not(:last-child) {
+    padding-bottom: 26px;
+    border-bottom: 1px solid #efefef;
+  }
+  .apptech .contents-init-wrap:not(:first-child) {
+    padding-top: 26px;
+  }
+  .apptech .contents-init-wrap:last-child {
+    margin-bottom: 30px;
+  }
+  .apptech .guide-wrap {
+    margin-top: 26px;
+  }
+}

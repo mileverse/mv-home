@@ -1,0 +1,234 @@
+.media .refer-total-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+.media .refer-total-wrap img {
+  width: 100%;
+  max-width: 306px;
+}
+
+.media .news-total-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 73px;
+  gap: 18px 16px;
+}
+
+.media .refer-header {
+  margin-top: 34px;
+  color: #212121;
+  font-size: 20px;
+  font-family: NotoSansBold;
+}
+
+.media .refer-header:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.media .refer-expl {
+  width: 300px;
+  margin-top: 10px;
+  color: #212121;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: NotoSansMedium;
+}
+
+.media .refer-expl:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.media .contents-init-wrap:not(:first-child) {
+  padding-top: 100px;
+}
+
+.media .contents-init-wrap:not(:last-child) {
+  padding-bottom: 120px;
+  border-bottom: 1px solid #efefef;
+}
+
+.media .contents-init-wrap:last-child {
+  margin-bottom: 120px;
+}
+
+.media .news-wrap {
+  width: 264px;
+  height: 218px;
+  padding: 40px 30px;
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+}
+
+.media .news-header {
+  height: 64px;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: NotoSansBold;
+}
+
+.media .news-date {
+  margin-top: 20px;
+  color: #616161;
+  font-size: 16px;
+  font-family: NotoSansRegular;
+}
+
+.media .news-dash {
+  width: 56px;
+  height: 2px;
+  margin-top: 16px;
+  background-color: rgba(60, 0, 124, 0.4);
+}
+
+.media .news-contents {
+  margin-top: 26px;
+  color: #212121;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: NotoSansRegular;
+}
+
+.partner .contents-init-wrap:not(:first-child) {
+  margin-top: 130px;
+}
+
+.partner .contents-init-wrap:last-child {
+  margin-bottom: 162px;
+}
+
+.partner .partener-total-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+}
+
+.partner .parnter-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 244px;
+  height: 166px;
+  border: 1px solid #efefef;
+}
+
+.partner .logo {
+  width: 76%;
+}
+
+.partner .logo-ddo {
+  width: 50%;
+}
+
+.parnter .logo-small {
+  width: 44%;
+}
+
+@media (max-width: 767px) {
+  .bg_media {
+    background-position-x: 68%;
+  }
+  .media .refer-total-wrap {
+    margin: 16px 0 0 0;
+    gap: 0;
+  }
+  .media .refer-total-wrap img {
+    max-width: unset;
+  }
+  .media .refer-card:not(:first-child) {
+    margin-top: 50px;
+  }
+  .media .refer-header {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .media .refer-expl {
+    width: auto;
+    margin-top: 6px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .media .news-total-wrap {
+    margin: 16px 0 0 0;
+    gap: 0px;
+  }
+  .media .news-wrap {
+    width: 100%;
+  }
+  .media .news-wrap:not(:first-child) {
+    margin-top: 20px;
+  }
+  .media .news-header {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .media .news-date {
+    font-size: 14px;
+  }
+  .media .news-contents {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .media .contents-init-wrap:not(:last-child) {
+    padding-bottom: 28px;
+  }
+  .media .contents-init-wrap:not(:first-child) {
+    padding-top: 26px;
+  }
+  .media .contents-init-wrap:last-child {
+    margin-bottom: 50px;
+  }
+  .partner .parnter-wrap {
+    width: 48%;
+    height: 110px;
+  }
+  .partner .contents-init-wrap:not(:first-child) {
+    margin-top: 50px;
+  }
+  .partner .partener-total-wrap {
+    margin-top: 16px;
+  }
+  .partner .contents-init-wrap:last-child {
+    margin-bottom: 50px;
+  }
+  .partner .contents-title {
+    font-size: 18px;
+    font-family: GmarketSansMedium;
+  }
+}

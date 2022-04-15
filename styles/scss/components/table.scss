@@ -1,0 +1,40 @@
+table.commonFrame {
+  text-align: center;
+}
+
+table.commonFrame tr th {
+  padding: 8px 0;
+  border-top: 1px solid #424242;
+  border-bottom: 1px solid #424242;
+  font-family: NotoSansMedium;
+}
+
+table.commonFrame:lang(cn) tr th {
+  font-family: MFSongHe;
+}
+
+table.commonFrame tr td {
+  vertical-align: middle;
+  padding: 8px 0;
+  border-bottom: 1px solid #dbdbdb;
+  font-family: NotoSansRegular;
+  line-height: 21px;
+  font-size: 15px;
+}
+
+table.commonFrame:lang(cn) tr td {
+  font-family: MFSongHe;
+}
+
+table.commonFrame tr th:not(:last-child),
+table.commonFrame tr td:not(:last-child) {
+  border-right: 1px solid #dbdbdb;
+}
+
+// 모바일
+@media (max-width: 767px) {
+  table.commonFrame tr th,
+  table.commonFrame tr td {
+    font-size: 10px;
+  }
+}

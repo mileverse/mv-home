@@ -1,5 +1,4 @@
 .apptech .contents-size {
-  max-width: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,24 +19,29 @@
 }
 
 .apptech .contents-init-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  padding: 100px 0 40px 0;
+  border: none;
 }
 
 .apptech .contents-init-wrap:first-child {
-  padding-top: 0;
+  width: 1300px;
   padding-bottom: 50px;
   border-bottom: 1px solid #efefef;
 }
 
 .apptech .contents-init-wrap:last-child {
   padding-bottom: 140px;
+}
+
+.apptech .contents-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 27px;
+  font-family: GmarketSansBold;
+}
+
+.apptech .contents-title.web {
+  font-size: 28px;
+  line-height: 32px;
 }
 
 .apptech .contents-text {
@@ -74,28 +78,6 @@
   cursor: pointer;
 }
 
-.apptech .contents-article-wrap {
-  width: 900px;
-  margin-left: 110px;
-}
-
-.apptech .contents-article-wrap.web {
-  width: 1000px;
-  margin-left: 10px;
-}
-
-.apptech .contents-title {
-  margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 27px;
-  font-family: GmarketSansBold;
-}
-
-.apptech .contents-title.web {
-  font-size: 28px;
-  line-height: 32px;
-}
-
 @media (max-width: 767px) {
   .apptech .background-wrap {
     background: transparent;
@@ -103,6 +85,10 @@
   .apptech .bg_tech {
     background-position-y: 26%;
     background-position-x: 63%;
+  }
+  .apptech .contents-init-wrap:first-child {
+    width: 100%;
+    padding-bottom: 0;
   }
   .apptech .contents-title {
     margin-top: 10px;
@@ -155,11 +141,11 @@
     margin-bottom: 30px;
     border: none;
   }
-  .apptech .contents-article-wrap {
+  .apptech .contents-article-size {
     width: 100%;
     margin-left: 0;
   }
-  .apptech .contents-article-wrap.web {
+  .apptech .contents-article-size.web {
     width: 100%;
     margin-left: 0;
   }

@@ -1,10 +1,10 @@
 .fade-in-box {
-  animation: fadein 2s ease-in;
-  -moz-animation: fadein 2s ease-in;
+  animation: fadein 1s ease-in;
+  -moz-animation: fadein 1s ease-in;
   /* Firefox */
-  -webkit-animation: fadein 2s ease-in;
+  -webkit-animation: fadein 1s ease-in;
   /* Safari and Chrome */
-  -o-animation: fadein 2s ease-in;
+  -o-animation: fadein 1s ease-in;
   /* Opera */
 }
 

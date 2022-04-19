@@ -153,7 +153,9 @@ img {
   .contents-title.mobile {
     line-height: 21px;
   }
-  .contents-article-size {
+  .contents-article-size,
+  .contents-article-900-size {
     width: 100%;
+    margin-left: 0;
   }
 }

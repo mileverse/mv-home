@@ -221,11 +221,11 @@
   .partner .contents-init-wrap:not(:first-child) {
     margin-top: 50px;
   }
-  .partner .partener-total-wrap {
-    margin-top: 16px;
-  }
   .partner .contents-init-wrap:last-child {
     margin-bottom: 50px;
+  }
+  .partner .partener-total-wrap {
+    margin-top: 16px;
   }
   .partner .contents-title {
     font-size: 18px;

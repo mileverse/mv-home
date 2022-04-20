@@ -2190,16 +2190,6 @@ table.commonFrame tr td:not(:last-child) {
           flex-direction: column;
 }
 
-.token-table-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 60px;
-}
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2247,6 +2237,16 @@ table.commonFrame tr td:not(:last-child) {
 
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
   font-size: 14px;
+}
+
+.token-table-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
 }
 
 .tech .contents-text {
@@ -2313,23 +2313,23 @@ table.commonFrame tr td:not(:last-child) {
   font-family: MFSongHe;
 }
 
-.tech .token-dist-wrap.web {
-  display: block;
-}
-
-.tech .contents-init-wrap.mobile-token-dis-wrap {
-  display: none;
-}
-
 .tech .token-dist-wrap {
   background-color: #f9f9f9;
   padding: 100px 0 120px 0;
+}
+
+.tech .token-dist-wrap.web {
+  display: block;
 }
 
 .tech .token-dist-wrap p {
   font-size: 28px;
   color: "#212121";
   font-family: GmarketSansBold;
+}
+
+.tech .contents-init-wrap.mobile-token-dis-wrap {
+  display: none;
 }
 
 .tech .token-dist-contnets-size {
@@ -2360,6 +2360,9 @@ table.commonFrame tr td:not(:last-child) {
   .tech .contents-init-wrap:last-child {
     margin-bottom: 50px;
   }
+  .tech .contents-init-wrap.mobile-token-dis-wrap {
+    display: block;
+  }
   .tech .article-wrap .eco-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2375,8 +2378,7 @@ table.commonFrame tr td:not(:last-child) {
     font-size: 11px;
     line-height: 20px;
   }
-  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn,
-  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
+  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn, .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
     font-size: 11px;
   }
   .token-table-wrap {
@@ -2402,9 +2404,6 @@ table.commonFrame tr td:not(:last-child) {
   }
   .tech .token-dist-wrap.web {
     display: none;
-  }
-  .tech .contents-init-wrap.mobile-token-dis-wrap {
-    display: block;
   }
 }
 
@@ -2631,11 +2630,11 @@ table.commonFrame tr td:not(:last-child) {
   .partner .contents-init-wrap:not(:first-child) {
     margin-top: 50px;
   }
-  .partner .partener-total-wrap {
-    margin-top: 16px;
-  }
   .partner .contents-init-wrap:last-child {
     margin-bottom: 50px;
+  }
+  .partner .partener-total-wrap {
+    margin-top: 16px;
   }
   .partner .contents-title {
     font-size: 18px;
@@ -2886,8 +2885,7 @@ table.commonFrame tr td:not(:last-child) {
     padding: 20px;
     margin-bottom: 50px;
   }
-  .privacy .privacy-area-wrap .title,
-  .privacy .privacy-area-wrap .contents {
+  .privacy .privacy-area-wrap.title, .privacy .privacy-area-wrap.contents {
     font-size: 15px;
   }
 }

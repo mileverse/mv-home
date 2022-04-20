@@ -17,10 +17,9 @@
   font-size: 30px;
   line-height: 45px;
   color: #212121;
-}
-
-.welcome-text-sub:lang(cn) {
-  font-family: MFSongHe;
+  &:lang(cn) {
+    font-family: MFSongHe;
+  }
 }
 
 .welcome-text-main {
@@ -63,15 +62,13 @@
   border-radius: 6px;
   box-shadow: 0px 0px 5px 0px #efefef;
   cursor: pointer;
-}
-
-.welcome-down-btn p {
-  color: #656565;
-  font-size: 12px;
-}
-
-.welcome-down-btn:not(:first-child) {
-  margin-left: 20px;
+  p {
+    color: #656565;
+    font-size: 12px;
+  }
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
 }
 
 // 모바일
@@ -123,8 +120,8 @@
     width: 155px;
     height: 40px;
     cursor: pointer;
-  }
-  .welcome-down-btn:not(:first-child) {
-    margin-left: 10px;
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
   }
 }

@@ -35,24 +35,22 @@
   width: 100%;
   max-width: 1400px;
   margin-bottom: 90px;
-}
+  .title {
+    font-size: 20px;
+    font-family: NotoSansBold;
+    color: #212121;
+    line-height: 29px;
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
 
-.privacy .privacy-area-wrap .title {
-  font-size: 20px;
-  font-family: NotoSansBold;
-  color: #212121;
-  line-height: 29px;
-}
-
-.privacy .privacy-area-wrap .title:not(:first-child) {
-  margin-top: 30px;
-}
-
-.privacy .privacy-area-wrap .contents {
-  font-size: 16px;
-  font-family: NotoSansRegular;
-  color: #212121;
-  line-height: 30px;
+  .contents {
+    font-size: 16px;
+    font-family: NotoSansRegular;
+    color: #212121;
+    line-height: 30px;
+  }
 }
 
 .privacy .commonFrame {
@@ -77,9 +75,9 @@
   .privacy .privacy-area-wrap {
     padding: 20px;
     margin-bottom: 50px;
-  }
-  .privacy .privacy-area-wrap .title,
-  .privacy .privacy-area-wrap .contents {
-    font-size: 15px;
+    &.title,
+    &.contents {
+      font-size: 15px;
+    }
   }
 }

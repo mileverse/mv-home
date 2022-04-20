@@ -85,8 +85,7 @@
     padding: 20px;
     margin-bottom: 50px;
   }
-  .privacy .privacy-area-wrap .title,
-  .privacy .privacy-area-wrap .contents {
+  .privacy .privacy-area-wrap.title, .privacy .privacy-area-wrap.contents {
     font-size: 15px;
   }
 }

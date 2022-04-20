@@ -15,10 +15,9 @@
   font-size: 20px;
   line-height: 29px;
   font-family: NotoSansMedium;
-}
-
-.mileverse .greeting-text:lang(cn) {
-  font-family: MFSongHe;
+  &:lang(cn) {
+    font-family: MFSongHe;
+  }
 }
 
 .mileverse .sign-wrap {
@@ -31,10 +30,9 @@
   font-size: 20px;
   color: #212121;
   font-family: NotoSansMedium;
-}
-
-.mileverse .sign-text:lang(cn) {
-  font-family: MFSongHe;
+  &:lang(cn) {
+    font-family: MFSongHe;
+  }
 }
 
 .mileverse .history-start-img {
@@ -46,10 +44,9 @@
 .mileverse .history-init-wrap {
   display: flex;
   flex-direction: column;
-}
-
-.mileverse .history-init-wrap.mobile {
-  display: none;
+  &.mobile {
+    display: none;
+  }
 }
 
 .mileverse .history-section {
@@ -66,19 +63,16 @@
   // padding-right: 26px;
   // padding-bottom: 82px;
   padding: 0 26px 82px 0;
-}
-
-.mileverse .history-years.fake {
-  height: 160px;
-  padding-bottom: 0;
-}
-
-.mileverse .history-years.title {
-  justify-content: space-between;
-}
-
-.mileverse .history-years.last {
-  padding-bottom: 0;
+  &.fake {
+    height: 160px;
+    padding-bottom: 0;
+  }
+  &.title {
+    justify-content: space-between;
+  }
+  &.last {
+    padding-bottom: 0;
+  }
 }
 
 .history-years-text,
@@ -116,10 +110,9 @@
   display: flex;
   align-items: flex-start;
   padding-bottom: 82px;
-}
-
-.mileverse .history-expl.last {
-  padding-bottom: 0;
+  &.last {
+    padding-bottom: 0;
+  }
 }
 
 .mileverse .history-expl-subtext {

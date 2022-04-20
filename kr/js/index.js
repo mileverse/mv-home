@@ -127,7 +127,7 @@ const animationObserver = new IntersectionObserver(entries => {
   })
 })
 
-document.querySelectorAll('.contents-init-wrap').forEach((el) => animationObserver.observe(el));
+document.querySelectorAll('.apptech .contents-init-wrap').forEach((el) => animationObserver.observe(el));
 
 
 

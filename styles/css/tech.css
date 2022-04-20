@@ -167,7 +167,7 @@
 
 .tech .token-dist-wrap {
   background-color: #f9f9f9;
-  padding: 100px 15.8% 120px;
+  padding: 100px 0 120px 0;
 }
 
 .tech .token-dist-wrap p {
@@ -176,12 +176,15 @@
   font-family: GmarketSansBold;
 }
 
-.tech .token-dist-img-wrap {
-  text-align: right;
-}
-
-.tech .token-dist-wrap img {
-  margin-top: 58px;
+.tech .token-dist-contnets-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1300px;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {

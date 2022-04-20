@@ -31,6 +31,7 @@
 }
 
 .apptech .contents-init-wrap:first-child {
+  width: 1300px;
   padding-top: 0;
   padding-bottom: 50px;
   border-bottom: 1px solid #efefef;
@@ -127,6 +128,7 @@
   }
   .apptech .app-img {
     margin-top: 6px;
+    width: 100%;
   }
   .apptech .app-img.web {
     display: none;

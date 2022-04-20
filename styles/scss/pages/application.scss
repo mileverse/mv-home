@@ -18,6 +18,7 @@
   width: 100%;
   padding: 100px 0 40px 0;
   &:first-child {
+    width: 1300px;
     padding-top: 0;
     padding-bottom: 50px;
     border-bottom: 1px solid #efefef;
@@ -111,6 +112,8 @@
 
   .apptech .app-img {
     margin-top: 6px;
+    width: 100%;
+    // width: auto;
     &.web {
       display: none;
     }

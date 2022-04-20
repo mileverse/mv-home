@@ -111,15 +111,28 @@
   </div>
 </div>
 <script>
+  // active-border
   if (location.href.indexOf("company") !== -1) {
     $(".company").css("font-family", "GmarketSansBold");
     $(".company").siblings(".active-border").show();
+    $(".category:first-child").hover(
+      () => $(".company").siblings(".active-border").hide(),
+      () => $(".company").siblings(".active-border").show()
+    );
   } else if (location.href.indexOf("apptech") !== -1) {
     $(".apptech").css("font-family", "GmarketSansBold");
     $(".apptech").siblings(".active-border").show();
+    $(".category:nth-child(2)").hover(
+      () => $(".apptech").siblings(".active-border").hide(),
+      () => $(".apptech").siblings(".active-border").show()
+    );
   } else if (location.href.indexOf("media") !== -1) {
     $(".media").css("font-family", "GmarketSansBold");
     $(".media").siblings(".active-border").show();
+    $(".category:nth-child(3)").hover(
+      () => $(".media").siblings(".active-border").hide(),
+      () => $(".media").siblings(".active-border").show()
+    );
   } else if (location.href.indexOf("contact") !== -1) {
     $(".contact").css("font-family", "GmarketSansBold");
     $(".contact").siblings(".active-border").show();

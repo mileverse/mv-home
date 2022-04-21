@@ -1,0 +1,64 @@
+.banner-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 560px;
+}
+
+.banner-text-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1300px;
+  margin-top: 110px;
+}
+
+.banner-title {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: GmarketSansBold;
+}
+
+.banner-sub-title {
+  font-size: 22px;
+  color: #ffffff;
+  margin-top: 12px;
+  font-family: NotoSansMedium;
+  line-height: 29px;
+  &.mobile {
+    display: none;
+  }
+  &:lang(cn) {
+    font-family: MFSongHe;
+  }
+}
+
+// 모바일
+@media (max-width: 767px) {
+  .banner-bg {
+    height: 310px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+  }
+  .banner-text-wrap {
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 64px;
+  }
+  .banner-title {
+    font-size: 30px;
+  }
+  .banner-sub-title {
+    font-size: 16px;
+    line-height: 24px;
+    &.web {
+      display: none;
+    }
+    &.mobile {
+      display: block;
+    }
+  }
+}

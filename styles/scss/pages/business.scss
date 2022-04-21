@@ -1,0 +1,77 @@
+.business .contents-init-wrap {
+  &:not(:first-child) {
+    padding-top: 100px;
+  }
+  &:not(:last-child) {
+    padding-bottom: 120px;
+    border-bottom: 1px solid #efefef;
+  }
+  &:last-child {
+    margin-bottom: 120px;
+  }
+}
+
+.business .contents-header {
+  color: #212121;
+  font-family: NotoSansBold;
+  font-size: 24px;
+  &:lang(cn) {
+    font-family: MFSongHe;
+  }
+}
+
+.business .contents-text {
+  margin-top: 7px;
+  font-size: 20px;
+  line-height: 29px;
+  font-family: NotoSansMedium;
+  &:lang(cn) {
+    font-family: MFSongHe;
+  }
+}
+
+.business .contents-img {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.business .video {
+  width: 100%;
+  max-width: 1046px;
+}
+
+// 모바일
+@media (max-width: 767px) {
+  .business .contents-header {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .business .contents-text {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .business .contents-img,
+  .business .contents-init-wrap:not(:first-child) {
+    margin-top: 26px;
+    padding-top: 0;
+  }
+
+  .business .contents-init-wrap {
+    &:not(:last-child) {
+      padding-bottom: 26px;
+    }
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  .business .video {
+    transform: scale(1.4);
+  }
+  .business .vodeo-wrap {
+    overflow: hidden;
+    margin: 26px 0;
+  }
+}

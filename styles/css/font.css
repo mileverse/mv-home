@@ -1,0 +1,57 @@
+@font-face {
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansMedium;
+  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: MFSongHe;
+  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+.noto-regular {
+  font-family: NotoSansRegular;
+}
+
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-medium {
+  font-family: NotoSansMedium;
+}
+
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-bold {
+  font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
+}

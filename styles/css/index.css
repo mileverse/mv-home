@@ -2088,6 +2088,12 @@ table.commonFrame tr td:not(:last-child) {
   .apptech .background-wrap {
     background: transparent;
   }
+  .apptech .divider {
+    width: 100%;
+    height: 26px;
+    margin-bottom: 26px;
+    border-bottom: 1px solid #efefef;
+  }
   .apptech .bg_tech {
     background-position-y: 26%;
     background-position-x: 63%;
@@ -2131,18 +2137,18 @@ table.commonFrame tr td:not(:last-child) {
     padding-right: 0;
   }
   .apptech .contents-init-wrap {
-    border-bottom: 1px solid #efefef;
-    padding: 26px 0;
+    border: none;
+    padding: 0;
   }
   .apptech .contents-init-wrap:first-child {
     width: 100%;
     padding-top: 0;
-    padding-bottom: 26px;
+    padding-bottom: 0;
+    border: none;
   }
   .apptech .contents-init-wrap:last-child {
     padding-bottom: 20px;
     margin-bottom: 30px;
-    border: none;
   }
   .apptech .contents-article-wrap {
     width: 100%;

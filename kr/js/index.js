@@ -8,7 +8,7 @@ $(document).ready(function () {
     //scroll event;;
     $(window).scroll(function () {
       //스크롤 이동시 작동코드
-      var _height = isMobile() ? 240 : 540;
+      var _height = $(window).width() < 767 ? 240 : 540;
       if ($(window).scrollTop() <= _height) {
         $(".header-wrap").removeClass("bl");
       } else {
@@ -25,11 +25,6 @@ $(document).ready(function () {
     e.preventDefault();
     $(".input-file").click();
   });
-  function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    );
-  }
 
   $(".play-store").click(function () {
     window.open(
@@ -116,18 +111,5 @@ $(document).ready(function () {
     }
   }
 });
-
-// application fade -in animation
-// observer 객체 생성
-const animationObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    // 관찰 대상이 viewport 안에 들어온 경우
-    if (entry.intersectionRatio > 0) entry.target.classList.add('fade-in-box');
-    else entry.target.classList.remove('fade-in-box');
-  })
-})
-
-document.querySelectorAll('.apptech .contents-init-wrap').forEach((el) => animationObserver.observe(el));
-
 
 

@@ -8,7 +8,7 @@ $(document).ready(function () {
     //scroll event;;
     $(window).scroll(function () {
       //스크롤 이동시 작동코드
-      var _height = isMobile() ? 240 : 540;
+      var _height = $(window).width() < 767 ? 240 : 540;
       if ($(window).scrollTop() <= _height) {
         $(".header-wrap").removeClass("bl");
       } else {

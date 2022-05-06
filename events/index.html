@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/lib/jquery-3.5.0.min.js"></script>
     <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/event.css" />
     <title>마일벌스</title>
@@ -52,7 +53,7 @@
           <p class="event-title">이벤트 상품</p>
           <article class="item-list">
             <div class="item">
-              <img src="img/family/cu.png" alt="cu" />
+              <img src="img/family/cu.png" alt="cu" id="image" />
               <p>CU 편의점</p>
               <p>3천원권 / 1만원권</p>
             </div>
@@ -77,8 +78,8 @@
               <p>1만원권 / 3만원권</p>
             </div>
             <div class="item">
-              <div class="booknlife-img-wrap">
-                <img src="img/family/booknlife-01.jpg" alt="booknlife" class="booknlife" />
+              <div id="booknlife">
+                <img src="img/family/booknlife.jpg" alt="booknlife" />
               </div>
               <p>북앤라이프</p>
               <p>도서문화상품권</p>
@@ -122,14 +123,14 @@
           <p class="caution mobile">※ 이벤트 관련 문의 사항은 마일벌스 고객센터로 연락 바랍니다. 02-2633-5896 / 평일 10:00 ~ 17:00</p>
           <p class="footer-title">이벤트 유의사항</p>
           <ul class="footer-expl">
-            <li>최대 30% 할인은, MVP 상품권 할인 5%와 제품 할인율을 함께 적용 받았을 때의 할인율입니다.</li>
+            <li>최대 30% 할인은, MVP 상품권 할인 5%와 제품 할인율을 함께 적용 받았을 때의 최대할인율입니다.</li>
             <li>본 이벤트는, 이벤트 참여 브랜드에 한정됩니다.</li>
             <li>준비된 이벤트 물량이 조기 소진 될 경우, 이벤트가 조기종료 될 수 있습니다.</li>
             <li>통신상태에 따라 리워드, 디지털상품권 발송까지 일부 시간이 소요될 수 있습니다.</li>
             <li>바코드 결제의 리워드는, 구매 시 사용한 MVP를 기준으로 책정됩니다.</li>
             <li>바코드결제는 제휴사 정책에 의해 일부 매장에서는 이용이 불가합니다.</li>
             <li>바코드결제 취소는 구매하신 매장에서만 가능 합니다.</li>
-            <li>상품 구매 시, 각 상품 유의사항을 숙지하여 주시기 바랍니다. <br />미숙지로 인한 불이익은 마일벌스에서 책임지지 않습니다.</li>
+            <li>상품 구매 시, 각 상품 유의사항을 숙지하여 주시기 바랍니다. 미숙지로 인한 불이익은 마일벌스에서 책임지지 않습니다.</li>
             <li>본 이벤트는 마일벌스 내부 사정에 따라 별도의 고지없이 변경 또는 조기 종료될 수 있습니다.</li>
             <li>부적절한 방법을 통한 이벤트 참여 및 혜택은 모두 취소되며, 법적 처벌을 받을 수 있습니다.</li>
           </ul>
@@ -137,4 +138,16 @@
       </footer>
     </div>
   </body>
+  <script>
+    const imgResize = () => {
+      const IMAGE_SIZE = document.getElementById("image");
+      const IMAGE_HEIGHT = IMAGE_SIZE.naturalHeight / IMAGE_SIZE.naturalWidth;
+      const cal_height = $(".item")[0].clientWidth * IMAGE_HEIGHT;
+      $("#booknlife").height(cal_height);
+    };
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener("resize", imgResize);
+    });
+    imgResize();
+  </script>
 </html>

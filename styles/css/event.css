@@ -123,7 +123,7 @@ body {
   padding: 160px 20px 150px 20px;
   background-image: url(../../../events/img/family/w-bg-01.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: #604244;
 }
 
@@ -244,8 +244,7 @@ body {
   margin-bottom: 16px;
 }
 
-.contents .event-section-wrap .item-list .item .booknlife-img-wrap {
-  position: relative;
+.contents .event-section-wrap .item-list .item #booknlife {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,20 +254,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 0;
   margin-bottom: 16px;
-  padding-bottom: calc(140.84 / 218.008 * 100%);
-  background-color: tomato;
 }
 
-.contents .event-section-wrap .item-list .item .booknlife-img-wrap img {
+.contents .event-section-wrap .item-list .item #booknlife img {
   margin-bottom: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .contents .event-section-wrap .item-list .item p {
@@ -463,10 +453,10 @@ body {
   .contents .event-section-wrap .item-list .item img {
     margin-bottom: 8px;
   }
-  .contents .event-section-wrap .item-list .item .booknlife-img-wrap {
+  .contents .event-section-wrap .item-list .item #booknlife {
     margin-bottom: 8px;
   }
-  .contents .event-section-wrap .item-list .item .booknlife-img-wrap img {
+  .contents .event-section-wrap .item-list .item #booknlife img {
     margin-bottom: 0;
   }
   .contents .event-section-wrap .item-list .item p {

@@ -50,7 +50,6 @@ body {
         margin-left: 10px;
         font-size: 28px;
         color: #604244;
-        font-family: SANGJU Gotgam;
       }
     }
 
@@ -58,7 +57,6 @@ body {
       font-size: 24px;
       line-height: 40px;
       word-spacing: -4px;
-      font-family: NanumSquareB;
     }
   }
 
@@ -85,13 +83,11 @@ body {
     .section-title {
       margin-bottom: 53px;
       font-size: 28px;
-      font-family: SANGJU Gotgam;
     }
 
     .event-title {
       margin-bottom: 14px;
       font-size: 24px;
-      font-family: NanumSquareEB;
       margin-bottom: 20px;
     }
 
@@ -100,7 +96,6 @@ body {
       font-size: 24px;
       line-height: 36px;
       word-spacing: -4px;
-      font-family: NanumSquareB;
       &:last-child {
         margin-bottom: 0;
       }
@@ -134,7 +129,6 @@ body {
           font-size: 22px;
           line-height: 30px;
           word-spacing: -4px;
-          font-family: NanumSquareB;
           &:last-child {
             margin-top: 5px;
           }
@@ -161,7 +155,6 @@ body {
     .install-title {
       margin-bottom: 58px;
       font-size: 24px;
-      font-family: NanumSquareEB;
     }
     .row {
       display: flex;
@@ -197,20 +190,17 @@ body {
       font-size: 24px;
       line-height: 40px;
       color: #f4d151;
-      font-family: NanumSquareEB;
     }
     .footer-title {
       margin: 55px 0 21px 0;
       font-size: 20px;
       line-height: 34px;
-      font-family: NanumSquareB;
     }
     .footer-expl {
       margin-left: 13px;
       font-size: 18px;
       line-height: 32px;
       list-style-type: "- ";
-      font-family: NanumSquareR;
     }
   }
 }
@@ -328,7 +318,6 @@ body {
         background-color: #509870;
         border-radius: 2px;
         color: #ffffff;
-        font-family: NanumSquareB;
         font-size: 16px;
         line-height: 20px;
         border: none;
@@ -352,7 +341,6 @@ body {
         font-size: 15px;
         line-height: 25px;
         word-spacing: -1px;
-        font-family: NanumSquareB;
         &.web {
           display: none;
         }
@@ -364,13 +352,11 @@ body {
         margin: 30px 0 15px 0;
         font-size: 16px;
         line-height: 26px;
-        font-family: NanumSquareB;
       }
       .footer-expl {
         font-size: 15px;
         line-height: 26px;
         word-spacing: 2px;
-        font-family: NanumSquareR;
       }
     }
   }

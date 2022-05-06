@@ -1,11 +1,11 @@
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -24,6 +24,21 @@
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -38,19 +53,12 @@
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -77,8 +85,16 @@
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -87,10 +103,6 @@
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 *,
@@ -159,14 +171,12 @@ body {
   margin-left: 10px;
   font-size: 28px;
   color: #604244;
-  font-family: SANGJU Gotgam;
 }
 
 .contents .mileverse-wrap .mileverse-expl {
   font-size: 24px;
   line-height: 40px;
   word-spacing: -4px;
-  font-family: NanumSquareB;
 }
 
 .contents .event-section-wrap {
@@ -192,13 +202,11 @@ body {
 .contents .event-section-wrap .section-title {
   margin-bottom: 53px;
   font-size: 28px;
-  font-family: SANGJU Gotgam;
 }
 
 .contents .event-section-wrap .event-title {
   margin-bottom: 14px;
   font-size: 24px;
-  font-family: NanumSquareEB;
   margin-bottom: 20px;
 }
 
@@ -207,7 +215,6 @@ body {
   font-size: 24px;
   line-height: 36px;
   word-spacing: -4px;
-  font-family: NanumSquareB;
 }
 
 .contents .event-section-wrap .event-expl:last-child {
@@ -265,7 +272,6 @@ body {
   font-size: 22px;
   line-height: 30px;
   word-spacing: -4px;
-  font-family: NanumSquareB;
 }
 
 .contents .event-section-wrap .item-list .item p:last-child {
@@ -296,7 +302,6 @@ body {
 .install .install-contents .install-title {
   margin-bottom: 58px;
   font-size: 24px;
-  font-family: NanumSquareEB;
 }
 
 .install .install-contents .row {
@@ -353,14 +358,12 @@ body {
   font-size: 24px;
   line-height: 40px;
   color: #f4d151;
-  font-family: NanumSquareEB;
 }
 
 .footer .footer-contents .footer-title {
   margin: 55px 0 21px 0;
   font-size: 20px;
   line-height: 34px;
-  font-family: NanumSquareB;
 }
 
 .footer .footer-contents .footer-expl {
@@ -368,7 +371,6 @@ body {
   font-size: 18px;
   line-height: 32px;
   list-style-type: "- ";
-  font-family: NanumSquareR;
 }
 
 @media (max-width: 767px) {
@@ -480,7 +482,6 @@ body {
     background-color: #509870;
     border-radius: 2px;
     color: #ffffff;
-    font-family: NanumSquareB;
     font-size: 16px;
     line-height: 20px;
     border: none;
@@ -502,7 +503,6 @@ body {
     font-size: 15px;
     line-height: 25px;
     word-spacing: -1px;
-    font-family: NanumSquareB;
   }
   .footer .footer-contents .caution.web {
     display: none;
@@ -514,13 +514,11 @@ body {
     margin: 30px 0 15px 0;
     font-size: 16px;
     line-height: 26px;
-    font-family: NanumSquareB;
   }
   .footer .footer-contents .footer-expl {
     font-size: 15px;
     line-height: 26px;
     word-spacing: 2px;
-    font-family: NanumSquareR;
   }
 }
 

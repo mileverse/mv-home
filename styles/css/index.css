@@ -28,6 +28,31 @@
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
 
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
 .noto-regular {
   font-family: NotoSansRegular;
 }
@@ -54,6 +79,18 @@
 
 .gmarket-bold {
   font-family: GmarketSansBold;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
 }
 
 .fade-in-box {
@@ -695,6 +732,101 @@ table.commonFrame tr td:not(:last-child) {
   }
 }
 
+@font-face {
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansMedium;
+  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: MFSongHe;
+  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+.noto-regular {
+  font-family: NotoSansRegular;
+}
+
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-medium {
+  font-family: NotoSansMedium;
+}
+
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-bold {
+  font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
 .welcome-page {
   position: relative;
   height: 1030px;
@@ -831,6 +963,101 @@ table.commonFrame tr td:not(:last-child) {
   .welcome-down-btn:not(:first-child) {
     margin-left: 10px;
   }
+}
+
+@font-face {
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansMedium;
+  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: MFSongHe;
+  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+.noto-regular {
+  font-family: NotoSansRegular;
+}
+
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-medium {
+  font-family: NotoSansMedium;
+}
+
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-bold {
+  font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
 }
 
 .mileverse .contents-text {
@@ -1909,6 +2136,101 @@ table.commonFrame tr td:not(:last-child) {
   }
 }
 
+@font-face {
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansMedium;
+  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: MFSongHe;
+  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+.noto-regular {
+  font-family: NotoSansRegular;
+}
+
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-medium {
+  font-family: NotoSansMedium;
+}
+
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-bold {
+  font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
 .business .contents-init-wrap:not(:first-child) {
   padding-top: 100px;
 }
@@ -1983,6 +2305,101 @@ table.commonFrame tr td:not(:last-child) {
     overflow: hidden;
     margin: 26px 0;
   }
+}
+
+@font-face {
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansMedium;
+  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: MFSongHe;
+  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+.noto-regular {
+  font-family: NotoSansRegular;
+}
+
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-medium {
+  font-family: NotoSansMedium;
+}
+
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-bold {
+  font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
 }
 
 .apptech .contents-size {
@@ -2158,6 +2575,101 @@ table.commonFrame tr td:not(:last-child) {
     width: 100%;
     margin-left: 0;
   }
+}
+
+@font-face {
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansMedium;
+  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: MFSongHe;
+  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+.noto-regular {
+  font-family: NotoSansRegular;
+}
+
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-medium {
+  font-family: NotoSansMedium;
+}
+
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-bold {
+  font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
 }
 
 .tech .contents-init-wrap:not(:first-child) {
@@ -2413,6 +2925,101 @@ table.commonFrame tr td:not(:last-child) {
   }
 }
 
+@font-face {
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansMedium;
+  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: MFSongHe;
+  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+.noto-regular {
+  font-family: NotoSansRegular;
+}
+
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-medium {
+  font-family: NotoSansMedium;
+}
+
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-bold {
+  font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
 .media .refer-total-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2648,6 +3255,101 @@ table.commonFrame tr td:not(:last-child) {
   }
 }
 
+@font-face {
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansMedium;
+  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: MFSongHe;
+  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+.noto-regular {
+  font-family: NotoSansRegular;
+}
+
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-medium {
+  font-family: NotoSansMedium;
+}
+
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-bold {
+  font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
 .contact .contents-init-wrap {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2802,6 +3504,101 @@ table.commonFrame tr td:not(:last-child) {
     height: 40px;
     font-size: 16px;
   }
+}
+
+@font-face {
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansMedium;
+  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: MFSongHe;
+  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+.noto-regular {
+  font-family: NotoSansRegular;
+}
+
+.noto-regular:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-medium {
+  font-family: NotoSansMedium;
+}
+
+.noto-medium:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.noto-bold {
+  font-family: NotoSansBold;
+}
+
+.noto-bold:lang(cn) {
+  font-family: MFSongHe;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
 }
 
 .privacy .contents-total-wrap {

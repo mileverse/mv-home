@@ -7,8 +7,9 @@
 }
 
 body {
-  min-width: 803px;
+  // min-width: 803px;
   word-break: keep-all;
+  background-color: #88d1e6;
 }
 
 .mobile {
@@ -16,23 +17,50 @@ body {
 }
 
 .contents {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 160px 20px 150px 20px;
-  background-image: url(../../../events/img/family/w-bg-01.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   color: #604244;
 
-  .banner-wrap .banner {
+  .background {
+    z-index: -1;
+    position: absolute;
+    background-color: #88d1e6;
     width: 100%;
+    object-fit: contain;
+  }
+
+  .top {
+    top: 0;
+    object-position: top;
+    min-height: 60%;
+  }
+
+  .bottom {
+    bottom: 0;
+    object-position: bottom;
+  }
+
+  .banner-wrap {
+    // margin-top: 160px;
+    margin-top: 8.3vw;
+    max-width: 68.75%;
+    // max-width: 73%;
+    .banner-web {
+      width: 100%;
+      min-width: 519px;
+    }
+    .banner-mobile {
+      display: none;
+    }
   }
 
   // 마일벌스란
   .mileverse-wrap {
     max-width: 900px;
-    margin-top: 120px;
+    // margin-top: 120px;
+    margin: 120px 20px 0 20px;
     padding: 16px;
     background-color: #cff2a5;
     border-radius: 10px;
@@ -63,14 +91,14 @@ body {
   // 이벤트 박스
   .event-section-wrap {
     position: relative;
-    width: 100%;
     max-width: 900px;
     padding: 82px 90px 90px 90px;
+    margin: 0 20px 150px 20px;
     border-radius: 10px;
     background-color: #ffffff;
     color: #604244;
     &.init {
-      margin: 112px 0;
+      margin: 112px 20px 112px 20px;
     }
 
     .event-tag {
@@ -121,6 +149,7 @@ body {
           justify-content: center;
           align-items: center;
           margin-bottom: 16px;
+          // height: 132.45px;
           img {
             margin-bottom: 0;
           }
@@ -129,8 +158,12 @@ body {
           font-size: 22px;
           line-height: 30px;
           word-spacing: -4px;
+          white-space: nowrap;
           &:last-child {
             margin-top: 5px;
+          }
+          &.small-text {
+            font-size: 20px;
           }
         }
       }
@@ -207,9 +240,9 @@ body {
 
 // mobile
 @media (max-width: 767px) {
-  body {
-    min-width: unset;
-  }
+  // body {
+  //   min-width: unset;
+  // }
 
   .web {
     display: none;
@@ -218,14 +251,21 @@ body {
     display: block;
   }
   .contents {
-    padding: 40px 20px 30px 20px;
-    background-image: url(../../../events/img/family/m-bg-01.png);
+    padding: 0px 20px 30px 20px;
     color: #2d2d2d;
 
     .banner-wrap {
-      width: 68.75%;
+      display: flex;
+      justify-content: center;
+      // width: 68.75%;
+      width: 73%;
+      margin-top: 11.1vw;
       .banner {
         width: 100%;
+        margin-top: 0;
+        &-web {
+          min-width: unset;
+        }
       }
     }
 
@@ -246,7 +286,7 @@ body {
         .mileverse-expl {
           font-size: 15px;
           line-height: 24px;
-          word-spacing: -3px;
+          word-spacing: -1px;
         }
       }
     }
@@ -255,6 +295,7 @@ body {
     .event-section-wrap {
       width: 100%;
       padding: 37px 20px 20px 20px;
+      margin: 0;
       color: #2d2d2d;
       &.init {
         margin: 48px 0;
@@ -362,11 +403,18 @@ body {
   }
 }
 
-@media (max-width: 500px) {
-  .banner.web {
-    display: none;
-  }
-  .banner.mobile {
-    display: block;
+@media (max-width: 415px) {
+  .contents {
+    background-image: url(../../../events/img/family/m-bg-01.png);
+    background-size: 100% 100%;
+    .banner-wrap {
+      // width: 61.1vw;
+      .banner-web {
+        display: none;
+      }
+      .banner-mobile {
+        display: block;
+      }
+    }
   }
 }

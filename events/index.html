@@ -13,9 +13,11 @@
   <body>
     <div class="event">
       <main class="contents">
+        <img src="img/family/w-bg-03.png" class="background top" />
+        <img src="img/family/w-bg-04.png" class="background bottom" />
         <div class="banner-wrap">
-          <img class="banner web" src="img/family/w-banner.png" alt="banner" />
-          <img class="banner mobile" src="img/family/m-banner.png" alt="banner" />
+          <img class="banner-web" src="img/family/w-banner.png" alt="banner" />
+          <img class="banner-mobile" src="img/family/m-banner.png" alt="banner" />
         </div>
 
         <section class="mileverse-wrap">
@@ -54,36 +56,36 @@
           <article class="item-list">
             <div class="item">
               <img src="img/family/cu.png" alt="cu" id="image" />
-              <p class="nanum-bold">CU 편의점</p>
-              <p class="nanum-bold">3천원권 / 1만원권</p>
+              <p class="item-title nanum-bold">CU 편의점</p>
+              <p class="item-title nanum-bold">3천원권 / 1만원권</p>
             </div>
             <div class="item">
               <img src="img/family/ediya.png" alt="ediya" />
-              <p class="nanum-bold">이디야커피</p>
-              <p class="nanum-bold">5천원권 / 1만원권</p>
+              <p class="item-title nanum-bold">이디야커피</p>
+              <p class="item-title nanum-bold">5천원권 / 1만원권</p>
             </div>
             <div class="item">
               <img src="img/family/mcdonald.png" alt="mcdonald" />
-              <p class="nanum-bold">맥도날드</p>
-              <p class="nanum-bold">1만원권 / 3만원권</p>
+              <p class="item-title nanum-bold">맥도날드</p>
+              <p class="item-title nanum-bold">1만원권 / 3만원권</p>
             </div>
             <div class="item">
               <img src="img/family/touslesjours.png" alt="touslesjours" />
-              <p class="nanum-bold">뚜레쥬르</p>
-              <p class="nanum-bold">1만원권 / 3만원권</p>
+              <p class="item-title nanum-bold">뚜레쥬르</p>
+              <p class="item-title nanum-bold">1만원권 / 3만원권</p>
             </div>
             <div class="item">
               <img src="img/family/megabox.png" alt="megabox" />
-              <p class="nanum-bold">메가박스</p>
-              <p class="nanum-bold">1만원권 / 3만원권</p>
+              <p class="item-title nanum-bold">메가박스</p>
+              <p class="item-title nanum-bold">1만원권 / 3만원권</p>
             </div>
             <div class="item">
               <div id="booknlife">
                 <img src="img/family/booknlife.jpg" alt="booknlife" />
               </div>
-              <p class="nanum-bold">북앤라이프</p>
-              <p class="nanum-bold">도서문화상품권</p>
-              <p class="nanum-bold">1만원권 / 3만원권</p>
+              <p class="item-title nanum-bold">북앤라이프</p>
+              <p class="item-title nanum-bold">도서문화상품권</p>
+              <p class="item-title nanum-bold">1만원권 / 3만원권</p>
             </div>
           </article>
 
@@ -139,13 +141,21 @@
     </div>
   </body>
   <script>
+    const imgResize = () => {
+      const IMAGE_HEIGHT = $("#image")[0].naturalHeight / $("#image")[0].naturalWidth;
+      const cal_height = $(".item")[0].clientWidth * IMAGE_HEIGHT;
+      $("#booknlife").height(cal_height);
+    };
+    const bgPosition = () => {
+      const contentsWidth = $(".contents").width();
+      if (contentsWidth > 2000) $(".background").css("object-fit", "");
+      else $(".background").css("object-fit", "contain");
+    };
+
     $(document).ready(function () {
-      const imgResize = () => {
-        const IMAGE_HEIGHT = $("#image")[0].naturalHeight / $("#image")[0].naturalWidth;
-        const cal_height = $(".item")[0].clientWidth * IMAGE_HEIGHT;
-        $("#booknlife").height(cal_height);
-      };
       window.addEventListener("resize", imgResize);
+      window.addEventListener("resize", bgPosition);
     });
+    $(window).on("load", imgResize);
   </script>
 </html>

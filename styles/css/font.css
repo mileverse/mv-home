@@ -1,11 +1,11 @@
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -24,8 +24,41 @@
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
+}
+
+@font-face {
+  font-family: DangDang;
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+}
+
+@font-face {
+  font-family: SANGJU Gotgam;
+  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+.gmarket-medium {
+  font-family: GmarketSansMedium;
+}
+
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -52,6 +85,22 @@
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
+}
+
+.dangdang {
+  font-family: DangDang;
+}
+
+.sangju {
+  font-family: SANGJU Gotgam;
 }

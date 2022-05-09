@@ -113,8 +113,8 @@
 }
 
 body {
-  min-width: 803px;
   word-break: keep-all;
+  background-color: #88d1e6;
 }
 
 .mobile {
@@ -122,6 +122,7 @@ body {
 }
 
 .contents {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,20 +133,48 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 160px 20px 150px 20px;
-  background-image: url(../../../events/img/family/w-bg-01.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   color: #604244;
 }
 
-.contents .banner-wrap .banner {
+.contents .background {
+  z-index: -1;
+  position: absolute;
+  background-color: #88d1e6;
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contents .top {
+  top: 0;
+  -o-object-position: top;
+     object-position: top;
+  min-height: 60%;
+}
+
+.contents .bottom {
+  bottom: 0;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.contents .banner-wrap {
+  margin-top: 8.3vw;
+  max-width: 68.75%;
+}
+
+.contents .banner-wrap .banner-web {
+  width: 100%;
+  min-width: 519px;
+}
+
+.contents .banner-wrap .banner-mobile {
+  display: none;
 }
 
 .contents .mileverse-wrap {
   max-width: 900px;
-  margin-top: 120px;
+  margin: 120px 20px 0 20px;
   padding: 16px;
   background-color: #cff2a5;
   border-radius: 10px;
@@ -181,16 +210,16 @@ body {
 
 .contents .event-section-wrap {
   position: relative;
-  width: 100%;
   max-width: 900px;
   padding: 82px 90px 90px 90px;
+  margin: 0 20px 150px 20px;
   border-radius: 10px;
   background-color: #ffffff;
   color: #604244;
 }
 
 .contents .event-section-wrap.init {
-  margin: 112px 0;
+  margin: 112px 20px 112px 20px;
 }
 
 .contents .event-section-wrap .event-tag {
@@ -272,10 +301,15 @@ body {
   font-size: 22px;
   line-height: 30px;
   word-spacing: -4px;
+  white-space: nowrap;
 }
 
 .contents .event-section-wrap .item-list .item p:last-child {
   margin-top: 5px;
+}
+
+.contents .event-section-wrap .item-list .item p.small-text {
+  font-size: 20px;
 }
 
 .contents .event-section-wrap .mobile-install {
@@ -374,9 +408,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  body {
-    min-width: unset;
-  }
   .web {
     display: none;
   }
@@ -384,15 +415,25 @@ body {
     display: block;
   }
   .contents {
-    padding: 40px 20px 30px 20px;
-    background-image: url(../../../events/img/family/m-bg-01.png);
+    padding: 0px 20px 30px 20px;
     color: #2d2d2d;
   }
   .contents .banner-wrap {
-    width: 68.75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 73%;
+    margin-top: 11.1vw;
   }
   .contents .banner-wrap .banner {
     width: 100%;
+    margin-top: 0;
+  }
+  .contents .banner-wrap .banner-web {
+    min-width: unset;
   }
   .contents .mileverse-wrap {
     width: 100%;
@@ -412,11 +453,12 @@ body {
   .contents .mileverse-wrap .inner-wrap .mileverse-expl {
     font-size: 15px;
     line-height: 24px;
-    word-spacing: -3px;
+    word-spacing: -1px;
   }
   .contents .event-section-wrap {
     width: 100%;
     padding: 37px 20px 20px 20px;
+    margin: 0;
     color: #2d2d2d;
   }
   .contents .event-section-wrap.init {
@@ -522,11 +564,15 @@ body {
   }
 }
 
-@media (max-width: 500px) {
-  .banner.web {
+@media (max-width: 415px) {
+  .contents {
+    background-image: url(../../../events/img/family/m-bg-01.png);
+    background-size: 100% 100%;
+  }
+  .contents .banner-wrap .banner-web {
     display: none;
   }
-  .banner.mobile {
+  .contents .banner-wrap .banner-mobile {
     display: block;
   }
 }

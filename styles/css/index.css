@@ -1,11 +1,11 @@
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -24,6 +24,21 @@
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -38,19 +53,12 @@
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -77,8 +85,16 @@
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -87,10 +103,6 @@
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 .fade-in-box {
@@ -733,13 +745,13 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -758,6 +770,21 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -772,19 +799,12 @@ table.commonFrame tr td:not(:last-child) {
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -811,8 +831,16 @@ table.commonFrame tr td:not(:last-child) {
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -821,10 +849,6 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 .welcome-page {
@@ -966,13 +990,13 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -991,6 +1015,21 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -1005,19 +1044,12 @@ table.commonFrame tr td:not(:last-child) {
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -1044,8 +1076,16 @@ table.commonFrame tr td:not(:last-child) {
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -1054,10 +1094,6 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 .mileverse .contents-text {
@@ -2137,13 +2173,13 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -2162,6 +2198,21 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -2176,19 +2227,12 @@ table.commonFrame tr td:not(:last-child) {
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -2215,8 +2259,16 @@ table.commonFrame tr td:not(:last-child) {
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -2225,10 +2277,6 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 .business .contents-init-wrap:not(:first-child) {
@@ -2308,13 +2356,13 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -2333,6 +2381,21 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -2347,19 +2410,12 @@ table.commonFrame tr td:not(:last-child) {
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -2386,8 +2442,16 @@ table.commonFrame tr td:not(:last-child) {
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -2396,10 +2460,6 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 .apptech .contents-size {
@@ -2578,13 +2638,13 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -2603,6 +2663,21 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -2617,19 +2692,12 @@ table.commonFrame tr td:not(:last-child) {
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -2656,8 +2724,16 @@ table.commonFrame tr td:not(:last-child) {
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -2666,10 +2742,6 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 .tech .contents-init-wrap:not(:first-child) {
@@ -2926,13 +2998,13 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -2951,6 +3023,21 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -2965,19 +3052,12 @@ table.commonFrame tr td:not(:last-child) {
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -3004,8 +3084,16 @@ table.commonFrame tr td:not(:last-child) {
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -3014,10 +3102,6 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 .media .refer-total-wrap {
@@ -3256,13 +3340,13 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -3281,6 +3365,21 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -3295,19 +3394,12 @@ table.commonFrame tr td:not(:last-child) {
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -3334,8 +3426,16 @@ table.commonFrame tr td:not(:last-child) {
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -3344,10 +3444,6 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 .contact .contents-init-wrap {
@@ -3507,13 +3603,13 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
+  font-family: GmarketSansMedium;
+  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
+  font-family: GmarketSansBold;
+  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
 
 @font-face {
@@ -3532,6 +3628,21 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 @font-face {
+  font-family: NanumSquareR;
+  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+}
+
+@font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
@@ -3546,19 +3657,12 @@ table.commonFrame tr td:not(:last-child) {
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
+.gmarket-medium {
+  font-family: GmarketSansMedium;
 }
 
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
+.gmarket-bold {
+  font-family: GmarketSansBold;
 }
 
 .noto-regular {
@@ -3585,8 +3689,16 @@ table.commonFrame tr td:not(:last-child) {
   font-family: MFSongHe;
 }
 
-.gmarket-bold {
-  font-family: GmarketSansBold;
+.nanum-regular {
+  font-family: NanumSquareR;
+}
+
+.nanum-bold {
+  font-family: NanumSquareB;
+}
+
+.nanum-extra {
+  font-family: NanumSquareEB;
 }
 
 .dangdang {
@@ -3595,10 +3707,6 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
 }
 
 .privacy .contents-total-wrap {

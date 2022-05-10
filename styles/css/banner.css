@@ -12,6 +12,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 20px;
   height: 560px;
 }
 
@@ -29,7 +30,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
   margin-top: 110px;
 }
 
@@ -63,7 +65,7 @@
     background-repeat: no-repeat;
   }
   .banner-text-wrap {
-    width: 100%;
+    max-width: unset;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -74,7 +76,7 @@
   }
   .banner-sub-title {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .banner-sub-title.web {
     display: none;

@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
   height: 560px;
 }
 
@@ -11,7 +12,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
   margin-top: 110px;
 }
 
@@ -44,7 +46,7 @@
     background-repeat: no-repeat;
   }
   .banner-text-wrap {
-    width: 100%;
+    max-width: unset;
     justify-content: flex-end;
     margin-bottom: 64px;
   }
@@ -53,7 +55,7 @@
   }
   .banner-sub-title {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     &.web {
       display: none;
     }

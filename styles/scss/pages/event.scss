@@ -25,7 +25,6 @@ body {
   .background {
     z-index: -1;
     position: absolute;
-    background-color: #88d1e6;
     width: 100%;
     object-fit: contain;
   }
@@ -230,6 +229,17 @@ body {
       line-height: 32px;
       list-style-type: "- ";
     }
+  }
+}
+
+@media (min-width: 1960px) {
+  .contents {
+    background: no-repeat url("../../../events/img/family/w-bg-01.png");
+    background-size: 100% 100%;
+  }
+  .background {
+    display: none;
+    background-color: transparent;
   }
 }
 

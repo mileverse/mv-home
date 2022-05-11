@@ -105,6 +105,10 @@
   font-family: SANGJU Gotgam;
 }
 
+.songhe {
+  font-family: MFSongHe;
+}
+
 .media .refer-total-wrap {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -16,7 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
 }
 
 .header-mobile {

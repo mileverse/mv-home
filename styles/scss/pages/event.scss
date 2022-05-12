@@ -7,7 +7,6 @@
 }
 
 body {
-  // min-width: 803px;
   word-break: keep-all;
   background-color: #88d1e6;
 }
@@ -26,7 +25,6 @@ body {
   .background {
     z-index: -1;
     position: absolute;
-    background-color: #88d1e6;
     width: 100%;
     object-fit: contain;
   }
@@ -43,10 +41,8 @@ body {
   }
 
   .banner-wrap {
-    // margin-top: 160px;
     margin-top: 8.3vw;
     max-width: 68.75%;
-    // max-width: 73%;
     .banner-web {
       width: 100%;
       min-width: 519px;
@@ -59,7 +55,6 @@ body {
   // 마일벌스란
   .mileverse-wrap {
     max-width: 900px;
-    // margin-top: 120px;
     margin: 120px 20px 0 20px;
     padding: 16px;
     background-color: #cff2a5;
@@ -149,7 +144,6 @@ body {
           justify-content: center;
           align-items: center;
           margin-bottom: 16px;
-          // height: 132.45px;
           img {
             margin-bottom: 0;
           }
@@ -238,12 +232,19 @@ body {
   }
 }
 
+@media (min-width: 1960px) {
+  .contents {
+    background: no-repeat url("../../../events/img/family/w-bg-01.png");
+    background-size: 100% 100%;
+  }
+  .background {
+    display: none;
+    background-color: transparent;
+  }
+}
+
 // mobile
 @media (max-width: 767px) {
-  // body {
-  //   min-width: unset;
-  // }
-
   .web {
     display: none;
   }
@@ -257,7 +258,6 @@ body {
     .banner-wrap {
       display: flex;
       justify-content: center;
-      // width: 68.75%;
       width: 73%;
       margin-top: 11.1vw;
       .banner {
@@ -408,7 +408,6 @@ body {
     background-image: url(../../../events/img/family/m-bg-01.png);
     background-size: 100% 100%;
     .banner-wrap {
-      // width: 61.1vw;
       .banner-web {
         display: none;
       }

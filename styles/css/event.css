@@ -105,6 +105,10 @@
   font-family: SANGJU Gotgam;
 }
 
+.songhe {
+  font-family: MFSongHe;
+}
+
 *,
 *::before,
 *::after {
@@ -139,7 +143,6 @@ body {
 .contents .background {
   z-index: -1;
   position: absolute;
-  background-color: #88d1e6;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -405,6 +408,17 @@ body {
   font-size: 18px;
   line-height: 32px;
   list-style-type: "- ";
+}
+
+@media (min-width: 1960px) {
+  .contents {
+    background: no-repeat url("../../../events/img/family/w-bg-01.png");
+    background-size: 100% 100%;
+  }
+  .background {
+    display: none;
+    background-color: transparent;
+  }
 }
 
 @media (max-width: 767px) {

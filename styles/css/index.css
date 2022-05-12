@@ -105,6 +105,10 @@
   font-family: SANGJU Gotgam;
 }
 
+.songhe {
+  font-family: MFSongHe;
+}
+
 .fade-in-box {
   animation: fadein 2s ease-in;
   -moz-animation: fadein 2s ease-in;
@@ -211,17 +215,17 @@ body {
   font-family: MFSongHe;
 }
 
-.contents-title.mobile,
-.contents-img.mobile {
-  display: none;
-}
-
 .contents-title.sub {
   color: #212121;
   font-size: 24px;
   font-family: NotoSansBold;
   margin-top: 6px;
   line-height: 28px;
+}
+
+.contents-title.mobile,
+.contents-img.mobile {
+  display: none;
 }
 
 .contents-text {
@@ -294,7 +298,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
 }
 
 .header-mobile {
@@ -563,6 +568,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 20px;
   height: 560px;
 }
 
@@ -580,7 +586,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
   margin-top: 110px;
 }
 
@@ -614,7 +621,7 @@ body {
     background-repeat: no-repeat;
   }
   .banner-text-wrap {
-    width: 100%;
+    max-width: unset;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -625,7 +632,7 @@ body {
   }
   .banner-sub-title {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .banner-sub-title.web {
     display: none;
@@ -849,6 +856,10 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
+}
+
+.songhe {
+  font-family: MFSongHe;
 }
 
 .welcome-page {
@@ -1094,6 +1105,10 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
+}
+
+.songhe {
+  font-family: MFSongHe;
 }
 
 .mileverse .contents-text {
@@ -2279,6 +2294,10 @@ table.commonFrame tr td:not(:last-child) {
   font-family: SANGJU Gotgam;
 }
 
+.songhe {
+  font-family: MFSongHe;
+}
+
 .business .contents-init-wrap:not(:first-child) {
   padding-top: 100px;
 }
@@ -2462,8 +2481,18 @@ table.commonFrame tr td:not(:last-child) {
   font-family: SANGJU Gotgam;
 }
 
+.songhe {
+  font-family: MFSongHe;
+}
+
+.apptech {
+  word-break: keep-all;
+}
+
 .apptech .contents-size {
-  max-width: none;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2476,8 +2505,8 @@ table.commonFrame tr td:not(:last-child) {
           align-items: center;
 }
 
-.apptech .background-wrap {
-  width: 100%;
+.apptech .contents-total-wrap {
+  padding: 0;
   background-image: url("../../../assets/img/appGuide/appGuide-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -2495,19 +2524,24 @@ table.commonFrame tr td:not(:last-child) {
 }
 
 .apptech .contents-init-wrap:first-child {
-  width: 1300px;
   padding-top: 0;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #efefef;
 }
 
 .apptech .contents-init-wrap:last-child {
   padding-bottom: 140px;
 }
 
+.apptech .divider {
+  width: 100%;
+  height: 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #efefef;
+}
+
 .apptech .contents-text {
   font-size: 20px;
   line-height: 34px;
+  margin-bottom: 10px;
 }
 
 .apptech .contents-text.web:first-child {
@@ -2519,8 +2553,17 @@ table.commonFrame tr td:not(:last-child) {
   display: none;
 }
 
+.apptech .contents-text:lang(en) {
+  line-height: 30px;
+  word-spacing: -0.2px;
+  margin-bottom: 0;
+}
+
+.apptech .contents-text:lang(cn) {
+  word-break: break-word;
+}
+
 .apptech .app-img {
-  margin-top: 20px;
   width: 100%;
 }
 
@@ -2553,7 +2596,6 @@ table.commonFrame tr td:not(:last-child) {
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 27px;
-  font-family: GmarketSansBold;
 }
 
 .apptech .contents-title.web {
@@ -2561,8 +2603,12 @@ table.commonFrame tr td:not(:last-child) {
   line-height: 32px;
 }
 
+.apptech .contents-title:lang(cn) {
+  font-family: GmarketSansBold;
+}
+
 @media (max-width: 767px) {
-  .apptech .background-wrap {
+  .apptech .contents-total-wrap {
     background: transparent;
   }
   .apptech .divider {
@@ -2586,6 +2632,9 @@ table.commonFrame tr td:not(:last-child) {
     font-size: 21px;
     line-height: 24px;
   }
+  .apptech .contents-title:lang(en), .apptech .contents-title:lang(cn) {
+    margin-top: 4px;
+  }
   .apptech .contents-text {
     font-size: 14px;
     line-height: 22px;
@@ -2596,8 +2645,13 @@ table.commonFrame tr td:not(:last-child) {
   .apptech .contents-text.mobile {
     display: block;
   }
+  .apptech .contents-text:lang(en) {
+    font-size: 13px;
+    line-height: 18px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+  }
   .apptech .app-img {
-    margin-top: 6px;
     width: 100%;
   }
   .apptech .app-img.web {
@@ -2742,6 +2796,10 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
+}
+
+.songhe {
+  font-family: MFSongHe;
 }
 
 .tech .contents-init-wrap:not(:first-child) {
@@ -3104,6 +3162,10 @@ table.commonFrame tr td:not(:last-child) {
   font-family: SANGJU Gotgam;
 }
 
+.songhe {
+  font-family: MFSongHe;
+}
+
 .media .refer-total-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3446,6 +3508,10 @@ table.commonFrame tr td:not(:last-child) {
   font-family: SANGJU Gotgam;
 }
 
+.songhe {
+  font-family: MFSongHe;
+}
+
 .contact .contents-init-wrap {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3707,6 +3773,10 @@ table.commonFrame tr td:not(:last-child) {
 
 .sangju {
   font-family: SANGJU Gotgam;
+}
+
+.songhe {
+  font-family: MFSongHe;
 }
 
 .privacy .contents-total-wrap {

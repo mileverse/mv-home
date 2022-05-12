@@ -105,6 +105,10 @@
   font-family: SANGJU Gotgam;
 }
 
+.songhe {
+  font-family: MFSongHe;
+}
+
 .business .contents-init-wrap:not(:first-child) {
   padding-top: 100px;
 }

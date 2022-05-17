@@ -109,140 +109,62 @@
   font-family: MFSongHe;
 }
 
-.welcome-page {
-  position: relative;
-  height: 1030px;
-  overflow: hidden;
+.appguide {
+  word-break: keep-all;
 }
 
-.welcome-page-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -232px;
-  margin-left: -656px;
+.appguide .contents-init-wrap {
+  width: 100%;
 }
 
-.welcome-text-sub {
-  font-family: GmarketSansMedium;
-  font-size: 30px;
-  line-height: 45px;
-  color: #212121;
-}
-
-.welcome-text-sub:lang(cn) {
-  font-family: MFSongHe;
-}
-
-.welcome-text-main {
-  margin-top: 26px;
-  color: #212121;
-  font-size: 64px;
-  line-height: 73px;
-  font-family: GmarketSansBold;
-}
-
-.welcome-img {
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  max-width: 1220px;
-  margin: -162px -1232px 0 0;
-}
-
-.web-welcome-btn-wrap {
+.appguide .contents-total-wrap {
+  margin: 40px 20px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30px;
 }
 
-.mobile-welcome-btn-wrap {
-  display: none;
+.appguide .divider {
+  width: 100%;
+  height: 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #efefef;
 }
 
-.welcome-down-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 230px;
-  height: 40px;
-  background-color: #ffffff;
-  border: 1px solid #f4f4f4;
-  border-radius: 6px;
-  -webkit-box-shadow: 0px 0px 5px 0px #efefef;
-          box-shadow: 0px 0px 5px 0px #efefef;
-  cursor: pointer;
+.appguide .contents-text {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
 }
 
-.welcome-down-btn p {
-  color: #656565;
-  font-size: 12px;
+.appguide .contents-text:lang(en) {
+  font-size: 13px;
+  line-height: 18px;
+  word-spacing: 1px;
 }
 
-.welcome-down-btn:not(:first-child) {
-  margin-left: 20px;
+.appguide .app-img {
+  width: 100%;
 }
 
-@media (max-width: 767px) {
-  .welcome-page {
-    height: auto;
-  }
-  .welcome-page-wrap {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 104px 0 0 0;
-    padding: 0 20px;
-    line-height: 1;
-  }
-  .welcome-text-sub {
-    font-size: 14px;
-    line-height: 19px;
-  }
-  .welcome-text-main {
-    margin-top: 6px;
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .welcome-img {
-    position: relative;
-    top: 0;
-    right: 174px;
-    width: 670px;
-    margin: 24px 0 20px 0;
-  }
-  .web-welcome-btn-wrap {
-    display: none;
-  }
-  .mobile-welcome-btn-wrap {
-    display: block;
-  }
-  .welcome-down-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 155px;
-    height: 40px;
-    cursor: pointer;
-  }
-  .welcome-down-btn:not(:first-child) {
-    margin-left: 10px;
-  }
+.appguide .contents-title {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.appguide .contents-title:first-child {
+  margin-top: 0;
+}
+
+.appguide .contents-title:lang(en) {
+  margin-top: 4px;
 }

@@ -2845,6 +2845,7 @@ table.commonFrame tr td:not(:last-child) {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  height: 180px;
 }
 
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-text-wrap {

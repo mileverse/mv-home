@@ -138,7 +138,7 @@ body {
           align-items: center;
   color: #2d2d2d;
   background-color: #07bbeb;
-  z-index: -2;
+  z-index: 0;
 }
 
 .contents .background {
@@ -325,6 +325,7 @@ body {
   border-radius: 2px;
   border: none;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .contents .event-section-wrap .mobile-install {

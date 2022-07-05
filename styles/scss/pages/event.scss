@@ -8,7 +8,7 @@
 
 body {
   word-break: keep-all;
-  background-color: #88d1e6;
+  // background-color: #88d1e6;
 }
 
 .mobile {
@@ -20,8 +20,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #604244;
+  color: #2d2d2d;
+  background-color: #07bbeb;
+  z-index: 0;
 
+  // 배경이미지
   .background {
     z-index: -1;
     position: absolute;
@@ -32,7 +35,7 @@ body {
   .top {
     top: 0;
     object-position: top;
-    min-height: 60%;
+    // min-height: 55%;
   }
 
   .bottom {
@@ -40,27 +43,34 @@ body {
     object-position: bottom;
   }
 
+  // 배너
   .banner-wrap {
     margin-top: 8.3vw;
-    max-width: 68.75%;
-    .banner-web {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
       width: 100%;
       min-width: 519px;
+      margin-bottom: 80px;
     }
-    .banner-mobile {
-      display: none;
+    .banner {
+      width: 85.4%;
+      min-width: 519px;
     }
   }
 
   // 마일벌스란
   .mileverse-wrap {
     max-width: 900px;
-    margin: 120px 20px 0 20px;
-    padding: 16px;
-    background-color: #cff2a5;
+    margin: 100px 20px 0 20px;
+    padding: 18px;
+    background-color: #53e0eb;
     border-radius: 10px;
+    color: #ffffff;
     .inner-wrap {
-      padding: 80px;
+      padding: 72px;
       border: 1px dotted #ffffff;
       border-radius: 10px;
     }
@@ -68,11 +78,14 @@ body {
     .title-wrap {
       display: flex;
       align-items: center;
-      margin-bottom: 40px;
+      margin-top: 2px;
+      margin-bottom: 44px;
+      .tube {
+        width: 28px;
+      }
       .title {
-        margin-left: 10px;
+        margin-left: 16px;
         font-size: 28px;
-        color: #604244;
       }
     }
 
@@ -87,80 +100,88 @@ body {
   .event-section-wrap {
     position: relative;
     max-width: 900px;
-    padding: 82px 90px 90px 90px;
+    padding: 90px 90px 70px;
     margin: 0 20px 150px 20px;
     border-radius: 10px;
     background-color: #ffffff;
-    color: #604244;
     &.init {
-      margin: 112px 20px 112px 20px;
+      margin: 132px 20px 132px 20px;
     }
 
     .event-tag {
       position: absolute;
       top: -12px;
       left: -12px;
+      width: 15.1%;
     }
 
     // 이벤트 제목
     .section-title {
-      margin-bottom: 53px;
+      margin-bottom: 60px;
       font-size: 28px;
     }
 
     .event-title {
-      margin-bottom: 14px;
       font-size: 24px;
       margin-bottom: 20px;
     }
 
     .event-expl {
-      margin-bottom: 44px;
+      margin-bottom: 50px;
       font-size: 24px;
       line-height: 36px;
       word-spacing: -4px;
+      &.list {
+        line-height: 38px;
+      }
+      &.one-line {
+        line-height: unset;
+      }
       &:last-child {
         margin-bottom: 0;
       }
     }
 
-    // 상품이미지
-    .item-list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, auto);
-      row-gap: 50px;
-      column-gap: 33px;
-      .item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        img {
-          width: 100%;
-          margin-bottom: 16px;
-        }
-        #booknlife {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 16px;
-          img {
-            margin-bottom: 0;
-          }
-        }
-        p {
-          font-size: 22px;
-          line-height: 30px;
-          word-spacing: -4px;
-          white-space: nowrap;
-          &:last-child {
-            margin-top: 5px;
-          }
-          &.small-text {
-            font-size: 20px;
-          }
-        }
+    .event-notice {
+      font-size: 24px;
+      margin-bottom: 50px;
+      word-spacing: -4px;
+      &.small {
+        font-size: 22px;
       }
+    }
+
+    .margin-bottom {
+      margin-bottom: 20px;
+      &.small {
+        margin-bottom: 13px;
+      }
+    }
+
+    .code-box {
+      background-color: #efefef;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 206px;
+      height: 68px;
+      .event-title {
+        margin: 0;
+      }
+    }
+
+    .event-detail {
+      width: 100%;
+      height: 80px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      background-color: #0097e6;
+      color: #ffffff;
+      border-radius: 2px;
+      border: none;
+      font-size: 25px;
+      cursor: pointer;
     }
 
     .mobile-install {
@@ -172,9 +193,9 @@ body {
 .install {
   display: flex;
   justify-content: center;
-  background-color: #438761;
+  background-color: #31bbbb;
   color: #ffffff;
-  padding: 80px 0 56px 0;
+  padding: 90px 0 52px 0;
 
   .install-contents {
     width: 800px;
@@ -207,7 +228,7 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  background-color: #6ca87d;
+  background-color: #44d4d4;
   color: #2d2d2d;
   .footer-contents {
     width: 800px;
@@ -216,12 +237,12 @@ body {
     .caution {
       font-size: 24px;
       line-height: 40px;
-      color: #f4d151;
+      color: #ffdb58;
     }
     .footer-title {
-      margin: 55px 0 21px 0;
+      margin-top: 60px;
+      margin-bottom: 26px;
       font-size: 20px;
-      line-height: 34px;
     }
     .footer-expl {
       margin-left: 13px;
@@ -234,12 +255,22 @@ body {
 
 @media (min-width: 1960px) {
   .contents {
-    background: no-repeat url("../../../events/img/family/w-bg-01.png");
+    background: no-repeat url("../../../events/img/w-bg-whole.png");
     background-size: 100% 100%;
   }
   .background {
     display: none;
     background-color: transparent;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contents {
+    .banner-wrap {
+      .title {
+        width: 86%;
+      }
+    }
   }
 }
 
@@ -251,42 +282,46 @@ body {
   .mobile {
     display: block;
   }
+
+  .mobile-banner {
+    width: 100%;
+  }
   .contents {
     padding: 0px 20px 30px 20px;
     color: #2d2d2d;
+    background-image: url(../../../events/img/m-bg.png);
+    background-size: 100% 100%;
+    background-color: #0fc0ea;
 
     .banner-wrap {
-      display: flex;
-      justify-content: center;
-      width: 73%;
-      margin-top: 11.1vw;
-      .banner {
-        width: 100%;
-        margin-top: 0;
-        &-web {
-          min-width: unset;
-        }
-      }
+      display: none;
     }
 
     // 마일벌스란
     .mileverse-wrap {
       width: 100%;
-      margin-top: 40px;
-      padding: 10px;
-      color: #604244;
+      margin-top: 0;
+      padding: 9px;
+      color: #2d2d2d;
       .inner-wrap {
-        padding: 32px 30px 36px 30px;
+        padding: 27px 21px;
+        // padding: 27px 15px; // 세줄맞추기
         .title-wrap {
-          margin-bottom: 19px;
+          margin-top: 0;
+          margin-bottom: 20px;
+          height: 16px;
+          .tube {
+            width: 16px;
+          }
           .title {
-            font-size: 18px;
+            margin-left: 6px;
+            font-size: 16px;
           }
         }
         .mileverse-expl {
-          font-size: 15px;
+          font-size: 14px;
           line-height: 24px;
-          word-spacing: -1px;
+          word-spacing: -2.8px;
         }
       }
     }
@@ -294,125 +329,109 @@ body {
     // 이벤트 박스
     .event-section-wrap {
       width: 100%;
-      padding: 37px 20px 20px 20px;
+      padding: 41px 20px 30px 20px;
       margin: 0;
       color: #2d2d2d;
       &.init {
-        margin: 48px 0;
+        margin: 38px 0;
       }
       .event-tag {
         top: -8px;
         left: -8px;
+        width: 22.42%;
+        max-width: 96px;
       }
 
       // 이벤트 제목
       .section-title {
-        margin-top: 5px;
-        margin-bottom: 27px;
-        font-size: 18px;
-        color: #604244;
+        margin-bottom: 30px;
+        font-size: 16px;
       }
       .event-title {
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+        word-spacing: -0.32px;
       }
 
       .event-expl {
-        margin-bottom: 27px;
+        margin-bottom: 30px;
         font-size: 15px;
-        line-height: 25px;
-        word-spacing: -2px;
+        line-height: 24px;
+        word-spacing: -0.3px;
+        &.list {
+          font-size: 14px;
+          line-height: 24px;
+        }
         &:last-child {
           margin-bottom: 15px;
         }
       }
 
-      .item-list {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-        gap: 20px;
-        .item {
-          img {
-            margin-bottom: 8px;
-          }
-          #booknlife {
-            margin-bottom: 8px;
-            img {
-              margin-bottom: 0;
-            }
-          }
-          p {
-            font-size: 15px;
-            line-height: 20px;
-            color: #604244;
-          }
+      .event-expl-mobile {
+        font-size: 15px;
+        line-height: 24px;
+        word-spacing: -2px;
+      }
+
+      .event-notice {
+        font-size: 13px;
+        word-spacing: -2px;
+        margin-bottom: 30px;
+        &.small {
+          font-size: 12px;
         }
       }
 
-      .mobile-install {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50px;
-        margin-top: 35px;
-        background-color: #509870;
-        border-radius: 2px;
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 20px;
-        border: none;
-        cursor: pointer;
+      .code-box {
+        width: 136px;
+        height: 40px;
       }
+
+      .margin-bottom {
+        margin-bottom: 8px;
+        &.small {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .mobile-install {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 44px;
+      margin-top: 20px;
+      background-color: #0097e6;
+      border-radius: 2px;
+      color: #ffffff;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
     }
   }
 
-  .install {
-    display: none;
-  }
-
   .footer {
-    padding: 36px 20px 80px 20px;
-    background-color: #509870;
+    padding: 30px 20px 60px 20px;
+    background-color: #31bbbb;
     color: #ffffff;
     .footer-contents {
       width: 100%;
       padding: 0;
       .caution {
-        font-size: 15px;
-        line-height: 25px;
-        word-spacing: -1px;
-        &.web {
-          display: none;
-        }
-        &.mobile {
-          display: block;
-        }
+        font-size: 14px;
+        line-height: 24px;
+        color: #ffe585;
       }
       .footer-title {
-        margin: 30px 0 15px 0;
-        font-size: 16px;
-        line-height: 26px;
+        margin-top: 30px;
+        margin-bottom: 16px;
+        font-size: 14px;
       }
       .footer-expl {
-        font-size: 15px;
-        line-height: 26px;
-        word-spacing: 2px;
-      }
-    }
-  }
-}
-
-@media (max-width: 415px) {
-  .contents {
-    background-image: url(../../../events/img/family/m-bg-01.png);
-    background-size: 100% 100%;
-    .banner-wrap {
-      .banner-web {
-        display: none;
-      }
-      .banner-mobile {
-        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 11px;
       }
     }
   }

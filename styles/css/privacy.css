@@ -1,112 +1,5 @@
-@font-face {
-  font-family: GmarketSansMedium;
-  src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
-}
-
-@font-face {
-  font-family: GmarketSansBold;
-  src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: NotoSansRegular;
-  src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: NotoSansMedium;
-  src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: NotoSansBold;
-  src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareR;
-  src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: NanumSquareB;
-  src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
-}
-
-@font-face {
-  font-family: NanumSquareEB;
-  src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: MFSongHe;
-  src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
-}
-
-@font-face {
-  font-family: DangDang;
-  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
-}
-
-@font-face {
-  font-family: SANGJU Gotgam;
-  src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
-}
-
-.gmarket-medium {
-  font-family: GmarketSansMedium;
-}
-
-.gmarket-bold {
-  font-family: GmarketSansBold;
-}
-
-.noto-regular {
-  font-family: NotoSansRegular;
-}
-
-.noto-regular:lang(cn) {
-  font-family: MFSongHe;
-}
-
-.noto-medium {
-  font-family: NotoSansMedium;
-}
-
-.noto-medium:lang(cn) {
-  font-family: MFSongHe;
-}
-
-.noto-bold {
-  font-family: NotoSansBold;
-}
-
-.noto-bold:lang(cn) {
-  font-family: MFSongHe;
-}
-
-.nanum-regular {
-  font-family: NanumSquareR;
-}
-
-.nanum-bold {
-  font-family: NanumSquareB;
-}
-
-.nanum-extra {
-  font-family: NanumSquareEB;
-}
-
-.dangdang {
-  font-family: DangDang;
-}
-
-.sangju {
-  font-family: SANGJU Gotgam;
-}
-
-.songhe {
-  font-family: MFSongHe;
+.privacy {
+  word-break: keep-all;
 }
 
 .privacy .contents-total-wrap {
@@ -117,6 +10,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.privacy .contents-size {
+  max-width: 1300px;
+  width: auto;
+  padding: 0 20px;
 }
 
 .privacy .contents-init-wrap {
@@ -133,13 +32,6 @@
   font-family: GmarketSansBold;
 }
 
-.privacy .privacy-sub-header {
-  font-size: 24px;
-  color: #212121;
-  line-height: 35px;
-  font-family: NotoSansBold;
-}
-
 .privacy .privacy-expl {
   font-size: 20px;
   color: #212121;
@@ -149,10 +41,9 @@
 
 .privacy .privacy-area-wrap {
   background-color: #f9f9f9;
-  padding: 50px;
+  padding: 40px 20px 50px 20px;
+  max-width: 1300px;
   margin-top: 40px;
-  width: 100%;
-  max-width: 1400px;
   margin-bottom: 90px;
 }
 
@@ -176,27 +67,40 @@
 
 .privacy .commonFrame {
   width: 100%;
+  min-width: 100%;
   max-width: 1100px;
+  margin: 10px 0;
+}
+
+.privacy .commonFrame th {
+  vertical-align: middle;
 }
 
 @media (max-width: 767px) {
   .privacy .banner-text-wrap {
     margin-bottom: 100px;
   }
+  .privacy .contents-total-wrap {
+    padding: 0;
+  }
+  .privacy .contents-size {
+    width: unset;
+  }
   .privacy .privacy-header {
     font-size: 21px;
   }
-  .privacy .privacy-sub-header {
-    font-size: 16px;
-  }
   .privacy .privacy-expl {
     font-size: 14px;
+    line-height: 24px;
   }
   .privacy .privacy-area-wrap {
     padding: 20px;
     margin-bottom: 50px;
+    width: auto;
   }
-  .privacy .privacy-area-wrap.title, .privacy .privacy-area-wrap.contents {
+  .privacy .privacy-area-wrap .title,
+  .privacy .privacy-area-wrap .contents {
     font-size: 15px;
+    line-height: 27px;
   }
 }

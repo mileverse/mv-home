@@ -425,7 +425,7 @@ body {
 
 @media (min-width: 1960px) {
   .contents {
-    background: no-repeat url("../../../events/img/w-bg-whole.png");
+    background: no-repeat url("../../../paysevents/img/w-bg-whole.png");
     background-size: 100% 100%;
   }
   .background {

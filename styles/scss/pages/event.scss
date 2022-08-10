@@ -1,5 +1,8 @@
 @import "../base/font.scss";
 
+// 이미지경로설정
+$image-path: "../../../events/img";
+
 *,
 *::before,
 *::after {
@@ -8,267 +11,165 @@
 
 body {
   word-break: keep-all;
-  // background-color: #88d1e6;
+  background-color: #e0d112;
+  overflow-x: hidden;
 }
 
 .mobile {
   display: none;
 }
 
-.contents {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #2d2d2d;
-  background-color: #07bbeb;
-  z-index: 0;
-
-  // 배경이미지
-  .background {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .top {
-    top: 0;
-    object-position: top;
-    // min-height: 55%;
-  }
-
-  .bottom {
-    bottom: 0;
-    object-position: bottom;
-  }
-
-  // 배너
-  .banner-wrap {
-    margin-top: 8.3vw;
+.banner-wrap {
+  width: 100%;
+  background: url($image-path + "/w-banner.png") no-repeat;
+  background-size: cover;
+  background-color: #e0d112;
+  padding-top: 5.2%;
+  .title {
+    width: 42.44%;
     max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .title {
-      width: 100%;
-      min-width: 519px;
-      margin-bottom: 80px;
-    }
-    .banner {
-      width: 85.4%;
-      min-width: 519px;
-    }
-  }
-
-  // 마일벌스란
-  .mileverse-wrap {
-    max-width: 900px;
-    margin: 100px 20px 0 20px;
-    padding: 18px;
-    background-color: #53e0eb;
-    border-radius: 10px;
-    color: #ffffff;
-    .inner-wrap {
-      padding: 72px;
-      border: 1px dotted #ffffff;
-      border-radius: 10px;
-    }
-
-    .title-wrap {
-      display: flex;
-      align-items: center;
-      margin-top: 2px;
-      margin-bottom: 44px;
-      .tube {
-        width: 28px;
-      }
-      .title {
-        margin-left: 16px;
-        font-size: 28px;
-      }
-    }
-
-    .mileverse-expl {
-      font-size: 24px;
-      line-height: 40px;
-      word-spacing: -4px;
-    }
-  }
-
-  // 이벤트 박스
-  .event-section-wrap {
-    position: relative;
-    max-width: 900px;
-    padding: 90px 90px 70px;
-    margin: 0 20px 150px 20px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    &.init {
-      margin: 132px 20px 132px 20px;
-    }
-
-    .event-tag {
-      position: absolute;
-      top: -12px;
-      left: -12px;
-      width: 15.1%;
-    }
-
-    // 이벤트 제목
-    .section-title {
-      margin-bottom: 60px;
-      font-size: 28px;
-    }
-
-    .event-title {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .event-expl {
-      margin-bottom: 50px;
-      font-size: 24px;
-      line-height: 36px;
-      word-spacing: -4px;
-      &.list {
-        line-height: 38px;
-      }
-      &.one-line {
-        line-height: unset;
-      }
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    .event-notice {
-      font-size: 24px;
-      margin-bottom: 50px;
-      word-spacing: -4px;
-      &.small {
-        font-size: 22px;
-      }
-    }
-
-    .margin-bottom {
-      margin-bottom: 20px;
-      &.small {
-        margin-bottom: 13px;
-      }
-    }
-
-    .code-box {
-      background-color: #efefef;
-      border-radius: 4px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 206px;
-      height: 68px;
-      .event-title {
-        margin: 0;
-      }
-    }
-
-    .event-detail {
-      width: 100%;
-      height: 80px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      background-color: #0097e6;
-      color: #ffffff;
-      border-radius: 2px;
-      border: none;
-      font-size: 25px;
-      cursor: pointer;
-    }
-
-    .mobile-install {
-      display: none;
-    }
+    display: block;
+    margin: 0 auto;
   }
 }
 
-.install {
-  display: flex;
-  justify-content: center;
-  background-color: #31bbbb;
-  color: #ffffff;
-  padding: 90px 0 52px 0;
+.contents {
+  position: absolute;
+  width: 100%;
 
-  .install-contents {
-    width: 800px;
-    padding: 0 40px;
-    .install-title {
-      margin-bottom: 58px;
-      font-size: 24px;
-    }
-    .row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  // 이벤트설명
+  .event-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+
+    .event-article {
+      max-width: 900px;
       width: 100%;
-      .item-wrap {
+      border-radius: 10px;
+      padding: 75px;
+
+      background-color: #fcf4c3;
+      color: #1c5e01;
+      margin-bottom: 75px;
+
+      &:first-child {
+        background-color: rgba(209, 230, 89, 0.8);
+      }
+
+      &:nth-child(2) {
+        background-color: #efe785;
+      }
+
+      .tag {
+        width: 31.38%;
+        min-width: 113.2px;
+        margin-bottom: 35px;
+        &.init {
+          margin-top: 2px;
+        }
+      }
+
+      .event-expl {
+        font-size: 24px;
+        line-height: 40px;
+        word-spacing: -4px;
+        opacity: 1;
+      }
+
+      .content-image {
+        display: block;
+        margin: 0 auto;
+        width: 74.5%;
+      }
+    }
+  }
+
+  // 웹버전 앱 설치 안내
+  .web-install {
+    display: flex;
+    justify-content: center;
+    background-color: #c6ae02;
+    color: #ffffff;
+    padding: 75px 0 55px 0;
+
+    .install-contents {
+      max-width: 900px;
+      width: 100%;
+      border-radius: 10px;
+      padding: 75px;
+      background-color: #f4eaae;
+      margin: 0 20px 55px 20px;
+      .tag {
+        width: 31.38%;
+        min-width: 113.2px;
+        margin-bottom: 35px;
+      }
+      .row {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        button {
-          margin-top: 16px;
-          background-color: transparent;
-          border: none;
-          cursor: pointer;
-          display: block;
+        width: 100%;
+        .content-image {
+          width: 51%;
+          margin-left: 50px;
+        }
+        .item-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &.whole {
+            margin-left: 57px;
+          }
+
+          &.google {
+            margin-bottom: 50px;
+          }
+
+          button {
+            margin-top: 16px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: block;
+          }
         }
       }
     }
   }
-}
 
-.footer {
-  display: flex;
-  justify-content: center;
-  background-color: #44d4d4;
-  color: #2d2d2d;
-  .footer-contents {
-    width: 800px;
-    padding: 150px 40px 200px 40px;
-
-    .caution {
-      font-size: 24px;
-      line-height: 40px;
-      color: #ffdb58;
-    }
-    .footer-title {
-      margin-top: 60px;
-      margin-bottom: 26px;
-      font-size: 20px;
-    }
-    .footer-expl {
-      margin-left: 13px;
-      font-size: 18px;
-      line-height: 32px;
-      list-style-type: "- ";
-    }
-  }
-}
-
-@media (min-width: 1960px) {
-  .contents {
-    background: no-repeat url("../../../paysevents/img/w-bg-whole.png");
-    background-size: 100% 100%;
-  }
-  .background {
-    display: none;
-    background-color: transparent;
-  }
-}
-
-@media (max-width: 1200px) {
-  .contents {
-    .banner-wrap {
-      .title {
-        width: 86%;
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6ae02;
+    color: #1c5e01;
+    .footer-article {
+      width: 100%;
+      max-width: 900px;
+      padding: 75px;
+      margin: 0 20px 200px 20px;
+      border-radius: 10px;
+      background-color: #c9dd57;
+      .tag {
+        width: 31.38%;
+        min-width: 113.2px;
+        margin-bottom: 35px;
+      }
+      .footer-title {
+        font-size: 18px;
+        line-height: 32px;
+      }
+      .footer-expl {
+        margin-left: 13px;
+        font-size: 18px;
+        line-height: 32px;
+        list-style-type: "- ";
       }
     }
   }
@@ -276,162 +177,96 @@ body {
 
 // mobile
 @media (max-width: 767px) {
-  .web {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-
-  .mobile-banner {
-    width: 100%;
+  .banner-wrap {
+    background: url($image-path + "/m-banner.png") no-repeat;
+    background-size: cover;
+    .title {
+      width: 74.23%;
+    }
   }
   .contents {
-    padding: 0px 20px 30px 20px;
-    color: #2d2d2d;
-    background-image: url(../../../paysevents/img/m-bg.png);
-    background-size: 100% 100%;
-    background-color: #0fc0ea;
-
-    .banner-wrap {
+    .web {
       display: none;
     }
-
-    // 마일벌스란
-    .mileverse-wrap {
-      width: 100%;
-      margin-top: 0;
-      padding: 9px;
-      color: #2d2d2d;
-      .inner-wrap {
-        padding: 27px 21px;
-        // padding: 27px 15px; // 세줄맞추기
-        .title-wrap {
-          margin-top: 0;
-          margin-bottom: 20px;
-          height: 16px;
-          .tube {
-            width: 16px;
-          }
-          .title {
-            margin-left: 6px;
-            font-size: 16px;
-          }
-        }
-        .mileverse-expl {
-          font-size: 14px;
-          line-height: 24px;
-          word-spacing: -2.8px;
-        }
-      }
+    .mobile {
+      display: block;
     }
-
     // 이벤트 박스
-    .event-section-wrap {
-      width: 100%;
-      padding: 41px 20px 30px 20px;
-      margin: 0;
-      color: #2d2d2d;
-      &.init {
-        margin: 38px 0;
-      }
-      .event-tag {
-        top: -8px;
-        left: -8px;
-        width: 22.42%;
-        max-width: 96px;
-      }
-
-      // 이벤트 제목
-      .section-title {
+    .event-list {
+      .event-article {
+        width: 100%;
+        padding: 20px;
         margin-bottom: 30px;
-        font-size: 16px;
-      }
-      .event-title {
-        font-size: 16px;
-        margin-bottom: 12px;
-        word-spacing: -0.32px;
-      }
 
-      .event-expl {
-        margin-bottom: 30px;
-        font-size: 15px;
-        line-height: 24px;
-        word-spacing: -0.3px;
-        &.list {
-          font-size: 14px;
-          line-height: 24px;
+        &:nth-child(3) {
+          background-color: #ffffff;
         }
-        &:last-child {
+        .tag {
+          width: 40.4%;
+          max-width: 113.2px;
           margin-bottom: 15px;
         }
-      }
-
-      .event-expl-mobile {
-        font-size: 15px;
-        line-height: 24px;
-        word-spacing: -2px;
-      }
-
-      .event-notice {
-        font-size: 13px;
-        word-spacing: -2px;
-        margin-bottom: 30px;
-        &.small {
-          font-size: 12px;
+        .event-expl {
+          margin-bottom: 30px;
+          font-size: 15px;
+          line-height: 24px;
+          word-spacing: -0.3px;
+          &.list {
+            font-size: 14px;
+            line-height: 24px;
+          }
+          &:last-child {
+            margin-bottom: 15px;
+          }
         }
-      }
-
-      .code-box {
-        width: 136px;
-        height: 40px;
-      }
-
-      .margin-bottom {
-        margin-bottom: 8px;
-        &.small {
-          margin-bottom: 5px;
+        .content-image {
+          width: 87.8%;
+          margin-bottom: 20px;
         }
       }
     }
 
+    // 모바일 앱 설치버튼
     .mobile-install {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
       height: 44px;
-      margin-top: 20px;
-      background-color: #0097e6;
+      background-color: #264c02;
       border-radius: 2px;
       color: #ffffff;
       font-size: 15px;
       border: none;
       cursor: pointer;
     }
-  }
 
-  .footer {
-    padding: 30px 20px 60px 20px;
-    background-color: #31bbbb;
-    color: #ffffff;
-    .footer-contents {
-      width: 100%;
-      padding: 0;
-      .caution {
-        font-size: 14px;
-        line-height: 24px;
-        color: #ffe585;
-      }
-      .footer-title {
-        margin-top: 30px;
-        margin-bottom: 16px;
-        font-size: 14px;
-      }
-      .footer-expl {
-        font-size: 14px;
-        line-height: 24px;
-        margin-left: 11px;
+    .footer {
+      padding: 20px 20px 60px 20px;
+      background-color: #e0d112;
+      color: #1c5e01;
+
+      .footer-article {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        background-color: #e8e8e8;
+        .tag {
+          width: 40.4%;
+          margin-bottom: 15px;
+          max-width: 113.2px;
+        }
+        .footer-title {
+          margin-bottom: 16px;
+          font-size: 14px;
+          line-height: 24px;
+          // letter-spacing: -1px;
+        }
+        .footer-expl {
+          font-size: 14px;
+          line-height: 24px;
+          margin-left: 11px;
+        }
       }
     }
   }

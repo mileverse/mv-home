@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/lib/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/event.css" />
+    <title>마일벌스</title>
+  </head>
+
+  <body>
+    <div class="event">
+      <!-- 상단배경 -->
+      <header class="banner-wrap">
+        <img class="title" alt="마일벌스 신규가입 이벤트" src="img/title.png" />
+      </header>
+
+      <!-- 내용 -->
+      <div class="contents">
+        <main class="event-list">
+
+          <!-- 마일벌스란 -->
+          <article class="event-article">
+            <img class="tag init" src="img/tag01.png" alt="tag" />
+            <p class="event-expl nanum-bold">흩어져 있는 나의 모든 포인트를 마일벌스 포인트(MVP)로 교환/통합하여 현금처럼 자유롭게 사용할 수 있는 즐거운 포인트 플랫폼 입니다.</p>
+          </article>
+
+          <!-- 이벤트기간 -->
+          <article class="event-article">
+            <img class="tag" src="img/tag02.png" alt="이벤트기간" />
+            <p class="event-expl nanum-bold">2022년 9월 1일(목) 11:00 ~ 9월 30일(금) 11:00</p>
+          </article>
+
+          <!-- 참여방법 -->
+          <article class="event-article">
+            <img class="tag" src="img/tag03.png" alt="참여방법" />
+            <img class="content-image" src="img/order.png" alt="참여방법 설명이미지" />
+          </article>       
+          
+          <!-- 모바일 앱설치버튼 -->
+          <button class="mobile mobile-install nanum-extra" onclick="window.open('https://www.mileverse.com/link?route=main')">회원 가입하러 가기</button>
+        </main>
+
+        <!-- 웹버전 앱설치안내 -->
+        <aside class="web-install web">
+          <section class="install-contents">
+            <img class="tag" src="img/tag04.png" alt="마일벌스 앱 설치하기" />
+
+            <div class="row">
+              <img class="content-image" src="img/mock-up.png" alt="마일벌스 어플이미지" />
+
+              <!-- QR코드 및 설치버튼 -->
+              <div class="item-wrap whole">
+                <article class="item-wrap google">
+                  <img src="img/google-qr.png" alt="구글 QR" />
+                  <button class="store-btn" onclick="window.open('https://bit.ly/2LkYoSJ')">
+                    <img src="./img/google-btn.png" alt="플레이스토어" />
+                  </button>
+                </article>
+                <article class="item-wrap">
+                  <img src="./img/apple-qr.png" alt="IOS QR코드" />
+                  <button class="store-btn" onclick="window.open('https://apple.co/3qIn3B0')">
+                    <img src="./img/appstore-btn.png" alt="앱스토어" />
+                  </button>
+                </article>
+              </div>
+            </div>
+          </section>
+        </aside>
+
+        <!-- 유의사항 -->
+        <footer class="footer">
+          <section class="footer-article">
+            <img class="tag" src="img/tag05.png" alt="유의사항" />
+            <p class="nanum-bold footer-title">
+              ※ 이벤트 관련 문의 사항은 마일벌스 고객센터로 연락 바랍니다.<br />
+              : 마일벌스앱 > 설정 > 문의하기 <br/>
+              : contact@mileverse.com <br/>
+              : 02-2633-5896 (평일 10:00 ~ 17:00)
+            </p>
+            <br/>
+            <ul class="footer-expl">
+              <li class="nanum-bold">참여는 1인당 1계정으로 참여 가능합니다.</li>
+              <li class="nanum-bold">최초 신규 가입자에 한하여 이벤트 참여가 가능합니다.<br/>(재가입 고객 참여 불가)</li>
+              <li class="nanum-bold">본 이벤트는 내부 사정에 따라 별도의 고지 없이 변경 또는 조기 종료될 수 있습니다.</li>
+              <li class="nanum-bold">준비된 이벤트 물량 소진 시, 조기종료될 수 있습니다.</li>
+              <li class="nanum-bold">잘못된 정보 입력 및 유의사항 미숙지로 인한 불이익은 마일벌스에서 책임지지 않습니다.</li>
+              <li class="nanum-bold">부적절한 방법을 통한 이벤트 참여 및 혜택은 모두 취소되며, 법적 처벌을 받을 수 있습니다.</li>
+            </ul>
+            </section>
+          </section>
+        </footer>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // const changeFont = () => {
+    //   const screenWidth = $(".event").width();
+    //   // 모바일
+    //   if (screenWidth <= 767) {
+    //     $(".event-title").addClass("nanum-bold");
+    //     $(".event-title").removeClass("nanum-extra");
+    //     $(".event-expl").addClass("nanum-regular");
+    //     $(".event-expl").removeClass("nanum-bold");
+    //   }
+    //   // 데스크탑
+    //   else {
+    //     $(".event-title").removeClass("nanum-bold");
+    //     $(".event-title").addClass("nanum-extra");
+    //     $(".event-expl").removeClass("nanum-regular");
+    //     $(".event-expl").addClass("nanum-bold");
+    //   }
+    // };
+
+    const getLayout = () => {
+      const screenWidth = $(".event").width();
+      let marginTop;
+      let bannerHeight;
+      let roadHeight;
+      if (screenWidth >= 767) {
+        marginTop = screenWidth * (93.28/1920);
+        bannerHeight = (671.71/1920) * screenWidth;
+        roadHeight = (563/1920) * screenWidth;
+      } else {
+        marginTop = (33.28/360) * screenWidth;
+        bannerHeight = (182.72/360) * screenWidth;
+        roadHeight = (131.0/360) * screenWidth;
+        if (marginTop >= 93.28) marginTop = 93.28; // 간격 최대값 지정
+      }
+      $(".banner-wrap").css("height", bannerHeight+roadHeight);
+      $(".contents").css("top", bannerHeight + marginTop);
+    };
+
+    $(document).ready(function () {
+      getLayout();
+      window.addEventListener("resize", getLayout);
+    });
+  </script>
+</html>

@@ -1,7 +1,7 @@
 @import "../base/font.scss";
 
 // 이미지경로설정
-$image-path: "../../../events/img";
+$image-path: "../../../bookcash/img";
 
 *,
 *::before,
@@ -11,263 +11,264 @@ $image-path: "../../../events/img";
 
 body {
   word-break: keep-all;
-  background-color: #e0d112;
   overflow-x: hidden;
 }
 
-.mobile {
-  display: none;
-}
-
-.banner-wrap {
-  width: 100%;
-  background: url($image-path + "/w-banner.png") no-repeat;
-  background-size: cover;
-  background-color: #e0d112;
-  padding-top: 5.2%;
-  .title {
-    width: 42.44%;
-    max-width: 900px;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.contents {
+// 반응형배경
+main > div,
+footer > div {
   position: absolute;
   width: 100%;
 
-  // 이벤트설명
-  .event-list {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #2d2d2d;
-    display: flex;
-    justify-content: center;
-    padding: 0 20px;
-
-    .event-article {
-      max-width: 900px;
-      width: 100%;
-      border-radius: 10px;
-      padding: 75px;
-
-      background-color: #fcf4c3;
-      color: #1c5e01;
-      margin-bottom: 75px;
-
-      &:first-child {
-        background-color: rgba(209, 230, 89, 0.8);
-      }
-
-      &:nth-child(2) {
-        background-color: #efe785;
-      }
-
-      .tag {
-        width: 31.38%;
-        min-width: 113.2px;
-        margin-bottom: 35px;
-        &.init {
-          margin-top: 2px;
-        }
-      }
-
-      .event-expl {
-        font-size: 24px;
-        line-height: 40px;
-        word-spacing: -4px;
-        opacity: 1;
-      }
-
-      .content-image {
-        display: block;
-        margin: 0 auto;
-        width: 74.5%;
-      }
-    }
+  background-size: cover;
+  z-index: -1;
+}
+main > div {
+  background: url($image-path + "/bg-top03.png") no-repeat;
+  background-size: cover;
+  top: 0;
+}
+footer > div {
+  background: url($image-path + "/bg-bottom02.png") no-repeat;
+  background-size: cover;
+}
+main > div img,
+footer > div img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  &.top {
+    top: 0;
   }
+}
+footer > div img {
+  bottom: 0;
+}
 
-  // 웹버전 앱 설치 안내
-  .web-install {
-    display: flex;
-    justify-content: center;
-    background-color: #c6ae02;
-    color: #ffffff;
-    padding: 75px 0 55px 0;
+// 상단
+main {
+  padding-top: 7.2%;
+  padding-bottom: 6.25%;
+}
+main section {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-    .install-contents {
-      max-width: 900px;
-      width: 100%;
-      border-radius: 10px;
-      padding: 75px;
-      background-color: #f4eaae;
-      margin: 0 20px 55px 20px;
-      .tag {
-        width: 31.38%;
-        min-width: 113.2px;
-        margin-bottom: 35px;
-      }
-      .row {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        .content-image {
-          width: 51%;
-          margin-left: 50px;
-        }
-        .item-wrap {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+// 타이틀
+main section .title {
+  display: flex;
+  align-items: center;
+}
 
-          &.whole {
-            margin-left: 57px;
-          }
+main section .title img {
+  width: 100%;
+}
 
-          &.google {
-            margin-bottom: 50px;
-          }
+// 타이틀 하단 이미지
+main section .img-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
 
-          button {
-            margin-top: 16px;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            display: block;
-          }
-        }
-      }
-    }
+main section .img-wrap img {
+  width: 46%;
+  margin-right: 40px;
+}
+
+// 내용
+main section .contents {
+  margin-top: 50px;
+  padding: 70px 60px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  // margin-bottom: 6.25%;
+}
+
+main section .contents .tag {
+  width: fit-content;
+  margin-bottom: 30px;
+  padding: 20px 26px;
+  border-radius: 38px;
+  background-color: #6f19cb;
+  &.gap {
+    margin-top: 40px;
   }
+}
 
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #c6ae02;
-    color: #1c5e01;
-    .footer-article {
-      width: 100%;
-      max-width: 900px;
-      padding: 75px;
-      margin: 0 20px 200px 20px;
-      border-radius: 10px;
-      background-color: #c9dd57;
-      .tag {
-        width: 31.38%;
-        min-width: 113.2px;
-        margin-bottom: 35px;
-      }
-      .footer-title {
-        font-size: 18px;
-        line-height: 32px;
-      }
-      .footer-expl {
-        margin-left: 13px;
-        font-size: 18px;
-        line-height: 32px;
-        list-style-type: "- ";
-      }
-    }
+main section .contents .tag p {
+  font-size: 25px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+main section .contents > p {
+  margin-left: 16px;
+  font-size: 25px;
+  line-height: 45px;
+  color: #373737;
+}
+
+main section .contents .install {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+main section .contents .install p {
+  font-size: 25px;
+  line-height: 52px;
+  color: #373737;
+  margin-bottom: 15px;
+}
+
+main section .contents .install > img {
+  width: 51.2%;
+}
+
+main section .contents .install div {
+  width: 48.7%;
+  padding: 0 54px 0 82px;
+  text-align: center;
+}
+
+main section .contents .install div img {
+  width: 100%;
+}
+
+// 유의사항
+footer {
+  // background: url($image-path + "/bg-bottom.png") no-repeat;
+  // background-size: cover;
+  // margin: 0 auto;
+  padding: 6.25% 0 12.7% 0;
+}
+
+footer section {
+  max-width: 806px;
+  margin: 0 auto;
+  font-size: 23px;
+  line-height: 45px;
+  color: #373737;
+  list-style-type: "-";
+}
+
+footer .title {
+  font-size: 25px;
+  line-height: 32px;
+  color: #6f19cb;
+  margin-bottom: 50px;
+}
+
+footer ul {
+  list-style-type: "- ";
+  margin-left: 20px;
+}
+
+footer ul li:first-child {
+  list-style-type: "※ ";
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+// desktop
+@media (min-width: 1920px) {
+  main > div,
+  main > div img,
+  footer > div,
+  footer > div img {
+    display: none;
+  }
+  main {
+    background: url($image-path + "/bg-top.png") no-repeat;
+    background-size: cover;
+    // padding: 7.2% 0 6.25% 0;
+  }
+  footer {
+    background: url($image-path + "/bg-bottom.png") no-repeat;
+    background-size: cover;
+  }
+  main section .contents {
+    margin-bottom: 0;
+  }
+}
+
+// 최소한 좌우간격 20px남도록
+@media (max-width: 940px) {
+  main section,
+  footer section {
+    max-width: unset;
+    margin: 0 20px;
+  }
+}
+@media (max-width: 771px) {
+  main section .contents .install p {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 // mobile
 @media (max-width: 767px) {
-  .banner-wrap {
-    background: url($image-path + "/m-banner.png") no-repeat;
-    background-size: cover;
-    .title {
-      width: 74.23%;
-    }
+  main {
+    padding-top: 8%;
   }
-  .contents {
-    .web {
-      display: none;
-    }
-    .mobile {
-      display: block;
-    }
-    // 이벤트 박스
-    .event-list {
-      .event-article {
-        width: 100%;
-        padding: 20px;
-        margin-bottom: 30px;
+  main section .img-wrap img {
+    margin-right: 15px;
+  }
+  // 내용
+  main section .contents {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+  }
 
-        &:nth-child(3) {
-          background-color: #ffffff;
-        }
-        .tag {
-          width: 40.4%;
-          max-width: 113.2px;
-          margin-bottom: 15px;
-        }
-        .event-expl {
-          margin-bottom: 30px;
-          font-size: 15px;
-          line-height: 24px;
-          word-spacing: -0.3px;
-          &.list {
-            font-size: 14px;
-            line-height: 24px;
-          }
-          &:last-child {
-            margin-bottom: 15px;
-          }
-        }
-        .content-image {
-          width: 87.8%;
-          margin-bottom: 20px;
-        }
-      }
-    }
+  main section .contents .tag {
+    padding: 10px 16px;
+    margin-bottom: 15px;
+  }
 
-    // 모바일 앱 설치버튼
-    .mobile-install {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 44px;
-      background-color: #264c02;
-      border-radius: 2px;
-      color: #ffffff;
-      font-size: 15px;
-      border: none;
-      cursor: pointer;
-    }
+  main section .contents .tag p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  main section .contents > p {
+    margin-left: 8px;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -1.3;
+  }
 
-    .footer {
-      padding: 20px 20px 60px 20px;
-      background-color: #e0d112;
-      color: #1c5e01;
+  main section .contents .install > img {
+    width: 54.2%;
+  }
 
-      .footer-article {
-        width: 100%;
-        padding: 20px;
-        margin: 0;
-        background-color: #e8e8e8;
-        .tag {
-          width: 40.4%;
-          margin-bottom: 15px;
-          max-width: 113.2px;
-        }
-        .footer-title {
-          margin-bottom: 16px;
-          font-size: 14px;
-          line-height: 24px;
-          // letter-spacing: -1px;
-        }
-        .footer-expl {
-          font-size: 14px;
-          line-height: 24px;
-          margin-left: 11px;
-        }
-      }
-    }
+  main section .contents .install p {
+    font-size: 11px;
+    line-height: 21px;
+    margin-bottom: 4px;
+  }
+  main section .contents .install div {
+    width: 43%;
+    padding: 0 10px 0 20px;
+  }
+
+  // 유의사항
+  footer {
+    padding: 36px 0 80px 0;
+  }
+  footer .title {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  footer ul {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 12px;
+  }
+  footer ul li:first-child {
+    margin-bottom: 15px;
+    margin-left: 6px;
   }
 }

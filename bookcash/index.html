@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/lib/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/event.css" />
+    <title>마일벌스</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- 배경이미지 -->
+      <div class="bg-wrap">
+        <img class="bg top" src="img/bg-top01.png" alt="" />
+        <img class="bg bottom" src="img/bg-top02.png" alt="" />
+      </div>
+
+      <section>
+        <!-- 타이틀 -->
+        <article class="title">
+          <img src="img/title.png" alt="도서문화상품권&북앤라이프캐시를 마일벌스 포인트 [MVP]로 교환하세요!" />
+        </article>
+
+        <!-- 이미지 -->
+        <article class="img-wrap">
+          <img src="img/ico_header.png" alt="withdraw" />
+        </article>
+
+        <!-- 내용 -->
+        <article class="contents">
+          <div class="tag">
+            <p class="jalnan">마일벌스란?</p>
+          </div>
+          <p class="gmarket-medium">
+            내포인트를 현금처럼!<br />
+            즐거운 나만의 앱테크를 할 수 있는 생활밀착형 포인트 앱입니다.
+          </p>
+
+          <div class="tag gap">
+            <p class="jalnan">마일벌스 포인트(MVP)란?</p>
+          </div>
+          <p class="gmarket-medium">마일벌스 앱에서 현금처럼 바로 사용하며, 즐거운 앱테크를 시작할 수 있는 포인트입니다.</p>
+
+          <div class="tag gap">
+            <p class="jalnan">마일벌스 앱 설치하기</p>
+          </div>
+          <div class="install">
+            <img src="img/ico_inner.png" alt="withdraw" />
+            <div>
+              <p class="gmarket-medium">앱 다운로드 ▼</p>
+              <img src="img/qr.png" alt="QR_CODE" />
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- 유의사항 -->
+    <footer>
+      <!-- 배경이미지 -->
+      <div class="footer-bg-wrap">
+        <img class="footer-bg" src="img/bg-bottom01.png" alt="" />
+      </div>
+
+      <section>
+        <p class="jalnan title">유의사항</p>
+        <ul>
+          <li class="gmarket-medium">
+            도서문화상품권 & 북앤라이프 캐시 교환 관련 문의는<br />
+            마일벌스 고객센터로 연락 바랍니다.<br />
+            : 마일벌스앱 > 설정 > 문의하기 <br />
+            : contact@mileverse.com <br />
+            : 02-2633-5896 (평일 10:00 ~ 17:00)
+          </li>
+          <li class="gmarket-medium">
+            도서문화상품권 & 북앤라이프 캐시 교환 시, 발행자가 부과하는 수수료(8%)를<br />
+            공제한 금액으로 교환됩니다.
+          </li>
+          <li class="gmarket-medium">1캐시는 1MVP로 교환됩니다.</li>
+          <li class="gmarket-medium">포인트 교환 한도(월) : 도서문화상품권 & 북앤라이프 11,000,000캐시</li>
+          <li class="gmarket-medium">출금서비스 관련 내용은 마일벌스 앱 공지사항을 참조해주세요.</li>
+          <li class="gmarket-medium">네트워크 상태에 따라 교환까지 최대 3분이 소요됩니다.</li>
+          <li class="gmarket-medium">계속해서 교환이 원할하지 않을 경우 고객센터로 문의 바랍니다.</li>
+          <li class="gmarket-medium">교환 완료된 MVP는 현금영수증 발급대상이 아닙니다.</li>
+          <li class="gmarket-medium">교환 완료된 MVP는 환불/취소가 불가합니다.</li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+
+  <script>
+    const getLayout = () => {
+      if ($("body").width() > 1920) return;
+      const main = $("main").outerHeight(true); // main태그 전체높이
+      const footer = $("footer").outerHeight(true); // footer태그 전체높이
+      const bgBottom = $(".bottom").height(); // 보라색배경 하단
+      $(".bottom").css("top", main - bgBottom);
+      $(".bg-wrap").css("height", main);
+      $(".footer-bg-wrap").css("height", footer);
+      $(".footer-bg-wrap").css("top", main);
+    };
+
+    $(document).ready(() => {
+      getLayout();
+      window.addEventListener("resize", getLayout);
+    });
+    // $(window).load(() => {
+    //   getLayout();
+    //   window.addEventListener("resize", getLayout);
+    // });
+  </script>
+</html>
+

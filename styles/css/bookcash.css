@@ -3,62 +3,50 @@
   font-family: GmarketSansMedium;
   src: url("../../../assets/font/GmarketSansMedium.woff2") format("woff2"), url("../../../assets/font/GmarketSansMedium.woff") format("woff");
 }
-
 @font-face {
   font-family: GmarketSansBold;
   src: url("../../../assets/font/GmarketSansBold.woff2") format("woff2"), url("../../../assets/font/GmarketSansBold.woff") format("woff");
 }
-
 @font-face {
   font-family: NotoSansRegular;
   src: url("../../../assets/font/NotoSansKR-Regular.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Regular.woff") format("woff");
 }
-
 @font-face {
   font-family: NotoSansMedium;
   src: url("../../../assets/font/NotoSansKR-Medium.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Medium.woff") format("woff");
 }
-
 @font-face {
   font-family: NotoSansBold;
   src: url("../../../assets/font/NotoSansKR-Bold.woff2") format("woff2"), url("../../../assets/font/NotoSansKR-Bold.woff") format("woff");
 }
-
 @font-face {
   font-family: NanumSquareR;
   src: url("../../../assets/font/NanumSquareR.ttf") format("truetype");
 }
-
 @font-face {
   font-family: NanumSquareB;
   src: url("../../../assets/font/NanumSquareB.woff2") format("woff2"), url("../../../assets/font/NanumSquareB.woff") format("woff");
 }
-
 @font-face {
   font-family: NanumSquareEB;
   src: url("../../../assets/font/NanumSquareEB.ttf") format("truetype");
 }
-
 @font-face {
   font-family: MFSongHe;
   src: url("../../../assets/font/MFSongHe.woff2") format("woff2"), url("../../../assets/font/MFSongHe.woff") format("woff");
 }
-
 @font-face {
   font-family: DangDang;
   src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../../../assets/font/Cafe24Dangdanghae.woff") format("woff");
 }
-
 @font-face {
   font-family: SANGJU Gotgam;
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
-
 @font-face {
   font-family: Jalnan;
   src: url("../../../assets/font/Jalnan.ttf") format("truetype");
 }
-
 .gmarket-medium {
   font-family: GmarketSansMedium;
 }
@@ -70,7 +58,6 @@
 .noto-regular {
   font-family: NotoSansRegular;
 }
-
 .noto-regular:lang(cn) {
   font-family: MFSongHe;
 }
@@ -78,7 +65,6 @@
 .noto-medium {
   font-family: NotoSansMedium;
 }
-
 .noto-medium:lang(cn) {
   font-family: MFSongHe;
 }
@@ -86,7 +72,6 @@
 .noto-bold {
   font-family: NotoSansBold;
 }
-
 .noto-bold:lang(cn) {
   font-family: MFSongHe;
 }
@@ -122,8 +107,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -156,7 +140,6 @@ footer > div img {
   z-index: -1;
   width: 100%;
 }
-
 main > div img.top,
 footer > div img.top {
   top: 0;
@@ -177,12 +160,8 @@ main section {
 }
 
 main section .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 main section .title img {
@@ -190,12 +169,8 @@ main section .title img {
 }
 
 main section .img-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 main section .img-wrap img {
@@ -211,7 +186,6 @@ main section .contents {
 }
 
 main section .contents .tag {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 30px;
@@ -219,7 +193,6 @@ main section .contents .tag {
   border-radius: 38px;
   background-color: #6f19cb;
 }
-
 main section .contents .tag.gap {
   margin-top: 40px;
 }
@@ -238,15 +211,9 @@ main section .contents > p {
 }
 
 main section .contents .install {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -321,7 +288,6 @@ footer ul li:first-child {
     margin-bottom: 0;
   }
 }
-
 @media (max-width: 940px) {
   main section,
   footer section {
@@ -329,14 +295,12 @@ footer ul li:first-child {
     margin: 0 20px;
   }
 }
-
 @media (max-width: 771px) {
   main section .contents .install p {
     font-size: 20px;
     line-height: 30px;
   }
 }
-
 @media (max-width: 767px) {
   main {
     padding-top: 8%;

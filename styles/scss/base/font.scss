@@ -58,6 +58,11 @@
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: Jalnan;
+  src: url("../../../assets/font/Jalnan.ttf") format("truetype");
+}
+
 // Gmarket
 .gmarket-medium {
   font-family: GmarketSansMedium;
@@ -113,4 +118,8 @@
 
 .songhe {
   font-family: MFSongHe;
+}
+
+.jalnan {
+  font-family: Jalnan;
 }

@@ -45,12 +45,17 @@
 
 @font-face {
   font-family: DangDang;
-  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../../../assets/font/Cafe24Dangdanghae.woff") format("woff");
 }
 
 @font-face {
   font-family: SANGJU Gotgam;
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Jalnan;
+  src: url("../../../assets/font/Jalnan.ttf") format("truetype");
 }
 
 .gmarket-medium {
@@ -107,6 +112,10 @@
 
 .songhe {
   font-family: MFSongHe;
+}
+
+.jalnan {
+  font-family: Jalnan;
 }
 
 .fade-in-box {

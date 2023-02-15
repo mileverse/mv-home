@@ -36,7 +36,7 @@
 }
 @font-face {
   font-family: DangDang;
-  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../../../assets/font/Cafe24Dangdanghae.woff") format("woff");
 }
 @font-face {
   font-family: SANGJU Gotgam;
@@ -1821,7 +1821,8 @@ table.commonFrame tr td:not(:last-child) {
     font-size: 21px;
     line-height: 24px;
   }
-  .apptech .contents-title:lang(en), .apptech .contents-title:lang(cn) {
+  .apptech .contents-title:lang(en),
+  .apptech .contents-title:lang(cn) {
     margin-top: 4px;
   }
   .apptech .contents-text {
@@ -2047,7 +2048,8 @@ table.commonFrame tr td:not(:last-child) {
     font-size: 11px;
     line-height: 20px;
   }
-  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn, .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
+  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn,
+  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
     font-size: 11px;
   }
   .token-table-wrap {

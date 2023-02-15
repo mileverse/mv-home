@@ -1,0 +1,274 @@
+@import "../base/font.scss";
+
+// 이미지경로설정
+$image-path: "../../../bookcash/img";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  word-break: keep-all;
+  overflow-x: hidden;
+}
+
+// 반응형배경
+main > div,
+footer > div {
+  position: absolute;
+  width: 100%;
+
+  background-size: cover;
+  z-index: -1;
+}
+main > div {
+  background: url($image-path + "/bg-top03.png") no-repeat;
+  background-size: cover;
+  top: 0;
+}
+footer > div {
+  background: url($image-path + "/bg-bottom02.png") no-repeat;
+  background-size: cover;
+}
+main > div img,
+footer > div img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  &.top {
+    top: 0;
+  }
+}
+footer > div img {
+  bottom: 0;
+}
+
+// 상단
+main {
+  padding-top: 7.2%;
+  padding-bottom: 6.25%;
+}
+main section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+// 타이틀
+main section .title {
+  display: flex;
+  align-items: center;
+}
+
+main section .title img {
+  width: 100%;
+}
+
+// 타이틀 하단 이미지
+main section .img-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main section .img-wrap img {
+  width: 46%;
+  margin-right: 40px;
+}
+
+// 내용
+main section .contents {
+  margin-top: 50px;
+  padding: 70px 60px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  // margin-bottom: 6.25%;
+}
+
+main section .contents .tag {
+  width: fit-content;
+  margin-bottom: 30px;
+  padding: 20px 26px;
+  border-radius: 38px;
+  background-color: #6f19cb;
+  &.gap {
+    margin-top: 40px;
+  }
+}
+
+main section .contents .tag p {
+  font-size: 25px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+main section .contents > p {
+  margin-left: 16px;
+  font-size: 25px;
+  line-height: 45px;
+  color: #373737;
+}
+
+main section .contents .install {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+main section .contents .install p {
+  font-size: 25px;
+  line-height: 52px;
+  color: #373737;
+  margin-bottom: 15px;
+}
+
+main section .contents .install > img {
+  width: 51.2%;
+}
+
+main section .contents .install div {
+  width: 48.7%;
+  padding: 0 54px 0 82px;
+  text-align: center;
+}
+
+main section .contents .install div img {
+  width: 100%;
+}
+
+// 유의사항
+footer {
+  // background: url($image-path + "/bg-bottom.png") no-repeat;
+  // background-size: cover;
+  // margin: 0 auto;
+  padding: 6.25% 0 12.7% 0;
+}
+
+footer section {
+  max-width: 806px;
+  margin: 0 auto;
+  font-size: 23px;
+  line-height: 45px;
+  color: #373737;
+  list-style-type: "-";
+}
+
+footer .title {
+  font-size: 25px;
+  line-height: 32px;
+  color: #6f19cb;
+  margin-bottom: 50px;
+}
+
+footer ul {
+  list-style-type: "- ";
+  margin-left: 20px;
+}
+
+footer ul li:first-child {
+  list-style-type: "※ ";
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+// desktop
+@media (min-width: 1920px) {
+  main > div,
+  main > div img,
+  footer > div,
+  footer > div img {
+    display: none;
+  }
+  main {
+    background: url($image-path + "/bg-top.png") no-repeat;
+    background-size: cover;
+    // padding: 7.2% 0 6.25% 0;
+  }
+  footer {
+    background: url($image-path + "/bg-bottom.png") no-repeat;
+    background-size: cover;
+  }
+  main section .contents {
+    margin-bottom: 0;
+  }
+}
+
+// 최소한 좌우간격 20px남도록
+@media (max-width: 940px) {
+  main section,
+  footer section {
+    max-width: unset;
+    margin: 0 20px;
+  }
+}
+@media (max-width: 771px) {
+  main section .contents .install p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+// mobile
+@media (max-width: 767px) {
+  main {
+    padding-top: 8%;
+  }
+  main section .img-wrap img {
+    margin-right: 15px;
+  }
+  // 내용
+  main section .contents {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  main section .contents .tag {
+    padding: 10px 16px;
+    margin-bottom: 15px;
+  }
+
+  main section .contents .tag p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  main section .contents > p {
+    margin-left: 8px;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -1.3;
+  }
+
+  main section .contents .install > img {
+    width: 54.2%;
+  }
+
+  main section .contents .install p {
+    font-size: 11px;
+    line-height: 21px;
+    margin-bottom: 4px;
+  }
+  main section .contents .install div {
+    width: 43%;
+    padding: 0 10px 0 20px;
+  }
+
+  // 유의사항
+  footer {
+    padding: 36px 0 80px 0;
+  }
+  footer .title {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  footer ul {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 12px;
+  }
+  footer ul li:first-child {
+    margin-bottom: 15px;
+    margin-left: 6px;
+  }
+}

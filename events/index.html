@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/lib/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/event.css" />
+    <title>마일벌스</title>
+  </head>
+  <body>
+    <div class="event">
+      <!-- 이미지~버튼까지 -->
+      <header>
+        <img alt="돈방석 X 마일벌스" src="img/title01.png" />
+        <img alt="마일벌스 회원가입하고" src="img/title02.png" />
+        <img alt="리워드" src="img/title03.png" />
+        <p class="title gmarket-bold">받아가세요!</p>
+        <div class="button" onclick="window.open('https://www.mileverse.com/link?route=main')">
+          <p class="jalnan">회원가입</p>
+          <p class="jalnan">하러가기!</p>
+        </div>
+      </header>
+
+      <!-- contents -->
+      <main>
+        <div class="tag">
+          <div></div>
+        </div>
+        <section>
+          <p class="title jalnan">이벤트 내용</p>
+          <p class="expl nanum-regular">마일벌스 회원 가입 시 XXX IDC 리워드 지급</p>
+          <p class="title jalnan">이벤트 기간</p>
+          <p class="expl nanum-regular">~ 23년 3월 31일 오전 11시 까지</p>
+          <p class="title jalnan">참여 방법</p>
+          <ol class="expl">
+            <li class="nanum-regular">참여하기 버튼을 눌러 마일벌스 앱 다운로드</li>
+            <li class="nanum-regular">마일벌스 앱 가입 시 추천코드 입력</li>
+            <li class="nanum-regular">회원 가입 완료</li>
+          </ol>
+          <p class="expl nanum-regular mt">* 추천 코드: 돈방석</p>
+          <p class="title jalnan">보상</p>
+          <p class="expl nanum-regular">회원가입 완료 시 XXX IDC</p>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <p class="nanum-extra">유의사항</p>
+        <ol>
+          <li class="nanum-extra">이벤트 관련 문의 사항은 마일벌스 고객센터로 연락 바랍니다. (02-2633-5896 / 평일 10:00 ~ 17:00)</li>
+        </ol>
+        <ul>
+          <li class="nanum-regular">돈방석 신규 가입 회원 대상입니다.<br />(탈퇴 후 재가입 고객 제외)</li>
+          <li class="nanum-regular">회원가입 시 이벤트 페이지를 통해 가입한 고객만 해당 이벤트 혜택을 받을 수 있습니다.</li>
+          <li class="nanum-regular">서버 통신 상태에 따라 지급 시점이 늦어질 수 있습니다.</li>
+          <li class="nanum-regular">본 이벤트는 내부 사정에 따라 별도의 고지 없이 변경 또는 조기종료 될 수 있습니다.</li>
+          <li class="nanum-regular">정확하지 않은 정보 입력으로 인한 불이익에 대하여 마일벌스는 책임지지 않습니다.</li>
+          <li class="nanum-regular">부적절한 방법을 통한 이벤트 참여 및 혜택은 모두 취소되며, 법적 처벌을 받을 수 있습니다.</li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      $(".button").click((e) => {
+        e.preventDefault();
+        console.log("회원가입하러가기!");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+@import "../base/font.scss";
+
+// 이미지경로
+$imgPath: "../../../events/img";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+.event {
+  background: url($imgPath + "/colorBg.png") no-repeat;
+  background-size: cover;
+}
+
+// 이미지~버튼까지
+header {
+  background: url($imgPath + "/moneyBg.png") no-repeat;
+  background-size: cover;
+  padding: 52px 48px 0;
+}
+header img:nth-child(1),
+header img:nth-child(3) {
+  width: 100%;
+}
+header img:nth-child(2) {
+  width: calc(100% - 12px);
+  margin: 0 6px;
+}
+header .title {
+  color: #ffffff;
+  font-size: 50px;
+  letter-spacing: -2px;
+  text-shadow: 2px 2px #dc8300;
+  text-align: center;
+}
+
+header .button {
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 7px;
+  width: fit-content;
+  background-size: cover;
+  background-color: #ff9100;
+  box-shadow: -1px -2px 6px rgba(0, 0, 0, 0.2) inset, 0.5px 0px 3px rgba(0, 0, 0, 0.2);
+}
+header .button p {
+  font-size: 13px;
+  line-height: 17px;
+  color: #ffffff;
+  text-align: center;
+}
+
+// contents
+main {
+  padding: 0 22px 30px;
+}
+main .tag {
+  padding: 12px 10px;
+  background-color: #09c1b2;
+  border-radius: 6px;
+  box-shadow: -1px -2px 6px rgba(0, 0, 0, 0.3) inset, 0px 0px 5px rgba(0, 0, 0, 0.35);
+}
+main .tag div {
+  height: 8px;
+  background-color: #0e3734;
+  border-radius: 4px;
+}
+main section {
+  margin: -16px 14px 0;
+  padding: 44px 16px 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.12) inset, 0px 3px 20px rgb(100, 43, 0, 0.16);
+}
+main section .title {
+  font-size: 15px;
+  letter-spacing: -0.3px;
+  margin-bottom: 14px;
+  color: #00a598;
+}
+main section .expl {
+  margin-bottom: 30px;
+  color: #2d2d2d;
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  line-height: 22px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+main section ol {
+  list-style: auto;
+  margin-left: 15px;
+}
+main section p.mt {
+  margin-top: -30px;
+}
+
+// footer
+footer {
+  padding: 0 22px 70px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #313131;
+}
+
+footer p,
+footer ol li {
+  margin-bottom: 20px;
+}
+footer p {
+  margin-left: 3px;
+}
+footer ol li {
+  list-style-type: "※ ";
+  margin-left: 15px;
+}
+
+footer ul {
+  list-style: circle;
+  list-style-type: "· ";
+  margin-left: 9px;
+}
+
+@media (min-width: 520px) {
+  .event {
+    background: url($imgPath + "/bg.png") no-repeat;
+    background-size: cover;
+  }
+  .header {
+    background-image: none;
+  }
+}
+
+@media (max-width: 330px) {
+  header .title {
+    font-size: 40px;
+    letter-spacing: -0.8px;
+  }
+}

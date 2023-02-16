@@ -64,6 +64,11 @@ $font-path: "../../../assets/font";
   src: url($font-path + "/Jalnan.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: Jalnan;
+  src: url("../../../assets/font/Jalnan.ttf") format("truetype");
+}
+
 // Gmarket
 .gmarket-medium {
   font-family: GmarketSansMedium;

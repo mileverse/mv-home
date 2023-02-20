@@ -46,6 +46,10 @@
   font-family: Jalnan;
   src: url("../../../assets/font/Jalnan.ttf") format("truetype");
 }
+@font-face {
+  font-family: Jalnan;
+  src: url("../../../assets/font/Jalnan.ttf") format("truetype");
+}
 .gmarket-medium {
   font-family: GmarketSansMedium;
 }

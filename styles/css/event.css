@@ -37,11 +37,15 @@
 }
 @font-face {
   font-family: DangDang;
-  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../assets/font/Cafe24Dangdanghae.woff") format("woff");
+  src: url("../../../assets/font/Cafe24Dangdanghae.woff2") format("woff2"), url("../../../assets/font/Cafe24Dangdanghae.woff") format("woff");
 }
 @font-face {
   font-family: SANGJU Gotgam;
   src: url("../../../assets/font/SANGJUGotgam.ttf") format("truetype");
+}
+@font-face {
+  font-family: Jalnan;
+  src: url("../../../assets/font/Jalnan.ttf") format("truetype");
 }
 @font-face {
   font-family: Jalnan;
@@ -142,18 +146,18 @@ header .title {
 
 header .button {
   margin: 20px auto;
-  padding: 10px 20px;
+  padding: 12px 26px;
   border-radius: 7px;
   width: -moz-fit-content;
   width: fit-content;
   background-size: cover;
-  background-color: #ff9100;
+  background-color: #8a38e1;
   box-shadow: -1px -2px 6px rgba(0, 0, 0, 0.2) inset, 0.5px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
 header .button p {
-  font-size: 13px;
-  line-height: 17px;
+  font-size: 17px;
+  line-height: 22px;
   color: #ffffff;
   text-align: center;
 }

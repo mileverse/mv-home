@@ -46,6 +46,10 @@
   font-family: Jalnan;
   src: url("../../../assets/font/Jalnan.ttf") format("truetype");
 }
+@font-face {
+  font-family: Jalnan;
+  src: url("../../../assets/font/Jalnan.ttf") format("truetype");
+}
 .gmarket-medium {
   font-family: GmarketSansMedium;
 }
@@ -1821,8 +1825,7 @@ table.commonFrame tr td:not(:last-child) {
     font-size: 21px;
     line-height: 24px;
   }
-  .apptech .contents-title:lang(en),
-  .apptech .contents-title:lang(cn) {
+  .apptech .contents-title:lang(en), .apptech .contents-title:lang(cn) {
     margin-top: 4px;
   }
   .apptech .contents-text {
@@ -2048,8 +2051,7 @@ table.commonFrame tr td:not(:last-child) {
     font-size: 11px;
     line-height: 20px;
   }
-  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn,
-  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
+  .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn, .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
     font-size: 11px;
   }
   .token-table-wrap {
@@ -2094,6 +2096,10 @@ table.commonFrame tr td:not(:last-child) {
   flex-wrap: wrap;
   margin-left: 73px;
   gap: 18px 16px;
+}
+
+.media .refer-card:first-child > img {
+  border: 1px solid #aeafaf;
 }
 
 .media .refer-header {

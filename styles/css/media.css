@@ -1,33 +1,24 @@
 .media .refer-total-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 16px;
 }
-
 .media .refer-total-wrap img {
   width: 100%;
   max-width: 306px;
 }
 
 .media .news-total-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-left: 73px;
   gap: 18px 16px;
+}
+
+.media .refer-card:first-child > img {
+  border: 1px solid #aeafaf;
 }
 
 .media .refer-header {
@@ -36,7 +27,6 @@
   font-size: 20px;
   font-family: NotoSansBold;
 }
-
 .media .refer-header:lang(cn) {
   font-family: MFSongHe;
 }
@@ -49,7 +39,6 @@
   line-height: 26px;
   font-family: NotoSansMedium;
 }
-
 .media .refer-expl:lang(cn) {
   font-family: MFSongHe;
 }
@@ -57,12 +46,10 @@
 .media .contents-init-wrap:not(:first-child) {
   padding-top: 100px;
 }
-
 .media .contents-init-wrap:not(:last-child) {
   padding-bottom: 120px;
   border-bottom: 1px solid #efefef;
 }
-
 .media .contents-init-wrap:last-child {
   margin-bottom: 120px;
 }
@@ -109,37 +96,22 @@
 .partner .contents-init-wrap:not(:first-child) {
   margin-top: 130px;
 }
-
 .partner .contents-init-wrap:last-child {
   margin-bottom: 162px;
 }
 
 .partner .partener-total-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 8px;
 }
 
 .partner .parnter-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 244px;
   height: 166px;
   border: 1px solid #efefef;

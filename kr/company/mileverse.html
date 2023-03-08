@@ -1,799 +1,330 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>마일벌스(MileVerse)</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property="og:title" content="마일벌스(MileVerse)">
-    <meta property="og:image" content="../../assets/img/thumbnail.png">
-    <meta property="og:image:width" content="800"/>
-    <meta property="og:image:height" content="400"/> 
-    <meta property="og:url" content="https://www.mileverse.com"/> 
-    <meta property="og:site_name" content="마일벌스(MileVerse)"/> 
-    <meta property="og:type" content="website"/>
-    <meta property="og:description" content="마일리지(포인트) 통합 플랫폼 마일벌스를 만나보세요."/>
-    <link rel=" shortcut icon" href="../../assets/favicon.png">
-    <link rel="icon" href="../../assets/favicon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:title" content="마일벌스(MileVerse)" />
+    <meta property="og:image" content="../../assets/img/thumbnail.png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:url" content="https://www.mileverse.com" />
+    <meta property="og:site_name" content="마일벌스(MileVerse)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="마일리지(포인트) 통합 플랫폼 마일벌스를 만나보세요." />
+    <link rel=" shortcut icon" href="../../assets/favicon.png" />
+    <link rel="icon" href="../../assets/favicon.png" />
 
-    <link rel="stylesheet" href="../../styles/css/reset.css">
-    <link rel="stylesheet" href="../../styles/css/index.css">
+    <link rel="stylesheet" href="../../styles/css/reset.css" />
+    <link rel="stylesheet" href="../../styles/css/index.css" />
 
     <script src="/lib/jquery-3.5.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div id='headers'></div>
+      <div id="headers"></div>
       <div class="main-content mileverse">
-        <div class="banner-bg bg_mileverse" style="background-image: url(../../assets/img/company_bg.png);">
-          <div class="banner-text-wrap" >
+        <!-- 상단배너 -->
+        <section class="banner-bg bg_mileverse">
+          <div class="banner-text-wrap">
             <p class="banner-title">MILEVERSE</p>
             <p class="banner-sub-title">마일벌스는 마일리지 결제의 새로운 패러다임을 만들어 갑니다.</p>
           </div>
-        </div>
+        </section>
+
         <div class="contents-total-wrap">
-          <div class="contents-size">
-            <div class="contents-init-wrap" data-aos="fade-down" data-aos-duration="1000">
+          <main class="contents-size">
+            <!-- 인사말 -->
+            <section class="contents-init-wrap" data-aos="fade-down" data-aos-duration="1000">
               <div class="contents-title-size">
                 <p class="contents-title">GREETING</p>
               </div>
               <div class="contents-article-size">
-                <p class="noto-bold greeting-title">안녕하세요.</p>
-                <p class="greeting-text">
-                  마일벌스 대표이사 정진형입니다.<br>
-                  <br>
-                  마일벌스는 Mileage + uniVerse의 합성어로 마일리지의 새로운 생태계를 조성하고자
-                  ㈜트루스트체인에서 만든 App 서비스입니다.<br>
-                  <br>
-                  통계청 자료에 따르면, 국내 마일리지 시장은 매년 20% 이상의 성장을 유지하고 있는 반면
-                  체인점, 카페 등 포인트를 발행하는 각 기업들이 기업 내부에서만 기업의 마일리지를 쓸 수
-                  있게 하는 등 한정된 사용처와 사용에 대한 여러가지 제약으로 인해 소수의 소비자들을 제외
-                  하고는 마일리지 사용에 소극적일 수 밖에 없었습니다.<br>
-                  <br>
-                  저희는 이러한 문제점들을 해결하고 소비자들이 가지고 있는 다양한 기업들의 마일리지를 손쉽게
-                  통합한 후 현금처럼 사용하게 하면 어떨까라는 생각으로 마일벌스 App서비스를 론칭하였습니다.<br>
-                  <br>
-                  이를 통해 소비자·기업·가맹점이 함께 Win-Win 할 수 있는 마일리지 생태계 조성함으로써
-                  “마일리지 결제의 새로운 패러다임”을 구축하여 마일벌스만의 마일리지 경제를 만들어가는
-                  것이 저희의 목표입니다.<br>
-                  <br>
-                  마일벌스가 만들어가는 새로운 마일리지 생태계를 지켜보시면서
-                  여러분들의 많은 관심과 애정 부탁드립니다.<br>
+                <p class="noto-bold">안녕하세요.</p>
+                <p class="noto-medium">
+                  마일벌스 대표이사 정진형입니다.<br />
+                  <br />
+                  마일벌스는 Mileage + uniVerse의 합성어로 마일리지의 새로운 생태계를 조성하고자 ㈜트루스트체인에서 만든 App 서비스입니다.<br />
+                  <br />
+                  통계청 자료에 따르면, 국내 마일리지 시장은 매년 20% 이상의 성장을 유지하고 있는 반면 체인점, 카페 등 포인트를 발행하는 각 기업들이 기업 내부에서만 기업의 마일리지를 쓸 수 있게 하는 등 한정된 사용처와 사용에 대한 여러가지 제약으로 인해 소수의 소비자들을 제외 하고는 마일리지 사용에
+                  소극적일 수 밖에 없었습니다.<br />
+                  <br />
+                  저희는 이러한 문제점들을 해결하고 소비자들이 가지고 있는 다양한 기업들의 마일리지를 손쉽게 통합한 후 현금처럼 사용하게 하면 어떨까라는 생각으로 마일벌스 App서비스를 론칭하였습니다.<br />
+                  <br />
+                  이를 통해 소비자·기업·가맹점이 함께 Win-Win 할 수 있는 마일리지 생태계 조성함으로써 “마일리지 결제의 새로운 패러다임”을 구축하여 마일벌스만의 마일리지 경제를 만들어가는 것이 저희의 목표입니다.<br />
+                  <br />
+                  마일벌스가 만들어가는 새로운 마일리지 생태계를 지켜보시면서 여러분들의 많은 관심과 애정 부탁드립니다.<br />
                   감사합니다.
                 </p>
               </div>
-            </div>
-            <div class="sign-wrap">
-              <p class="sign-text">마일벌스 대표이사 정진형</p>
-            </div>
-            <img class="history-start-img" src="../../assets/img/mileverse_history.png" alt="연혁 구분 img">
-            <div class="history-init-wrap web" data-aos="fade-down" data-aos-duration="1000">
-              <div class="history-section">
-                <div class="history-years fake"></div>
-                <div class="history-expl"></div>
-              </div>
-              
-              <div class="history-section" >
+            </section>
+            <p class="noto-medium">마일벌스 대표이사 정진형</p>
+
+            <!-- 연혁 -->
+            <img src="../../assets/img//mileverse/run.png" alt="연혁" />
+            <section class="history-init-wrap" data-aos="fade-down" data-aos-duration="1000">
+              <p class="section-title mobile gmarket-bold">Road map</p>
+              <!-- 2019 -->
+              <article>
                 <div class="history-years title">
-                  <p class="history-title-text">Road map</p>
-                  <p class="history-years-text" style="margin-right: 28px" >2019</p>
+                  <span class="section-title web gmarket-bold">Road map</span>
+                  <p class="gmarket-bold">2019</p>
                 </div>
                 <div class="history-expl">
-                  <img src="../../assets/img/history_horizontal.png" alt="" class="history-horizontal">
-                    <div style="display: flex; flex-direction: column;">
-                      <div style="display: flex;flex-direction: row;align-items: flex-start;padding-left: 20px;">
-                        <div class="history-Warp">10월</div>
-                        <span class="history-expl-text">마일벌스 설립<br>
-                      </div>
-                    </div>
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile" />
+                  <ul>
+                    <li class="one-line" style="list-style-type: '10월   '">마일벌스 설립</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
-              <div class="history-section">
+              <!-- 2020 -->
+              <article>
                 <div class="history-years">
-                  <p class="history-years-text" style="margin-right: 28px;">2020</p>
+                  <p class="gmarket-bold">2020</p>
                 </div>
                 <div class="history-expl">
-                    <img src="../../assets/img/history_horizontal.png" style="margin-top: 0px;" alt="" class="history-horizontal">
-                      <div class="history-expl-text" style="display: flex; flex-direction: column; padding-left: 20px;" >
-                        <div class="histoy-Display-flex">
-                          <span class="history-Warp">2월</span>
-                          <span class="history-expl-text">블록체인 기술 마일리지 통합 특허 출원</span>
-                        </div>
-
-                        <div class="history-border1">
-                          <span class="history-Warp">3월</span>
-                          <span  class="history-expl-text">MileVerse APP 정식 버전 런칭(Android/IOS)</span>
-                        </div>
-
-                        <div class="history-border1">
-                            <span class="history-Warp">6월</span>
-                          <span  class="history-expl-text">벤처기업 인증</span>
-                        </div>
-                        <div class="history-border1">
-                          <span class="history-Warp">10월</span>
-                          <span class="history-expl-text">코인원 상장</span>
-                        </div>
-                        <div class="history-border1" >
-                          <span class="history-Warp">11월</span>
-                          <span class="history-expl-text-lineheight">기프티콘 계약 체결(SK앰엔서비스)
-                          </span>
-                        </div>
-                        <p class="history-subtext-text-2020">
-                          디지털 Wallet 개발 및 런칭
-                        </p>
-                      </div>
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile" />
+                  <ul>
+                    <li style="list-style-type: '2월   '">블록체인 기술 마일리지 통합 특허 출원</li>
+                    <li style="list-style-type: '3월   '">MileVerse APP 정식 버전 런칭(Android/IOS)</li>
+                    <li style="list-style-type: '6월   '">벤처기업 인증</li>
+                    <li style="list-style-type: '10월  '">코인원 상장</li>
+                    <li class="two-line" style="list-style-type: '11월   '">기프티콘 계약 체결(SK앰엔서비스)<br />디지털 Wallet 개발 및 런칭</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
-              <div class="history-section">
-                <div class="history-years" >
-                  <p class="history-years-text" style="margin-right: 28px">2021</p>
+              <!-- 2021 -->
+              <article>
+                <div class="history-years">
+                  <p class="gmarket-bold">2021</p>
                 </div>
                 <div class="history-expl">
-                  <img src="../../assets/img/history_horizontal.png" style="margin-top: 0px ;" alt="" class="history-horizontal">
-                  <div class="history-expl-text" style="display: flex; flex-direction: column; padding-left: 16px;" >
-                    <div class="histoy-Display-flex">
-                      <span class="history-Warp">1월</span>
-                          <span class="history-expl-text-lineheight">디지털상품권 계약 체결(한국페이즈서비스)<br>
-                          </span>
-                    </div>
-                      <p class="history-subtext-text-2021">빗썸 BTC 마켓상장</p>
-                    
-                    <div class="history-border1">
-                      <span  class="history-Warp">3월</span>
-                          <span class="history-expl-text-lineheight">빗썸 원화 마켓 추가
-                          </span>
-                    </div>
-                    <p class="history-subtext-text-2021"> 포인트 연동 계약 체결(북앤라이프)</p>
-                    <div class="history-border1">                
-                      <span  class="history-Warp">8월</span>
-                      <span  class="history-expl-text">APP2.0 버전 런칭</span>
-                    </div>
-                    <div class="history-border1">
-                      <span  class="history-Warp">9월</span>
-                      <span  class="history-expl-text">글로벌 거래소 비트렉스 상장</span>
-                    </div>
-                    <div class="history-border1" >
-                      <span  class="history-Warp" >11월</span>
-                      <span  class="history-expl-text-lineheight">가맹점 결제를 위한 바코드 연동
-                      </span>
-                    </div>
-                    <p class="history-subtext-text-2020">가맹점 10 개 브랜드 추가</p>
-
-
-                    <div class="history-border1">             
-                      <span  class="history-Warp" style="margin-top: -3px;">ing</span>
-                      <span  class="history-expl-text">국내기업 및 가맹점 확장</span>
-                    </div>
-                  </div>
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile" />
+                  <ul>
+                    <li class="two-line" style="list-style-type: '1월   '">디지털상품권 계약 체결(한국페이즈서비스)<br />빗썸 BTC 마켓상장</li>
+                    <li class="two-line" style="list-style-type: '3월   '">빗썸 원화 마켓 추가<br />포인트 연동 계약 체결(북앤라이프)</li>
+                    <li style="list-style-type: '8월   '">APP2.0 버전 런칭</li>
+                    <li style="list-style-type: '9월   '">글로벌 거래소 비트렉스 상장</li>
+                    <li class="two-line" style="list-style-type: '11월   '">가맹점 결제를 위한 바코드 연동<br />가맹점 10 개 브랜드 추가</li>
+                    <li style="list-style-type: 'ing   '">국내기업 및 가맹점 확장</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
-
-              <div class="history-section">
-                <div class="history-years last" >
-                  <p class="history-years-text" style="margin-right: 28px">2022</p>
+              <!-- 2022 1분기-->
+              <article>
+                <div class="history-years">
+                  <p class="gmarket-bold">2022</p>
                 </div>
-                <div class="history-expl last">
-                  <img src="../../assets/img/web-line.png" alt="" class="history-horizontals" style="margin-top: 1px;">
-                  <div class="history-FlexDirection-Column">
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q">1Q</span>          
-                      <span  class="history-expl-text">앱 누적 다운로드 100,000 건 달성</span>
-                    </div>
-
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">기업 포인트 제휴 5개로 확장 </span>
-                    </div>
-
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">백화점 상품권 및 문화 상품권 추가 연동
-                      </span>   
-                    </div>
-          
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">기프티콘 판매상품 100 개로 확장</span>
-                    </div>
-
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">백서2.0 버전 배포</span>
-                    </div>
-
-                  </div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile" />
+                  <ul>
+                    <li class="first-q">앱 누적 다운로드 100,000 건 달성</li>
+                    <li>기업 포인트 제휴 5개로 확장</li>
+                    <li>백화점 상품권 및 문화 상품권 추가 연동</li>
+                    <li>기프티콘 판매상품 100 개로 확장</li>
+                    <li>백서2.0 버전 배포</li>
+                  </ul>
                 </div>
-              </div>
-              
-              <div class="history-section">
-                <div class="history-years last" >
+              </article>
+
+              <!-- 2022 2분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile" />
+                  <ul>
+                    <li class="second-q">앱 누적 다운로드 150,000 건 달성</li>
+                    <li>가맹점 결제 브랜드 30 개로 확장</li>
+                    <li>고객별 맞춤 추천 서비스 제공</li>
+                    <li class="sub">* GA 분석 데이터 기반 맞춤 서비스</li>
+                    <li>마일벌스 Alliance 기업 5 개로 확장</li>
+                  </ul>
                 </div>
-                <div class="history-expl last">
-                  <img src="../../assets/img/web-line.png" alt="" class="history-horizontals">
-                  <div class="history-FlexDirection-Column">
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q">2Q</span>          
-                      <span  class="history-expl-text">앱 누적 다운로드 150,000 건 달성</span>
-                    </div>
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">가맹점 결제 브랜드 30 개로 확장 </span>
-                    </div>
+              </article>
 
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">고객별 맞춤 추천 서비스 제공
-                      
-                      </span>  
-                    </div>
-
-                    <div class="history-sub-text">
-                          <span class="history-expl-subtext">* GA 분석 데이터 기반 맞춤 서비스</span>
-                      </span>  
-                    </div>
-
-          
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">마일벌스 Alliance 기업 5 개로 확장</span>
-                    </div>
-
-                  </div>
+              <!-- 2022 3분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile" />
+                  <ul>
+                    <li class="third-q">APP 3.0 업데이트</li>
+                    <li>앱 누적 다운로드 200,000 건 달성</li>
+                    <li>P2P 마일리지 연동 체결</li>
+                    <li>앱 내 추가 컨텐츠 서비스</li>
+                    <li class="sub">* SNS와 연계한 포인트 비즈니스</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
-
-              <div class="history-section">
-                <div class="history-years last" >
+              <!-- 2022 4분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile" />
+                  <ul>
+                    <li class="fourth-q">앱 누적 다운로드 250,000건 달성</li>
+                    <li>DAU 30,000건 달성</li>
+                    <li>기업 포인트 제휴 7개로 확장</li>
+                    <li>디지털 상품권 판매 상품 250개로 확장</li>
+                    <li>MVP 연동 서비스 추가</li>
+                    <li class="sub">* 포인트 활용 게임</li>
+                    <li class="sub">* 운세, 사주 서비스</li>
+                    <li>회원 등급제 도입</li>
+                    <li class="sub">* 고객 혜택 강화</li>
+                  </ul>
                 </div>
-                <div class="history-expl last">
-                  <img src="../../assets/img/web-line.png" alt="" class="history-horizontals">
-                  <div class="history-FlexDirection-Column">
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q">3Q</span>
-                      <span class="history-2Q-3Q">APP 3.0 업데이트</span>
-                    </div>
-                    
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">앱 누적 다운로드 200,000 건 달성</span>
-                    </div>
+              </article>
 
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">P2P 마일리지 연동 체결</span>
-                    </div>
-                    
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q">앱 내 추가 컨텐츠 서비스<br>
-                        </span>
-                    </div>
-
-                    <div class="history-sub-text">
-                          <span class="history-expl-subtext">* SNS와 연계한 포인트 비즈니스</span>
-                        </span>
-                    </div>
-                    
-                  </div>
+              <!-- 2023 1분기-->
+              <article>
+                <div class="history-years">
+                  <p class="gmarket-bold">2023</p>
                 </div>
-              </div>
-
-              <div class="history-section">
-                <div class="history-years last" >
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile" />
+                  <ul>
+                    <li class="first-q">추가 콘텐츠 제공</li>
+                    <li class="sub">* 게임 연동 리워드 서비스</li>
+                    <li>앱 누적 다운로드 300,000건 달성</li>
+                    <li>MAU 30,000건 달성</li>
+                  </ul>
                 </div>
-                <div class="history-expl last">
-                  <img src="../../assets/img/web-line.png" alt="" class="history-horizontals">
-                  <div class="history-FlexDirection-Column">
+              </article>
 
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q">4Q</span>
-                      <span  class="history-expl-text">앱 누적 다운로드 300,000 건 달성</span>
-                    </div>
-                    
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q">DAU 100,000 달성</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q">기업 포인트 제휴 10 개로 확장</span>
-                    </div>
-                    
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q">가맹점 결제 브랜드 100 개로 확장</span>
-                    </div>
-                    
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q">도서/웹툰 마일리지 연동 체결</span>
-                    </div>
-                    
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q">가맹점 구독 서비스 제공<br>
-                      </span>
-                    </div>
-
-                    <div class="history-sub-text">                      
-                      <span class="history-expl-subtext">* 구독 가맹점 할인 서비스</span>
-                      </span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q">마일벌스 Alliance 기업 15 개로 확장</span>
-                    </div>
-
-                  </div>
+              <!-- 2023 2분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile" />
+                  <ul>
+                    <li class="second-q">금융 서비스 제공</li>
+                    <li class="sub">* 포인트 출금 서비스</li>
+                    <li>앱 누적 다운로드 400,000건 달성</li>
+                    <li>MAU 40,000건 달성</li>
+                    <li>가맹점 결제 브랜드 20개로 확장</li>
+                    <li>기업 포인트 제휴 10개로 확장</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
+              <!-- 2023 3분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile" />
+                  <ul>
+                    <li class="third-q">멤버십 구독 서비스 제공</li>
+                    <li>쇼핑몰 연계 서비스 제공</li>
+                    <li class="sub">* 실물 상품 결제 서비스</li>
+                    <li>앱 누적 다운로드 500,000건 달성</li>
+                    <li>MAU 50,000건 달성</li>
+                  </ul>
+                </div>
+              </article>
 
-              <div class="history-section">
+              <!-- 2023 4분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile" />
+                  <ul>
+                    <li class="fourth-q">MVP 활용 써드파티앱 개발 시작</li>
+                    <li class="sub">* 포인트 활용 커뮤니티 / 게임</li>
+                    <li>앱 누적 다운로드 600,000건 달성</li>
+                    <li>MAU 60,000건 달성</li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- 2024 -->
+              <article>
                 <div class="history-years last">
-                  <p class="history-years-text" style="margin-right: 28px;">2023</p>
+                  <p class="gmarket-bold">2024</p>
                 </div>
                 <div class="history-expl last">
-                  <img src="../../assets/img/history_horizontal.png" alt="" class="history-horizontal-long">
-                  <div class="history-FlexDirection-Column-2023-2024">
-                    <div class="histoy-Display-flex" style="margin-top: 3px;">                      
-                      <span  class="history-expl-text">금융서비스 제공
-                      </span>
-                    </div>
-
-                    <div class = "history-sub-text-margin">                        
-                      <span class="history-expl-subtext-2023">* 가맹점 정산용 통장을 1금융권과 연계</span>
-                      </span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024">앱 누적 다운로드 1,000,000 건 달성</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024">DAU 200,000 달성</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024">기업 포인트 제휴 20 개로 확장</span>
-                    </div>
-
-                    <div class="history-border1">
-                      <span  class="history-letter-2023-2024">포인트 신규 사업 개발</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024">가맹점 결제 브랜드 200 개로 확장</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024">쇼핑 마일리지 연동 체결</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024">MVP 연동 써드파티앱 서비스<br>
-                      </span>
-                    </div>
-
-                    <div class = "history-sub-text-margin">                      
-                        <span class="history-expl-subtext-2023"> * 포인트 활용 게임/SNS </span>
-                      </span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024">마일벌스 Alliance 기업 30개로 확장</span>
-                    </div>
-
-                  </div>
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile" />
+                  <ul>
+                    <li>앱 누적 다운로드 1,000,000건 달성</li>
+                    <li>MileVerse Platform 확장</li>
+                    <li>가맹점 결제 브랜드 25개로 확장</li>
+                    <li>기업 포인트 제휴 20개로 확장</li>
+                    <li>동남아시아(말레이시아 외 4개국) 서비스 런칭</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
+            </section>
 
-
-              <div class="history-section">
-                <div class="history-years last">
-                  <p class="history-years-text" style="margin-right: 28px;">2024</p>
-                </div>
-                <div class="history-expl last">
-                  <img src="../../assets/img/history_horizontal.png" alt="" class="history-horizontal-long">
-                  <div class="history-FlexDirection-Column-2023-2024" style="margin-top: 5px;">
-                    <div class="histoy-Display-flex">
-                      <span class="history-expl-text">앱 누적 다운로드 2,000,000 건 달성</span>
-                    </div>
-
-                    <div class="history-border1">  
-                    <span class="history-letter-2023-2024">DAU 500,000 달성</span>
-                    </div>
-
-                    <div class="history-border1">                        
-                      <span class="history-letter-2023-2024">NFT 서비스 오픈</span>
-                    </div>
-
-                    <div class="history-border1">                        
-                      <span class="history-letter-2023-2024">마일벌스 Alliance 기업 50 개로 확장</span>
-                    </div>
-
-                    <div class="history-border1">                        
-                      <span class="history-letter-2023-2024">MileVerse Platform 확장</span>
-                    </div>
-
-                    <div class="history-border1">                        
-                      <span class="history-letter-2023-2024">동남아시아(말레이시아 외 4 개국) 서비스 런칭</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- 모바일 -->
-
-              <div class="history-section">
-                <div class="history-years fake"></div>
-                <div class="history-expl"></div>
-              </div>
-            </div>
-            <div class="history-init-wrap mobile" data-aos="fade-down" data-aos-duration="1000">
-              <p class="history-title-text">Road map</p>
-              <div class="history-section">
-                <div class="history-years fake"></div>
-                <div class="history-expl fake"></div>
-              </div>
-
-              <div class="history-section">
-                <div class="history-years">
-                  <p class="history-years-text">2019</p>
-                </div>
-                <div class="history-expl">
-                  <img src="../../assets/img/history_horizon_m.png" alt="" class="history-horizontal">
-                  <div style="display: flex; flex-direction: column; padding-left: 3px;">
-                  
-                    <div class="histoy-Display-flex" style="margin-top: 3px; margin-left:-2px;">
-                      <span class="history-letter-mobile-month">10월</span>
-                      <span class="history-expl-text-mobile">마일벌스 설립<br>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="history-section">
-                <div class="history-years" style="margin-top:1px">
-                  <p class="history-years-text">2020</p>
-                </div>
-                <div class="history-expl">
-                  <img src="../../assets/img/history_horizon_m.png" alt="" class="history-horizontal">
-                  <div style="display: flex; flex-direction: column; margin-top: 3px;" >
-                    <div class="histoy-Display-flex">
-                      <span class="history-letter-mobile-month">2월</span>
-                      <span class="history-expl-text-mobile">블록체인 기술 마일리지 통합 특허 출원 </span>
-                    </div>
-
-                    <div class="history-FlexDirection-Mobile">
-                      <span class="history-letter-mobile-month">3월</span>
-                      <span class="history-expl-text-mobile">MileVerse APP 정식 버전 런칭(Android/IOS)</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Mobile">
-                      <span class="history-letter-mobile-month">6월</span>
-                      <span class="history-expl-text-mobile">벤처기업 인증</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Mobile">
-                      <span class="history-letter-mobile-month">10월</span>
-                        <span class="history-expl-text-mobile">코인원 상장</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Mobile">
-                      <span class="history-letter-mobile-month">11월</span>
-                        <span class="history-expl-text-mobile-lineheight">기프티콘 계약 체결(SK 앰엔서비스)</span>
-                        
-                    </div>
-                    <p class ="history-subtext-mobile-text-2020">디지털 Wallet 개발 및 런칭</p>
-                  </div>
-                </div>
-              </div>
-              <div class="history-section">
-                <div class="history-years">
-                  <p class="history-years-text">2021</p>
-                </div>
-                <div class="history-expl">
-                  <img src="../../assets/img/history_horizon_m.png" alt="" class="history-horizontal">
-                  <div style="display: flex; flex-direction: column;margin-top: 2px; margin-left:-7px; margin-top: 3px;">
-
-                    <div style=" display: flex; flex-direction: row; align-items: flex-start;">
-                      <span class="history-FlexDirection-Mobile-2021">1월</span>
-                      <span class="history-expl-text-mobile-lineheight">디지털상품권 계약 체결(한국페이즈서비스)
-                        </span>
-                    </div>
-                    <p class ="history-subtext-mobile-text-2021">빗썸 BTC 마켓 상장</p>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span class="history-FlexDirection-Mobile-2021">3월</span>
-                      <span class="history-expl-text-mobile-lineheight">빗썸 원화 마켓 추가
-                    </div>
-                    <p class ="history-subtext-mobile-text-2021">포인트 연동 계약 체결(북앤라이프)</p>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span class="history-FlexDirection-Mobile-2021">8월</span>
-                      <span class="history-expl-text-mobile">APP 2.0 버전 런칭</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span class="history-FlexDirection-Mobile-2021">9월</span>
-                      <span class="history-expl-text-mobile">글로벌 거래소 비트렉스 상장</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span class="history-FlexDirection-Mobile-2021">11월</span>
-                      <span class="history-expl-text-mobile-lineheight">가맹점 결제를 위한 바코드 연동
-                    </div>
-                    <p class ="history-subtext-mobile-text-2021">가맹점 10 개 브랜드 추가</p>
-
-                    <div class="history-FlexDirection-Row-Mobile"  >
-                      <span class="history-FlexDirection-Mobile-2021" style="margin-top: -2px;">ing</span>
-                      <span  class="history-expl-text-mobile">국내 기업 및 가맹점 확장</span>
-                    </div>
-                  </div>
-               
-                </div>
-              </div>
-              <div class="history-section">
-                <div class="history-years last" style="margin-top:1px">
-                    <p class="history-years-text">2022</p>
-                  </div>
-                  <div class="history-expl">
-                    <img src="../../assets/img/history_horizon_m.png" alt="" class="history-horizontal">
-                  <div class="history-FlexDirection-Column-1Q-2Q-3Q-4Q">
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q-mobile">1Q</span>
-                      <span  class="history-expl-text-2-3-4Q-mobile-padding-clear">앱 누적 다운로드 100,000 건 달성</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">기업 포인트 제휴 5개로 확장 </span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">백화점 상품권 및 문화 상품권 추가 연동
-                      </span>   
-                    </div>
-          
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">기프티콘 판매상품 100 개로 확장</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">백서2.0 버전 배포</span>
-                    </div>
-
-                </div>
-                </div>
-                <div class="history-section">
-                  <div class="history-expl"></div>
-                </div>
-              </div>
-              <div class="history-section">
-                <div class="history-years last style="margin-top:1px style="margin-top:1px">
-                </div>
-                <div class="history-expl">
-                  <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                  <div class="history-FlexDirection-Column-1Q-2Q-3Q-4Q">
-
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q-mobile">2Q</span>                      
-                      <span  class="history-expl-text-2-3-4Q-mobile-padding-clear">앱 누적 다운로드 150,000 건 달성</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">가맹점 결제 브랜드 30 개로 확장</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">고객별 맞춤 추천 서비스 제공</span>
-                    </div>
-                    <p class ="history-subtext"> * GA 분석 데이터 기반 맞춤 서비스</p>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">마일벌스 Alliance 기업 5 개로 확장</span>
-                    </div>
-                </div>
-                </div>
-              </div>
-              <div class="history-section">
-                <div class="history-years last style="margin-top:1px style="margin-top:1px">
-                </div>
-                <div class="history-expl">
-                  <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                  <div class="history-FlexDirection-Column-1Q-2Q-3Q-4Q">
-
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q-mobile">3Q</span> 
-                      <span  class="history-expl-text-2-3-4Q-mobile-padding-clear">APP 3.0 업데이트</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">앱 누적 다운로드 200,000 건 달성</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">P2P 마일리지 연동 체결</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">앱 내 추가 컨텐츠 서비스</span>
-                    </div>
-                      <P class="history-subtext">* SNS와 연계한 포인트 비즈니스</P>
-                </div>
-                </div>
-              </div>
-              <div class="history-section">
-                <div class="history-years last style="margin-top:1px style="margin-top:1px">
-                </div>
-                <div class="history-expl">
-                  <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                  <div class="history-FlexDirection-Column-1Q-2Q-3Q-4Q">
-
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q-mobile">4Q</span>                      
-                      <span  class="history-expl-text-2-3-4Q-mobile-padding-clear">앱 누적 다운로드 300,000 건 달성</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">DAU 100,000 달성</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">기업 포인트 제휴 10 개로 확장</span>
-                    </div><div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">가맹점 결제 브랜드 100 개로 확장</span>
-                    </div><div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">도서/웹툰 마일리지 연동 체결</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">가맹점 구독 서비스 제공</span>   
-                    </div>
-                    <P class="history-subtext">* 구독 가맹점 할인 서비스</P>
-                   
-                    
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-expl-text-2-3-4Q-mobile">마일벌스 Alliance 기업 15 개로 확장</span>
-                    </div>
-                    
-                </div>
-                </div>
-              </div>
-              
-              <div class="history-section">
-                <div class="history-years last" style="margin-top:1px">
-                  <p class="history-years-text">2023</p>
-                </div>
-                <div class="history-expl">
-                  <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                  <div style="display: flex; flex-direction: column; ">
-
-                    <div class="histoy-Display-flex">
-                      <span  class="history-FlexDirection-Row-Mobile-text">금융 서비스 제공</span>
-                    </div>
-                    <P class="history-subtext-2023-mobile">* 가맹점 정산용 통장을 1금융권과 연계</P>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">앱 누적 다운로드 1,000,000 건 달성</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">DAU 200,000 달성</span>
-                    </div>
-                    
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">기업 포인트 제휴 20 개로 확장</span>
-                    </div>
-                
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">포인트 신규 사업 개발</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">가맹점 결제 브랜드 200 개로 확장</span>
-                    </div>
-                    
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">쇼핑몰 마일리지 연동 체결</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">MVP 연동 써드파티앱 서비스</span>
-                    </div>
-                    <P class="history-subtext-2023-mobile">* 포인트 활용 게임 / SNS</P>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">마일벌스 Alliance 기업 30개로 확장</span>
-                    </div>
-                </div>
-                </div>
-              </div>
-
-              <div class="history-section">
-                <div class="history-years last" style="margin-top:1px">
-                  <p class="history-years-text">2024</p>
-                </div>
-                <div class="history-expl">
-                  <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                  <div style="display: flex; flex-direction: column; ">
-
-                    <div class="histoy-Display-flex" style="margin-top: 3px;">
-                      <span  class="history-expl-text" style="margin-left: 30px;">앱 누적 다운로드 2,000,000 건 달성</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">DAU 500,000 달성</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">NFT 서비스 오픈</span>
-                    </div>
-
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">마일벌스 Alliance 기업 50 개로 확장</span>
-                    </div>
-                    
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">MileVerse Platform 확장</span>
-                    </div>
-                
-                    <div class="history-FlexDirection-Row-Mobile">
-                      <span  class="history-FlexDirection-Row-Mobile-text">동남아시아(말레이시아 외 4 개국) 서비스 런칭</span>
-                    </div>
-                    
-                </div>
-                </div>
-              </div>
-              <div class="history-section">
-                <div class="history-years fake"></div>
-                <div class="history-expl"></div>
-              </div>
-            </div>
-            <div class="contents-init-wrap" data-aos="fade-down" data-aos-duration="1000">
+            <!-- 설립자 -->
+            <section class="contents-init-wrap" data-aos="fade-down" data-aos-duration="1000">
               <div class="contents-title-size">
-                <p class="contents-title director">Founders</p>
+                <p class="contents-title">Founders</p>
               </div>
-              <div class="contents-article-size director">
-                <div class="director-box-wrap">
-                  <div style="flex: 1;">
-                    <p class="founder-name">William Jung<br>
+              <div class="contents-article-size">
+                <article>
+                  <div>
+                    <p class="noto-medium">
+                      William Jung<br />
                       CEO
                     </p>
-                    <p class="founder-history">
-                      G마켓 마케팅 팀장<br>
-                      Qoo10 일본 신사업팀장<br>
-                      Qoo10 말레이시아 법인장<br>
-                      AIO 글로벌 CEO<br>
-                      MileVerse CEO / 공동 설립자<br>
+                    <p>
+                      G마켓 마케팅 팀장<br />
+                      Qoo10 일본 신사업팀장<br />
+                      Qoo10 말레이시아 법인장<br />
+                      AIO 글로벌 CEO<br />
+                      MileVerse CEO / 공동 설립자<br />
                     </p>
                   </div>
-                  <div class="thumb-img-wrap">
-                    <img src="../../assets/img/ceo_thumb.png" alt="" style="width: 100%;">
-                  </div>
-                </div>
-                <div class="director-box-wrap">
-                  <div style="flex:1">
-                    <p class="founder-name">Lucca Kim<br>
+                  <img src="../../assets/img/mileverse/ceo.png" alt="ceo" />
+                </article>
+                <article>
+                  <div>
+                    <p class="noto-medium">
+                      Lucca Kim<br />
                       COO / Co-founder
                     </p>
-                    <p class="founder-history">
-                      IMCOM<br>
-                      GM 글로벌 커뮤니케이션<br>
-                      OnePlus 커뮤니케이션 CEO<br>
-                      MileVerse COO / 공동 설립자<br>
+                    <p>
+                      IMCOM<br />
+                      GM 글로벌 커뮤니케이션<br />
+                      OnePlus 커뮤니케이션 CEO<br />
+                      MileVerse COO / 공동 설립자<br />
                     </p>
                   </div>
-                  <div class="thumb-img-wrap">
-                    <img src="../../assets/img/coo_thumb.png" alt="" style="width: 100%;">
-                  </div>
-                </div>
+                  <img src="../../assets/img/mileverse/coo.png" alt="coo" />
+                </article>
               </div>
-            </div>
-            <div class="contents-init-wrap vision-wrap" data-aos="fade-down" data-aos-duration="1000">
+            </section>
+
+            <!-- 비전 -->
+            <section class="contents-init-wrap" data-aos="fade-down" data-aos-duration="1000">
               <div class="contents-title-size">
                 <p class="contents-title">Vision</p>
               </div>
-              <div class="contents-article-size vision">
-                <p class="noto-bold vision-text">
-                  동남아를 시작으로 전세계의 마일리지가 실생활에서 현금처럼 사용 될 수 있는 글로벌 플랫폼을 구축해 나갈 계획입니다.
-                </p>
-                <img src="../../assets/img/vision_img.png" class="vision-imge" alt="비전 이미지">
-              </div>
-            </div>
-          </div>
+              <article class="contents-article-size">
+                <p class="noto-bold">동남아를 시작으로 전세계의 마일리지가 실생활에서 현금처럼 사용 될 수 있는 글로벌 플랫폼을 구축해 나갈 계획입니다.</p>
+                <img src="../../assets/img/mileverse/vision_kr.png" alt="비전" />
+              </article>
+            </section>
+          </main>
         </div>
       </div>
-      <div id='footers'></div>
+      <div id="footers"></div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../js/index.js"></script>

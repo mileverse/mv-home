@@ -1,791 +1,330 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>MileVerse</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property="og:title" content="MileVerse">
-    <meta property="og:image" content="../../assets/img/thumbnail.png">
-    <meta property="og:image:width" content="800"/>
-    <meta property="og:image:height" content="400"/> 
-    <meta property="og:url" content="https://www.mileverse.com"/> 
-    <meta property="og:site_name" content="MileVerse"/> 
-    <meta property="og:type" content="website"/>
-    <meta property="og:description" content="便捷积分经济的积分整合支付平台"/>
-    <link rel=" shortcut icon" href="../../assets/favicon.png">
-    <link rel="icon" href="../../assets/favicon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:title" content="MileVerse" />
+    <meta property="og:image" content="../../assets/img/thumbnail.png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:url" content="https://www.mileverse.com" />
+    <meta property="og:site_name" content="MileVerse" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="便捷积分经济的积分整合支付平台" />
+    <link rel=" shortcut icon" href="../../assets/favicon.png" />
+    <link rel="icon" href="../../assets/favicon.png" />
 
-    <link rel="stylesheet" href="../../styles/css/reset.css">
-    <link rel="stylesheet" href="../../styles/css/index.css">
+    <link rel="stylesheet" href="../../styles/css/reset.css" />
+    <link rel="stylesheet" href="../../styles/css/index.css" />
 
     <script src="/lib/jquery-3.5.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div id='headers'></div>
+      <div id="headers"></div>
       <div class="main-content mileverse">
-        <div class="banner-bg bg_mileverse" style="background-image: url(../../assets/img/company_bg.png);">
-          <div class="banner-text-wrap" >
+        <!-- 상단배너 -->
+        <section class="banner-bg bg_mileverse">
+          <div class="banner-text-wrap">
             <p class="banner-title">MILEVERSE</p>
             <p class="banner-sub-title" lang="cn">MileVerse开启积分支付的新模式。</p>
           </div>
-        </div>
+        </section>
+
         <div class="contents-total-wrap">
-          <div class="contents-size">
-            <div class="contents-init-wrap" data-aos="fade-down" data-aos-duration="1000">
+          <main class="contents-size">
+            <!-- 인사말 -->
+            <section class="contents-init-wrap" data-aos="fade-down" data-aos-duration="1000">
               <div class="contents-title-size">
                 <p class="contents-title">GREETING</p>
               </div>
               <div class="contents-article-size">
                 <p class="noto-bold greeting-title" lang="cn">大家好！</p>
-                <p class="greeting-text" lang="cn">
-                  我是MileVerse 的代表理事William Jung。<br>
-                  <br>
+                <p class="noto-medium" lang="cn">
+                  我是MileVerse 的代表理事William Jung。<br />
+                  <br />
                   MileVerse是Mileage + uniVerse的合成词，是(株)TRUSTCHAIN推出的APP服务，意为构建积分服务的新生态系统。
-                  <br>
-                  <br>
+                  <br />
+                  <br />
                   据统计厅资料显示，虽然韩国国内积分市场每年都以20%以上的速度增长，但发行积分的连锁店、咖啡厅等各个公司，只允许在公司内部使用该公司的积分，由于有限的使用场合和使用上的各种制约，所以除了少数消费者外，对积分使用只能持消极态度。
-                  <br>
-                  <br>
-                  我们出于解决这些问题，轻松整合消费者拥有的各家公司的积分后，让消费者如现金般使用的想法，推出了Mileverse App服务。<br>
-                  <br>
-                  我们的目标是，通过这种方式，打造消费者、企业和加盟店都可以Win-Win的积分生态系统，构建"积分支付的新模式"，打造MileVerse独有的积分经济。<br>
-                  <br>
-                  希望大家关注MileVerse打造的新的积分生态系统，对于我们给予更多的关注和支持。<br>
+                  <br />
+                  <br />
+                  我们出于解决这些问题，轻松整合消费者拥有的各家公司的积分后，让消费者如现金般使用的想法，推出了Mileverse App服务。<br />
+                  <br />
+                  我们的目标是，通过这种方式，打造消费者、企业和加盟店都可以Win-Win的积分生态系统，构建"积分支付的新模式"，打造MileVerse独有的积分经济。<br />
+                  <br />
+                  希望大家关注MileVerse打造的新的积分生态系统，对于我们给予更多的关注和支持。<br />
                   谢谢。
                 </p>
               </div>
-            </div>
-            <div class="sign-wrap">
-              <p class="sign-text" lang="cn">MileVerse 代表理事 鄭鎭馨</p>
-            </div>
-            <img class="history-start-img" src="../../assets/img/mileverse_history.png" alt="연혁 구분 img">
-            <div class="history-init-wrap web" data-aos="fade-down" data-aos-duration="1000">
-              <div class="history-section">
-                <div class="history-years fake"></div>
-                <div class="history-expl"></div>
-              </div>
-                <div class="history-section" >
+            </section>
+            <p class="noto-medium" lang="cn">MileVerse 代表理事 鄭鎭馨</p>
+
+            <!-- 연혁 -->
+            <img src="../../assets/img//mileverse/run.png" alt="연혁" />
+            <section class="history-init-wrap" data-aos="fade-down" data-aos-duration="1000">
+              <!-- 2019 -->
+              <article>
                 <div class="history-years title">
-                  <p class="history-title-text">Road map</p>
-                  <p class="history-years-text" style="margin-right: 28px" >2019</p>
+                  <span class="section-title web gmarket-bold">Road map</span>
+                  <p class="gmarket-bold">2019</p>
                 </div>
                 <div class="history-expl">
-                  <img src="../../assets/img/history_horizontal.png" alt="" class="history-horizontal">
-                    <div style="display: flex; flex-direction: column;">
-                      <div style="display: flex;flex-direction: row;align-items: flex-start;padding-left: 22px;">
-                        <div class="history-Warp-cn">10月</div>
-                        <span class="history-expl-text-cn">成立MileVerse<br>
-                      </div>
-                    </div>
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web cn" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile cn" />
+                  <ul>
+                    <li class="one-line" style="list-style-type: '10月   '">成立MileVerse</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
-              <div class="history-section">
+              <!-- 2020 -->
+              <article>
                 <div class="history-years">
-                  <p class="history-years-text" style="margin-right: 28px;">2020</p>
+                  <p class="gmarket-bold">2020</p>
                 </div>
                 <div class="history-expl">
-                    <img src="../../assets/img/history_horizontal.png" style="margin-top: 0px;" alt="" class="history-horizontal">
-                      <div class="history-expl-text" style="display: flex; flex-direction: column; padding-left: 20px;" >
-                        <div class="histoy-Display-flex">
-                          <span class="history-Warp-cn">2月</span>
-                          <span class="history-expl-text-cn">申请区块链技术积分整合专利</span>
-                        </div>
-
-                        <div class="history-border1">
-                          <span class="history-Warp-cn">3月</span>
-                          <span  class="history-expl-text-cn">发布MileVerse APP 正式版本( Android/IOS)</span>
-                        </div>
-
-                        <div class="history-border1">
-                            <span class="history-Warp-cn">6月</span>
-                          <span  class="history-expl-text-cn">取得风险企业认证</span>
-                        </div>
-                        <div class="history-border1">
-                          <span class="history-Warp-cn">10月</span>
-                          <span class="history-expl-text-cn">在Coinone上市</span>
-                        </div>
-
-                        <div class="history-border1">
-                          <span class="history-Warp-cn">11月</span>
-                          <p class="history-expl-text-lineheight-cn">
-                            <span>签订礼品卡合同 (SK M&Services)<br>
-                              开发及推出数字Wallet</span>
-                          </p>
-                        </div>
-                      </div>
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web cn" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile cn" />
+                  <ul>
+                    <li style="list-style-type: '2月   '">申请区块链技术积分整合专利</li>
+                    <li style="list-style-type: '3月   '">发布MileVerse APP 正式版本( Android/IOS)</li>
+                    <li style="list-style-type: '6月   '">取得风险企业认证</li>
+                    <li style="list-style-type: '10月   '">在Coinone上市</li>
+                    <li style="list-style-type: '11月   '">签订礼品卡合同 (SK M&Services)<br />开发及推出数字Wallet</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
-              <div class="history-section">
-                <div class="history-years" >
-                  <p class="history-years-text" style="margin-right: 28px">2021</p>
+              <!-- 2021  -->
+              <article>
+                <div class="history-years">
+                  <p class="gmarket-bold">2021</p>
                 </div>
                 <div class="history-expl">
-                  <img src="../../assets/img/history_horizontal.png" style="margin-top: 0px ;" alt="" class="history-horizontal">
-                  <div class="history-expl-text" style="display: flex; flex-direction: column; padding-left:16px;" >
-                    <div class="histoy-Display-flex">
-                      <span class="history-Warp-cn">1月</span>
-                      <div>
-                        <p class="history-expl-subtext-text-2020-2021-cn">签订数字商品券合同（Korea Pay's Service）</p>
-                        <p class="history-expl-subtext-text-2020-2021-margin-cn">在Bithumb BTC市场上市</p>
-                      </div>
-                    </div>
-                    
-                    <div class="history-border1">
-                      <span  class="history-Warp-cn">3月</span>
-                      <div>
-                        <p class="history-expl-subtext-text-2020-2021-cn">新增Bithumb韩元市场</p>
-                        <p class="history-expl-subtext-text-2020-2021-margin-cn">签订积分绑定合同（BOOK&LIFE)</p>
-                      </div>
-                    </div>
-
-                    <div class="history-border1">                
-                      <span  class="history-Warp-cn">8月</span>
-                      <span  class="history-expl-text-cn"> 推出APP 2.0 版本</span>
-                    </div>
-                    <div class="history-border1">
-                      <span  class="history-Warp-cn">9月</span>
-                      <span  class="history-expl-text-cn">在全球交易所BITTREX上市</span>
-                    </div>
-                    <div class="history-border1">
-                      <span  class="history-Warp-cn">11月</span>
-                      <div>
-                        <p class="history-expl-subtext-text-2020-2021-cn">为进行加盟店支付绑定条形码</p>
-                        <p class="history-expl-subtext-text-2020-2021-margin-cn">添加10个加盟店品牌</p>
-                      </div>
-                    </div>
-                    <div class="history-border1">             
-                      <span  class="history-Warp-cn" style="margin-top: -1px;">正在</span>
-                      <span  class="history-expl-text-cn">扩大国内企业及加盟店</span>
-                    </div>
-                  </div>
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web cn" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile cn" />
+                  <ul>
+                    <li class="two-line" style="list-style-type: '1月   '">签订数字商品券合同（Korea Pay's Service）<br />在Bithumb BTC市场上市</li>
+                    <li class="two-line" style="list-style-type: '3月   '">新增Bithumb韩元市场<br />签订积分绑定合同（BOOK&LIFE）</li>
+                    <li style="list-style-type: '8月   '">推出APP 2.0 版本</li>
+                    <li style="list-style-type: '9月   '">在全球交易所BITTREX上市</li>
+                    <li class="two-line" style="list-style-type: '11月   '">为进行加盟店支付绑定条形码<br />添加10个加盟店品牌</li>
+                    <li style="list-style-type: '正在   '">扩大国内企业及加盟店</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
-
-              <div class="history-section">
-                <div class="history-years last" >
-                  <p class="history-years-text" style="margin-right: 28px">2022</p>
+              <!-- 2022 1분기 -->
+              <article>
+                <div class="history-years">
+                  <p class="gmarket-bold">2022</p>
                 </div>
-                <div class="history-expl last">
-                  <img src="../../assets/img/web-line.png" alt="" class="history-horizontals" style="margin-top: 1px;">
-                  <div class="history-FlexDirection-Column-cn">
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q-cn">1Q</span>          
-                      <span  class="history-expl-text-cn">累计应用下载量达到100,000 次</span>
-                    </div>
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">企业积分合作处扩大到5个 </span>
-                    </div>
-
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">与百货商店商品券及文化商品券联动
-                      </span>   
-                    </div>
-          
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">礼品券销售商品扩张到100个</span>
-                    </div>
-
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">发布2.0版白皮书</span>
-                    </div>
-
-                  </div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web cn" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile cn" />
+                  <ul>
+                    <li class="first-q">累计应用下载量达到100,000 次</li>
+                    <li>企业积分合作处扩大到5个</li>
+                    <li>与百货商店商品券及文化商品券联动</li>
+                    <li>礼品券销售商品扩张到100个</li>
+                    <li>发布2.0版白皮书</li>
+                  </ul>
                 </div>
-              </div>
-              
-              <div class="history-section">
-                <div class="history-years last" >
+              </article>
+
+              <!-- 2022 2분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web cn" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile cn" />
+                  <ul>
+                    <li class="second-q">累计应用下载量达到150,000 次</li>
+                    <li>加盟店结算品牌扩大到30个</li>
+                    <li>提供针对顾客的定制型推荐服务</li>
+                    <li class="sub">* 基于GA分析数据的定制化服务</li>
+                    <li>MileVerse Alliance 企业扩大到5处</li>
+                  </ul>
                 </div>
-                <div class="history-expl last">
-                  <img src="../../assets/img/web-line.png" alt="" class="history-horizontals">
-                  <div class="history-FlexDirection-Column-cn">
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q-cn">2Q</span>    
-                      <span  class="history-expl-text-cn">累计应用下载量达到150,000 次</span>
-                    </div>
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">加盟店结算品牌扩大到30个 </span>
-                    </div>
+              </article>
 
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">提供针对顾客的定制型推荐服务
-                      </span>  
-                    </div>
-
-                    <div class="history-sub-text">
-                          <span class="history-expl-subtext-cn">* 基于GA分析数据的定制化服务</span>
-                      </span>  
-                    </div>
-
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">MileVerse Alliance 企业扩大到5处</span>
-                    </div>
-
-                  </div>
+              <!-- 2022 3분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web cn" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile cn" />
+                  <ul>
+                    <li class="third-q">更新到APP 3.0</li>
+                    <li>累计应用下载量达到200,000 次</li>
+                    <li>签订P2P积分联动协议</li>
+                    <li>APP内附加内容服务</li>
+                    <li class="sub">* 与SNS连接的积分业务</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
-              <div class="history-section">
-                <div class="history-years last" >
+              <!-- 2022 4분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web cn" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile cn" />
+                  <ul>
+                    <li class="fourth-q">应用程序累计下载量达到 250,000 次</li>
+                    <li>达到DAU 30,000</li>
+                    <li>积分合作企业扩大到7个</li>
+                    <li>数字商品券销售商品扩大到250个</li>
+                    <li>添加MVP联动服务</li>
+                    <li class="sub">* 积分运用游戏</li>
+                    <li class="sub">* 运势、生辰八字服务</li>
+                    <li>引进会员等级制</li>
+                    <li class="sub">* 强化顾客优惠</li>
+                  </ul>
                 </div>
-                <div class="history-expl last">
-                  <img src="../../assets/img/web-line.png" alt="" class="history-horizontals">
-                  <div class="history-FlexDirection-Column-cn">
+              </article>
 
-                    <div class="histoy-Display-flex">
-                      <span class="history-1Q-2Q-3Q-4Q-cn">3Q</span> 
-                      <span class="history-2Q-3Q-cn">更新到APP 3.0</span>
-                    </div>
-          
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">累计应用下载量达到200,000 次</span>
-                    </div>
-
-                    <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">签订P2P积分联动协议</span>
-                    </div>
-                                        <div class="history-border1">
-                      <span  class="history-expl-text-2-3-4Q-cn">APP内附加内容服务<br>
-                        </span>
-                    </div>
-
-                    <div class="history-sub-text">
-                          <span class="history-expl-subtext-cn">* 与SNS连接的积分业务</span>
-                        </span>
-                    </div>
-
-                  </div>
+              <!-- 2023 1분기-->
+              <article>
+                <div class="history-years">
+                  <p class="gmarket-bold">2023</p>
                 </div>
-              </div>
-
-              <div class="history-section">
-                <div class="history-years last" >
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web cn" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile cn" />
+                  <ul>
+                    <li class="first-q">提供附加内容</li>
+                    <li class="sub">* 游戏联动奖励服务</li>
+                    <li>应用程序累计下载量达到300,000次</li>
+                    <li>达到MAU 30,000</li>
+                  </ul>
                 </div>
-                <div class="history-expl last">
-                  <img src="../../assets/img/web-line.png" alt="" class="history-horizontals">
-                  <div class="history-FlexDirection-Column-cn">
-                    <div class="histoy-Display-flex">
+              </article>
 
-                      <span class="history-1Q-2Q-3Q-4Q-cn">4Q</span>
-                      <span  class="history-expl-text-cn">累计应用下载量达到300,000 次</span>
-                    </div>
-                    
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q-cn">达成DAU 100,000</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q-cn">企业积分合作处扩大到10个</span>
-                    </div>
-                    
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q-cn">加盟店结算品牌扩大到100个</span>
-                    </div>
-                    
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q-cn">签订图书/网络漫画积分联动协议</span>
-                    </div>
-                    
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q-cn">提供加盟店订阅服务<br>
-                      </span>
-                    </div>
-
-                    <div class="history-sub-text">                      
-                      <span class="history-expl-subtext-cn">* 订阅加盟店打折服务</span>
-                      </span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-expl-text-2-3-4Q-cn">MileVerse Alliance 企业扩大到15处</span>
-                    </div>
-
-                  </div>
+              <!-- 2023 2분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web cn" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile cn" />
+                  <ul>
+                    <li class="second-q">提供金融服务</li>
+                    <li class="sub">* 积分取款服务</li>
+                    <li>应用程序累计下载量达到400,000次</li>
+                    <li>达到MAU 40,000</li>
+                    <li>加盟店结算品牌扩展到20个</li>
+                    <li>积分合作企业扩大到10个</li>
+                  </ul>
                 </div>
-              </div>
+              </article>
 
-              <div class="history-section">
+              <!-- 2023 3분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web cn" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile cn" />
+                  <ul>
+                    <li class="third-q">提供会员订阅服务</li>
+                    <li>提供商城联动服务</li>
+                    <li class="sub">* 实物商品支付服务</li>
+                    <li>应用程序累计下载量达到500,000次</li>
+                    <li>达到MAU 50,000</li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- 2023 4분기 -->
+              <article>
+                <div class="history-years"></div>
+                <div class="history-expl">
+                  <img src="../../assets/img/mileverse/line_light.png" alt="" class="short web cn" />
+                  <img src="../../assets/img/mileverse/line_m_light.png" alt="" class="short mobile cn" />
+                  <ul>
+                    <li class="fourth-q">使用MVP的第三方应用程序开发</li>
+                    <li class="sub">* 积分使用社区/游戏</li>
+                    <li>应用程序累计下载量达到600,000次</li>
+                    <li>达到MAU 60,000</li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- 2024 -->
+              <article>
                 <div class="history-years last">
-                  <p class="history-years-text" style="margin-right: 28px;">2023</p>
-                </div>
-
-                <div class="history-expl last">
-                  <img src="../../assets/img/history_horizontal.png" alt="" class="history-horizontal-long">
-                  <div class="history-FlexDirection-Column-2023-2024-cn">
-                    <div class="histoy-Display-flex" style="margin-top: 3px;">                      
-                      <span  class="history-expl-text-cn">提供金融服务</span>
-                    </div>
-
-                    <div class="history-sub-text">                      
-                      <span class="history-expl-subtext-2023-cn">* 订阅加盟店打折服务</span>
-                      </span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024-cn">累计应用下载量达到1,000,000次</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024-cn">达成DAU 200,000</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024-cn">企业积分合作处扩大到20个</span>
-                    </div>
-
-                    <div class="history-border1">
-                      <span  class="history-letter-2023-2024-cn">开发积分新项目</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024-cn">加盟店结算品牌扩大到200个</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024-cn">签订购物中心积分联动协议</span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024-cn"> MVP联动第三方APP服务<br>
-                      </span>
-                    </div>
-
-                    <div class="history-sub-text">                      
-                      <span class="history-expl-subtext-2023-cn"> * 运用积分的游戏/SNS </span>
-                      </span>
-                    </div>
-
-                    <div class="history-border1">                      
-                      <span  class="history-letter-2023-2024-cn">MileVerse Alliance 企业扩大到30处</span>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="history-section">
-                <div class="history-years last">
-                  <p class="history-years-text" style="margin-right: 28px;">2024</p>
+                  <p class="gmarket-bold">2024</p>
                 </div>
                 <div class="history-expl last">
-                  <img src="../../assets/img/history_horizontal.png" alt="" class="history-horizontal-long">
-                  <div class="history-FlexDirection-Column-2023-2024-cn" style="margin-top: 6px;">
-                    <div class="histoy-Display-flex">
-                      <span class="history-expl-text" style="font-family:MFSongHe ;">累计应用下载量达到2,000,000次</span>
-                    </div>
-
-                    <div class="history-border1">  
-                    <span class="history-letter-2023-2024-cn">达成DAU 500,000</span>
-                    </div>
-
-                    <div class="history-border1">                        
-                      <span class="history-letter-2023-2024-cn">开放NFT服务</span>
-                    </div>
-
-                    <div class="history-border1">                        
-                      <span class="history-letter-2023-2024-cn">MileVerse Alliance 企业扩大到50处</span>
-                    </div>
-
-                    <div class="history-border1">                        
-                      <span class="history-letter-2023-2024-cn">扩展MileVerse Platform</span>
-                    </div>
-
-                    <div class="history-border1">                        
-                      <span class="history-letter-2023-2024-cn">在东南亚（马来西亚及其他4个国家）推出服务</span>
-                    </div>
-                  </div>
+                  <img src="../../assets/img/mileverse/line_bold.png" alt="" class="web cn" />
+                  <img src="../../assets/img/mileverse/line_m_bold.png" alt="" class="mobile cn" />
+                  <ul>
+                    <li>应用程序累计下载量达到1,000,000次</li>
+                    <li>扩张MileVerse Platform</li>
+                    <li>加盟店结算品牌扩展到25个</li>
+                    <li>积分合作企业扩大到20个</li>
+                    <li>东南亚（马来西亚及其他4个国家）服务上线</li>
+                  </ul>
                 </div>
-              </div>
-            <!-- 모바일  -->
-            <div class="history-section">
-              <div class="history-years fake"></div>
-              <div class="history-expl"></div>
-            </div>
-          </div>
-          <div class="history-init-wrap mobile" data-aos="fade-down" data-aos-duration="1000">
-            <p class="history-title-text">Road map</p>
-            <div class="history-section">
-              <div class="history-years fake"></div>
-              <div class="history-expl fake"></div>
-            </div>
-            <div class="history-section">
-              <div class="history-years">
-                <p class="history-years-text">2019</p>
-              </div>
-              <div class="history-expl">
-                <img src="../../assets/img/history_horizon_m.png" alt="" class="history-horizontal">
-                <div style="display: flex; flex-direction: column; padding-left: 1px; margin-top: 3px;">
-                
-                  <div class="histoy-Display-flex">
-                    <span class="history-letter-mobile-month-cn">10月</span>
-                    <span class="history-expl-text-mobile-cn">成立MileVerse<br>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="history-section">
-              <div class="history-years" style="margin-top:1px">
-                <p class="history-years-text">2020</p>
-              </div>
-              <div class="history-expl">
-                <img src="../../assets/img/history_horizon_m.png" alt="" class="history-horizontal">
-                <div style="display: flex; flex-direction: column;">
-                  <div class="histoy-Display-flex">
-                    <span class="history-letter-mobile-month-cn">2月</span>
-                    <span class="history-expl-text-mobile-cn">申请区块链技术积分整合专利</span>
-                  </div>
+              </article>
+            </section>
 
-                  <div class="history-FlexDirection-Mobile">
-                    <span class="history-letter-mobile-month-cn">3月</span>
-                    <span class="history-expl-text-mobile-cn">发布MileVerse APP 正式版本( Android/IOS)</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Mobile">
-                    <span class="history-letter-mobile-month-cn">6月</span>
-                    <span class="history-expl-text-mobile-cn">取得风险企业认证</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Mobile">
-                    <span class="history-letter-mobile-month-cn">10月</span>
-                      <span class="history-expl-text-mobile-cn">在Coinone上市</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Mobile">
-                    <span class="history-letter-mobile-month-cn">11月</span>
-                    <div>
-                      <p class="history-expl-text-mobile-lineheight-cn" >签订礼品卡合同（SK M&Services）</p>
-                      <p class="history-expl-text-mobile-lineheight-margin-cn">开发及推出数字Wallet</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="history-section">
-              <div class="history-years">
-                <p class="history-years-text">2021</p>
-              </div>
-              <div class="history-expl">
-                <img src="../../assets/img/history_horizon_m.png" alt="" class="history-horizontal">
-                <div style="display: flex; flex-direction: column;margin-top: 2px; margin-left:-8px;">
-
-                  <div style=" display: flex; flex-direction: row; align-items: flex-start;">
-                    <span class="history-FlexDirection-Mobile-2021-cn">1月</span>
-                    <div>
-                      <p class="history-expl-text-mobile-lineheight-cn" >签订数字商品券合同（Korea Pay's Service）</p>
-                      <p class="history-expl-text-mobile-lineheight-margin-cn">在Bithumb BTC市场上市</p>
-                    </div>
-                  </div>
-                  <div class="history-FlexDirection-Row-Mobile" style="margin-top: 6px;">
-                    <span class="history-FlexDirection-Mobile-2021-cn">3月</span>
-                    <div>
-                      <p class="history-expl-text-mobile-lineheight-cn" >新增Bithumb韩元市场</p>
-                      <p class="history-expl-text-mobile-lineheight-margin-cn">签订积分绑定合同（BOOK&LIFE）</p>
-                    </div>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile" style="margin-top: 6px;"">
-                    <span class="history-FlexDirection-Mobile-2021-cn">8月</span>
-                    <span class="history-expl-text-mobile-cn">推出APP 2.0 版本</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span class="history-FlexDirection-Mobile-2021-cn">9月</span>
-                    <span class="history-expl-text-mobile-cn">在全球交易所BITTREX上市</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span class="history-FlexDirection-Mobile-2021-cn">11月</span>
-                    <div>
-                      <p class="history-expl-text-mobile-lineheight-cn" >为进行加盟店支付绑定条形码</p>
-                      <p class="history-expl-text-mobile-lineheight-margin-cn">添加10个加盟店品牌</p>
-                    </div>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile"  >
-                    <span class="history-FlexDirection-Mobile-2021-cn" style="margin-top: -1px;">正在</span>
-                    <span  class="history-expl-text-mobile-cn">扩大国内企业及加盟店</span>
-                  </div>
-                </div>
-             
-              </div>
-            </div>
-            <div class="history-section">
-              <div class="history-years last" style="margin-top:1px">
-                  <p class="history-years-text">2022</p>
-                </div>
-                <div class="history-expl">
-                  <img src="../../assets/img/history_horizon_m.png" alt="" class="history-horizontal">
-                <div class="history-FlexDirection-Column-1Q-2Q-3Q-4Q">
-                  <div class="histoy-Display-flex">
-                    <span class="history-1Q-2Q-3Q-4Q-mobile-cn">1Q</span>
-                    <span  class="history-expl-text-2-3-4Q-mobile-padding-clear-cn" style="margin-left: 3px;">累计应用下载量达到100,000 次</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">企业积分合作处扩大到5个 </span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">与百货商店商品券及文化商品券联动
-                    </span>   
-                  </div>
-        
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">礼品券销售商品扩张到100个</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">发布2.0版白皮书</span>
-                  </div>
-
-              </div>
-              </div>
-              <div class="history-section">
-                <div class="history-expl"></div>
-              </div>
-            </div>
-            <div class="history-section">
-              <div class="history-years last style="margin-top:1px style="margin-top:1px">
-              </div>
-              <div class="history-expl">
-                <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                <div class="history-FlexDirection-Column-1Q-2Q-3Q-4Q">
-
-                  <div class="histoy-Display-flex">
-                    <span class="history-1Q-2Q-3Q-4Q-mobile-cn">2Q</span>                      
-                    <span  class="history-expl-text-2-3-4Q-mobile-padding-clear-cn">累计应用下载量达到150,000 次</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">加盟店结算品牌扩大到30个</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">提供针对顾客的定制型推荐服务</span>
-                  </div>
-                  <p class ="history-subtext-cn"> *  基于GA分析数据的定制化服务</p>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">MileVerse Alliance 企业扩大到5处</span>
-                  </div>
-              </div>
-              </div>
-            </div>
-            <div class="history-section">
-              <div class="history-years last style="margin-top:1px style="margin-top:1px">
-              </div>
-              <div class="history-expl">
-                <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                <div class="history-FlexDirection-Column-1Q-2Q-3Q-4Q">
-
-                  <div class="histoy-Display-flex">
-                    <span class="history-1Q-2Q-3Q-4Q-mobile-cn">3Q</span> 
-                    <span  class="history-expl-text-2-3-4Q-mobile-padding-clear-cn">更新到APP 3.0</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">累计应用下载量达到200,000 次</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">签订P2P积分联动协议</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">APP内附加内容服务</span>
-                  </div>
-                    <P class="history-subtext-cn">* 与SNS连接的积分业务</P>
-              </div>
-              </div>
-            </div>
-            <div class="history-section">
-              <div class="history-years last style="margin-top:1px style="margin-top:1px">
-              </div>
-              <div class="history-expl">
-                <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                <div class="history-FlexDirection-Column-1Q-2Q-3Q-4Q">
-
-                  <div class="histoy-Display-flex">
-                    <span class="history-1Q-2Q-3Q-4Q-mobile-cn">4Q</span>                      
-                    <span  class="history-expl-text-2-3-4Q-mobile-padding-clear-cn">累计应用下载量达到300,000 次</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">达成DAU 100,000</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">企业积分合作处扩大到10个</span>
-                  </div><div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">加盟店结算品牌扩大到100个</span>
-                  </div><div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">签订图书/网络漫画积分联动协议</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">提供加盟店订阅服务</span>   
-                  </div>
-                  <P class="history-subtext-cn">* 订阅加盟店打折服务</P>
-                 
-                  
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-expl-text-2-3-4Q-mobile-cn">MileVerse Alliance 企业扩大到15处</span>
-                  </div>
-                  
-              </div>
-              </div>
-            </div>
-            
-            <div class="history-section">
-              <div class="history-years last" style="margin-top:1px">
-                <p class="history-years-text">2023</p>
-              </div>
-              <div class="history-expl">
-                <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                <div style="display: flex; flex-direction: column; margin-top:2px;">
-
-                  <div class="histoy-Display-flex">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">提供金融服务</span>
-                  </div>
-                  <P class="history-subtext-2023-cn">* 将加盟店结算用存折与1金融圈连接</P>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">累计应用下载量达到1,000,000次</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">达成DAU 200,000</span>
-                  </div>
-                  
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">企业积分合作处扩大到20个</span>
-                  </div>
-              
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">开发积分新项目</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">加盟店结算品牌扩大到200个</span>
-                  </div>
-                  
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">签订购物中心积分联动协议</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">MVP联动第三方APP服务</span>
-                  </div>
-                  <P class="history-subtext-2023-mobile-cn">* 运用积分的游戏/SNS</P>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">MileVerse Alliance 企业扩大到30处</span>
-                  </div>
-              </div>
-              </div>
-            </div>
-
-            <div class="history-section">
-              <div class="history-years last" style="margin-top:1px">
-                <p class="history-years-text">2024</p>
-              </div>
-              <div class="history-expl">
-                <img src="../../assets/img/roadmap_mobile.png" alt="" class="history-horizontal-short">
-                <div style="display: flex; flex-direction: column; ">
-
-                  <div class="histoy-Display-flex" style="margin-top: 3px;">
-                    <span  class="history-expl-text" style="margin-left: 30px; font-family:MFSongHe;">累计应用下载量达到2,000,000次</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">达成DAU 500,000</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">开放NFT服务</span>
-                  </div>
-
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">MileVerse Alliance 企业扩大到50处</span>
-                  </div>
-                  
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">扩展MileVerse Platform</span>
-                  </div>
-              
-                  <div class="history-FlexDirection-Row-Mobile">
-                    <span  class="history-FlexDirection-Row-Mobile-text-cn">在东南亚（马来西亚及其他4个国家）推出服务</span>
-                  </div>
-                  
-              </div>
-              </div>
-            </div>
-              <div class="history-section">
-              </div>
-              <div class="history-section">
-                <div class="history-years fake"></div>
-                <div class="history-expl"></div>
-              </div>
-            </div>
-            <div class="contents-init-wrap" data-aos="fade-down" data-aos-duration="1000">
+            <!-- 설립자 -->
+            <section class="contents-init-wrap" data-aos="fade-down" data-aos-duration="1000">
               <div class="contents-title-size">
-                <p class="contents-title director">Founders</p>
+                <p class="contents-title">Founders</p>
               </div>
-              <div class="contents-article-size director">
-                <div class="director-box-wrap">
-                  <div style="flex: 1;">
-                    <p class="founder-name">William Jung<br>
+              <div class="contents-article-size">
+                <article>
+                  <div>
+                    <p class="noto-medium">
+                      William Jung<br />
                       CEO
                     </p>
-                    <p class="founder-history">
-                      G Market Marketing team leader<br>
-                      Qoo10 Japan business developer<br>
-                      Qoo10 Malaysia country manager<br>
-                      AIO Global CEO<br>
-                      MileVerse CEO/Co-founder<br>
+                    <p>
+                      G Market Marketing team leader<br />
+                      Qoo10 Japan business developer<br />
+                      Qoo10 Malaysia country manager<br />
+                      AIO Global CEO<br />
+                      MileVerse CEO/Co-founder<br />
                     </p>
                   </div>
-                  <div class="thumb-img-wrap">
-                    <img src="../../assets/img/ceo_thumb.png" alt="" style="width: 100%;">
-                  </div>
-                </div>
-                <div class="director-box-wrap">
-                  <div style="flex:1">
-                    <p class="founder-name">Lucca Kim<br>
+                  <img src="../../assets/img/mileverse/ceo.png" alt="ceo" />
+                </article>
+                <article>
+                  <div>
+                    <p class="noto-medium">
+                      Lucca Kim<br />
                       COO / Co-founder
                     </p>
-                    <p class="founder-history">
-                      IMCOM<br>
-                      GM Global communication<br>
-                      OnePlus communication CEO<br>
-                      MileVerse COO/Co-founder<br>
+                    <p>
+                      IMCOM<br />
+                      GM Global communication<br />
+                      OnePlus communication CEO<br />
+                      MileVerse COO/Co-founder<br />
                     </p>
                   </div>
-                  <div class="thumb-img-wrap">
-                    <img src="../../assets/img/coo_thumb.png" alt="" style="width: 100%;">
-                  </div>
-                </div>
+                  <img src="../../assets/img/mileverse/coo.png" alt="coo" />
+                </article>
               </div>
-            </div>
-            <div class="contents-init-wrap vision-wrap" data-aos="fade-down" data-aos-duration="1000">
+            </section>
+
+            <!-- 비전 -->
+            <section class="contents-init-wrap vision-wrap" data-aos="fade-down" data-aos-duration="1000">
               <div class="contents-title-size">
                 <p class="contents-title">Vision</p>
               </div>
-              <div class="contents-article-size vision">
-                <p class="noto-bold vision-text" lang="cn">
-                  计划以东南亚为开端，构建在实际生活中可以像现金一样使用全球积分的全球平台。
-                </p>
-                <img src="../../assets/img/vision_img_cn.png" class="vision-imge" alt="비전 이미지">
-              </div>
-            </div>
-          </div>
+              <article class="contents-article-size">
+                <p class="noto-bold" lang="cn">计划以东南亚为开端，构建在实际生活中可以像现金一样使用全球积分的全球平台。</p>
+                <img src="../../assets/img/mileverse/vision_kr.png" alt="비전" />
+              </article>
+            </section>
+          </main>
         </div>
       </div>
-      <div id='footers'></div>
+      <div id="footers"></div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../js/index.js"></script>

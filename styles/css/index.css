@@ -615,7 +615,8 @@ table.commonFrame:lang(cn) tr td {
 }
 
 table.commonFrame tr th:not(:last-child),
-table.commonFrame tr td:not(:last-child) {
+table.commonFrame tr td:not(:last-child),
+table.commonFrame .br {
   border-right: 1px solid #dbdbdb;
 }
 

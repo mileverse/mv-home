@@ -1,8 +1,8 @@
 $(document).ready(function () {
   AOS.init();
 
-  $("#headers").load("/en/common/header.html");
-  $("#footers").load("/en/common/footer.html");
+  $("#headers").load("./common/header.html");
+  $("#footers").load("./common/footer.html");
 
   if ($(".main").length === 0) {
     //scroll event;;

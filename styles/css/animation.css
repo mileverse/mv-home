@@ -1,26 +1,11 @@
 .fade-in-box {
   animation: fadein 2s ease-in;
-  -moz-animation: fadein 2s ease-in;
-  /* Firefox */
-  -webkit-animation: fadein 2s ease-in;
-  /* Safari and Chrome */
-  -o-animation: fadein 2s ease-in;
-  /* Opera */
+  -moz-animation: fadein 2s ease-in; /* Firefox */
+  -webkit-animation: fadein 2s ease-in; /* Safari and Chrome */
+  -o-animation: fadein 2s ease-in; /* Opera */
 }
 
 @keyframes fadein {
-  from {
-    opacity: 0;
-    background-color: white;
-  }
-  to {
-    opacity: 1;
-    background-color: transparent;
-  }
-}
-
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
   from {
     opacity: 0;
     background-color: white;

@@ -423,6 +423,14 @@ body {
     background: #ffffff;
     transition: all ease 0.5s 0s;
   }
+  .mobile-menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 84px;
+  }
   .mobile-menu-screen.active {
     left: 0;
   }
@@ -463,6 +471,14 @@ body {
   }
   .header-mobile a {
     color: #212121;
+  }
+  .mobile-menu-bottom {
+    line-height: 1;
+    padding: 0 20px 32px 20px;
+    text-align: right;
+  }
+  .mobile-menu-bottom img {
+    width: 136px;
   }
 }
 .banner-bg {
@@ -731,6 +747,9 @@ table.commonFrame .br {
   }
   .mobile-welcome-btn-wrap {
     display: block;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
   }
   .welcome-down-btn {
     display: flex;

@@ -1,12 +1,10 @@
 .tech .contents-init-wrap:not(:first-child) {
   padding-top: 100px;
 }
-
 .tech .contents-init-wrap:not(:last-child) {
   padding-bottom: 120px;
   border-bottom: 1px solid #efefef;
 }
-
 .tech .contents-init-wrap:last-child {
   margin-bottom: 120px;
 }
@@ -14,83 +12,55 @@
 .tech .article-wrap {
   margin-top: 70px;
 }
-
 .tech .article-wrap .eco-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .tech .article-wrap .eco-wrap .eco-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   height: 180px;
 }
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-text-wrap {
   margin-left: 24px;
   font-size: 15px;
 }
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token {
   width: 100%;
   max-width: 100px;
 }
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-header {
   color: #212121;
   font-size: 18px;
   font-family: NotoSansBold;
   line-height: 30px;
 }
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-header:lang(cn) {
   font-family: MFSongHe;
 }
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl {
   color: #212121;
   font-size: 18px;
   font-family: NotoSansRegular;
   line-height: 30px;
 }
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl:lang(cn) {
   font-family: MFSongHe;
 }
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.cn {
   font-size: 16px;
 }
-
 .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-expl.en {
   font-size: 14px;
 }
 
 .token-table-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 60px;
 }
 
@@ -100,29 +70,17 @@
 }
 
 .tech .corp-card-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 40px;
   gap: 8px;
 }
 
 .tech .franch-card-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 40px;
   gap: 8px;
 }
@@ -132,13 +90,11 @@
   max-width: 834px;
   padding: 10px 0;
   text-align: center;
-  -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
   color: #212121;
   font-size: 20px;
   font-family: NotoSansRegular;
 }
-
 .tech .franch-card:lang(cn) {
   font-family: MFSongHe;
 }
@@ -148,12 +104,10 @@
   width: 414px;
   padding: 10px 0;
   text-align: center;
-  -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
   font-size: 20px;
   font-family: NotoSansRegular;
 }
-
 .tech .corp-card:lang(cn) {
   font-family: MFSongHe;
 }
@@ -162,11 +116,9 @@
   background-color: #f9f9f9;
   padding: 100px 0 120px 0;
 }
-
 .tech .token-dist-wrap.web {
   display: block;
 }
-
 .tech .token-dist-wrap p {
   font-size: 28px;
   color: "#212121";
@@ -178,12 +130,8 @@
 }
 
 .tech .token-dist-contnets-size {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 1300px;
   margin: 0 auto;
 }
@@ -209,10 +157,7 @@
     display: block;
   }
   .tech .article-wrap .eco-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 36px 0;
   }
   .tech .article-wrap .eco-wrap .eco-item .token-wrap .token-header {

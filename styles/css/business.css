@@ -1,12 +1,10 @@
 .business .contents-init-wrap:not(:first-child) {
   padding-top: 100px;
 }
-
 .business .contents-init-wrap:not(:last-child) {
   padding-bottom: 120px;
   border-bottom: 1px solid #efefef;
 }
-
 .business .contents-init-wrap:last-child {
   margin-bottom: 120px;
 }
@@ -16,7 +14,6 @@
   font-family: NotoSansBold;
   font-size: 24px;
 }
-
 .business .contents-header:lang(cn) {
   font-family: MFSongHe;
 }
@@ -27,7 +24,6 @@
   line-height: 29px;
   font-family: NotoSansMedium;
 }
-
 .business .contents-text:lang(cn) {
   font-family: MFSongHe;
 }
@@ -65,8 +61,7 @@
     margin-bottom: 50px;
   }
   .business .video {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    transform: scale(1.4);
   }
   .business .vodeo-wrap {
     overflow: hidden;

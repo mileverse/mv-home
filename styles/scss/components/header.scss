@@ -204,6 +204,14 @@
     background: #ffffff;
     transition: all ease 0.5s 0s;
   }
+  .mobile-menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 84px;
+  }
   .mobile-menu-screen.active {
     left: 0;
   }
@@ -244,5 +252,15 @@
   }
   .header-mobile a {
     color: #212121;
+  }
+
+  // 하단로고
+  .mobile-menu-bottom {
+    line-height: 1;
+    padding: 0 20px 32px 20px;
+    text-align: right;
+  }
+  .mobile-menu-bottom img {
+    width: 136px;
   }
 }

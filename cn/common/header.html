@@ -1,9 +1,12 @@
 <div class="header-wrap">
+  <!-- 데스크탑 -->
   <div class="header-web">
+    <!-- 로고: 현재언어의 홈화면으로 이동 -->
     <a href="/cn" style="position: relative">
       <div class="header_logo"></div>
     </a>
     <div style="display: flex">
+      <!-- 페이지 메뉴 -->
       <ul class="nav">
         <li class="category">
           <a href="#" class="company category-text">Company</a>
@@ -43,32 +46,42 @@
           <div class="active-border"></div>
         </li>
       </ul>
+
+      <!-- 언어메뉴 -->
       <ul class="lang_nav">
         <li>
-          <a href="/kr" class="category-text">KR</a>
+          <a href="/" class="category-text">KR</a>
         </li>
-        <li><a href="/" class="category-text">EN</a></li>
+        <li><a href="/en" class="category-text">EN</a></li>
         <li>
           <a href="/cn" class="category-text">CN</a>
         </li>
       </ul>
     </div>
   </div>
+
+  <!-- 모바일 -->
   <div class="header-mobile">
+    <!-- 로고: 현재언어의 홈화면으로 이동 -->
     <a href="/cn" style="flex: 1">
       <div class="header_logo mobile"></div>
     </a>
+
+    <!-- 햄버거 아이콘 -->
     <a href="#" id="mobile-menu-hamberger" style="width: 84px">
       <div class="menu_logo mobile"></div>
     </a>
+
+    <!-- 모바일 메뉴화면 -->
     <div class="mobile-menu-screen" id="menu-screen">
       <div>
-        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 0 20px; height: 84px">
+        <!-- 모바일 메뉴 헤더: 언어메뉴, 닫기버튼 -->
+        <div class="mobile-menu-header">
           <ul class="lang_nav">
             <li>
-              <a href="/kr" class="category-text">KR</a>
+              <a href="/" class="category-text">KR</a>
             </li>
-            <li><a href="/" class="category-text">EN</a></li>
+            <li><a href="/en" class="category-text">EN</a></li>
             <li>
               <a href="/cn" class="category-text">CN</a>
             </li>
@@ -77,6 +90,8 @@
             <img src="../../assets/img/ico_close.png" alt="" style="width: 20px; height: 20px" />
           </a>
         </div>
+
+        <!-- 모바일 페이지 메뉴 -->
         <div class="mobile-menu-wrap">
           <p class="level1">Company</p>
           <div>
@@ -104,8 +119,8 @@
           </p>
         </div>
       </div>
-      <div style="line-height: 1; padding: 0 20px 32px 20px; text-align: right">
-        <img src="../../assets/img/mv_logo_bl.png" alt="" style="width: 136px" />
+      <div class="mobile-menu-bottom">
+        <img src="../../assets/img/mv_logo_bl.png" alt="" />
       </div>
     </div>
   </div>

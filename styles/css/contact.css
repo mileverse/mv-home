@@ -1,8 +1,5 @@
 .contact .contents-init-wrap {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .contact .common-input {
@@ -12,31 +9,23 @@
   font-size: 20px;
   border: 1px solid #dbdbdb;
 }
-
 .contact .common-input:lang(cn) {
   font-family: MFSongHe;
 }
 
 .contact .common-input-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-
 .contact .common-input-wrap.name-mail {
   gap: 20px;
 }
-
 .contact .common-input-wrap:last-child {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 0 !important;
   padding-top: 50px;
   padding-bottom: 120px;
 }
-
 .contact .common-input-wrap:not(:first-child) {
   margin-top: 20px;
 }
@@ -47,15 +36,9 @@
 }
 
 .contact .fileTxtWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   width: 640px;
   height: 50px;
   padding-left: 16px;
@@ -64,21 +47,14 @@
   font-size: 20px;
   font-family: NotoSansMedium;
 }
-
 .contact .fileTxtWrap:lang(cn) {
   font-family: MFSongHe;
 }
 
 .contact #fileBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 114px;
   height: 50px;
   margin-left: 20px;
@@ -89,21 +65,13 @@
   font-family: NotoSansMedium;
   cursor: pointer;
 }
-
 .contact #fileBtn:lang(cn) {
   font-family: MFSongHe;
 }
-
 .contact #send {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 420px;
   height: 60px;
   background-color: #3c007c;
@@ -112,7 +80,6 @@
   font-family: NotoSansMedium;
   cursor: pointer;
 }
-
 .contact #send:lang(cn) {
   font-family: MFSongHe;
 }
@@ -131,9 +98,7 @@
     margin-top: 16px;
   }
   .contact .common-input-wrap:last-child {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-top: 0 !important;
     padding-top: 16px;
     padding-bottom: 50px;

@@ -2,46 +2,97 @@
   word-break: keep-all;
 }
 
-.apptech .contents-size {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.apptech .contents-total-wrap {
+.apptech main {
   padding: 0;
   background-image: url("../../../assets/img/appGuide/appGuide-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.apptech .contents-init-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.apptech section {
+  width: calc(100% - 40px);
+  max-width: 1300px;
+  margin: 0 20px;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apptech article {
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding: 100px 0 40px 0;
 }
-
-.apptech .contents-init-wrap:first-child {
+.apptech article:first-child {
+  padding-top: 0;
+}
+.apptech article:last-child {
+  padding-bottom: 140px;
+}
+.apptech article .pt-0 {
   padding-top: 0;
 }
 
-.apptech .contents-init-wrap:last-child {
-  padding-bottom: 140px;
+.apptech article .contents-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 27px;
+}
+.apptech article .contents-title.web {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.apptech article .contents-expl-size {
+  flex: 1;
+}
+
+.apptech article .contents-expl-size .contents-text {
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 80px;
+}
+.apptech article .contents-expl-size .contents-text.web:first-child {
+  font-size: 20px;
+  line-height: 29px;
+}
+.apptech article .contents-expl-size .contents-text.mobile {
+  display: none;
+}
+.apptech article .contents-expl-size .contents-text:lang(en) {
+  line-height: 30px;
+  word-spacing: -0.2px;
+  margin-bottom: 100px;
+}
+.apptech article .contents-expl-size .contents-text:lang(cn) {
+  word-break: break-word;
+}
+.apptech article .contents-expl-size .contents-text.no-margin {
+  margin-bottom: 0px;
+}
+
+.apptech article .contents-expl-size .app-img {
+  width: 100%;
+}
+.apptech article .contents-expl-size .app-img.mobile {
+  display: none;
+}
+
+.apptech article .contents-expl-size .btn-wrap {
+  margin-top: 38px;
+  margin-right: 34px;
+  text-align: right;
+}
+.apptech article .contents-expl-size .btn-wrap button {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.apptech article .contents-expl-size .btn-wrap button img {
+  width: 100%;
 }
 
 .apptech .divider {
@@ -50,156 +101,85 @@
   margin-bottom: 26px;
   border-bottom: 1px solid #efefef;
 }
-
-.apptech .contents-text {
-  font-size: 20px;
-  line-height: 34px;
-  margin-bottom: 10px;
-}
-
-.apptech .contents-text.web:first-child {
-  font-size: 20px;
-  line-height: 29px;
-}
-
-.apptech .contents-text.mobile {
+.apptech .divider.mobile {
   display: none;
-}
-
-.apptech .contents-text:lang(en) {
-  line-height: 30px;
-  word-spacing: -0.2px;
-  margin-bottom: 0;
-}
-
-.apptech .contents-text:lang(cn) {
-  word-break: break-word;
-}
-
-.apptech .app-img {
-  width: 100%;
-}
-
-.apptech .app-img.mobile {
-  display: none;
-}
-
-.apptech .btn-wrap {
-  margin-top: 38px;
-  text-align: right;
-}
-
-.apptech .btn-wrap .img-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.apptech .contents-article-wrap {
-  width: 900px;
-  margin-left: 110px;
-}
-
-.apptech .contents-article-wrap.web {
-  width: 1000px;
-  margin-left: 10px;
-}
-
-.apptech .contents-title {
-  margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 27px;
-}
-
-.apptech .contents-title.web {
-  font-size: 28px;
-  line-height: 32px;
-}
-
-.apptech .contents-title:lang(cn) {
-  font-family: GmarketSansBold;
 }
 
 @media (max-width: 767px) {
-  .apptech .contents-total-wrap {
+  .apptech main {
     background: transparent;
-  }
-  .apptech .divider {
-    width: 100%;
-    height: 26px;
-    margin-bottom: 26px;
-    border-bottom: 1px solid #efefef;
   }
   .apptech .bg_tech {
     background-position-y: 26%;
     background-position-x: 63%;
   }
-  .apptech .contents-title {
-    margin-top: 10px;
-    margin-bottom: 16px;
-    font-size: 18px;
-    line-height: 20px;
-  }
-  .apptech .contents-title.mobile {
-    margin-bottom: 16px;
-    font-size: 21px;
-    line-height: 24px;
-  }
-  .apptech .contents-title:lang(en), .apptech .contents-title:lang(cn) {
-    margin-top: 4px;
-  }
-  .apptech .contents-text {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .apptech .contents-text.web {
-    display: none;
-  }
-  .apptech .contents-text.mobile {
-    display: block;
-  }
-  .apptech .contents-text:lang(en) {
-    font-size: 13px;
-    line-height: 18px;
-    word-spacing: 1px;
-    margin-bottom: 10px;
-  }
-  .apptech .app-img {
-    width: 100%;
-  }
-  .apptech .app-img.web {
-    display: none;
-  }
-  .apptech .app-img.mobile {
-    display: block;
-  }
-  .apptech .btn-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 0;
-    padding-right: 0;
-  }
-  .apptech .contents-init-wrap {
+  .apptech article {
     border: none;
     padding: 0;
   }
-  .apptech .contents-init-wrap:first-child {
+  .apptech article:first-child {
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
     border: none;
   }
-  .apptech .contents-init-wrap:last-child {
+  .apptech article:last-child {
     padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
-  .apptech .contents-article-wrap {
-    width: 100%;
-    margin-left: 0;
+  .apptech article .contents-title {
+    margin-top: 10px;
+    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 20px;
   }
-  .apptech .contents-article-wrap.web {
+  .apptech article .contents-title.mobile {
+    margin-bottom: 23px;
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .apptech article .contents-title:lang(en), .apptech article .contents-title:lang(cn) {
+    margin-top: 4px;
+  }
+  .apptech article .contents-expl-size .contents-text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .apptech article .contents-expl-size .contents-text.no-margin {
+    margin-bottom: 20px;
+  }
+  .apptech article .contents-expl-size .contents-text.web {
+    display: none;
+  }
+  .apptech article .contents-expl-size .contents-text.mobile {
+    display: block;
+  }
+  .apptech article .contents-expl-size .contents-text:lang(en) {
+    font-size: 13px;
+    line-height: 18px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .apptech article .contents-expl-size .contents-text.app-guide {
+    word-spacing: -1px;
+  }
+  .apptech article .contents-expl-size .app-img {
     width: 100%;
-    margin-left: 0;
+  }
+  .apptech article .contents-expl-size .app-img.web {
+    display: none;
+  }
+  .apptech article .contents-expl-size .app-img.mobile {
+    display: block;
+  }
+  .apptech article .contents-expl-size .btn-wrap {
+    display: flex;
+    margin-top: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .apptech .divider.mobile {
+    display: block;
   }
 }

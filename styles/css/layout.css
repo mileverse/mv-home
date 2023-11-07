@@ -5,43 +5,25 @@ body {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 100vh;
   margin: 0 auto;
 }
 
 .main-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .contents-init-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .contents-total-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 100px;
 }
 
@@ -55,9 +37,7 @@ body {
 }
 
 .contents-article-size {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .contents-title {
@@ -66,11 +46,9 @@ body {
   font-family: GmarketSansBold;
   line-height: 36px;
 }
-
 .contents-title:lang(cn) {
   font-family: MFSongHe;
 }
-
 .contents-title.sub {
   color: #212121;
   font-size: 24px;
@@ -88,7 +66,6 @@ body {
   font-family: NotoSansMedium;
   color: #212121;
 }
-
 .contents-text:lang(cn) {
   font-family: MFSongHe;
 }
@@ -99,10 +76,7 @@ body {
     margin-top: 30px;
   }
   .contents-init-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .contents-title {
     font-size: 21px;

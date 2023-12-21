@@ -3,3 +3,5 @@
 
 # File #
 *.map
+
+*.DS_Store

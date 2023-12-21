@@ -54,6 +54,11 @@
   line-height: 30px;
 }
 
+.privacy a {
+  color: black;
+  font-weight: bold;
+}
+
 .privacy .commonFrame {
   width: 100%;
   min-width: 100%;

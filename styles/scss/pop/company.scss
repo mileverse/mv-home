@@ -1,0 +1,46 @@
+.company {
+  word-break: keep-all;
+  margin: 20px;
+  width: unset;
+  height: unset;
+}
+
+.company h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.company h3.sub {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.company table {
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: -0.42px;
+  line-height: 28px;
+  border: 1px solid #424242;
+  border-bottom: 0 none;
+  text-align: center;
+}
+
+.company table tr {
+  border-bottom: 1px solid #424242;
+}
+
+.company table tr th {
+  border-right: 1px solid #424242;
+}
+
+.company table tr th,
+.company table tr td {
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+}
+

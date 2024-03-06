@@ -67,9 +67,6 @@
   &:lang(cn) {
     word-break: break-word;
   }
-  &.no-margin {
-    margin-bottom: 0px;
-  }
 }
 
 .apptech article .contents-expl-size .app-img {
@@ -151,9 +148,6 @@
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 20px;
-    &.no-margin {
-      margin-bottom: 20px;
-    }
     &.web {
       display: none;
     }

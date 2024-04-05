@@ -1212,9 +1212,6 @@ table.commonFrame .br {
 .apptech article .contents-expl-size .contents-text:lang(cn) {
   word-break: break-word;
 }
-.apptech article .contents-expl-size .contents-text.no-margin {
-  margin-bottom: 0px;
-}
 
 .apptech article .contents-expl-size .app-img {
   width: 100%;
@@ -1288,9 +1285,6 @@ table.commonFrame .br {
   .apptech article .contents-expl-size .contents-text {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 20px;
-  }
-  .apptech article .contents-expl-size .contents-text.no-margin {
     margin-bottom: 20px;
   }
   .apptech article .contents-expl-size .contents-text.web {
